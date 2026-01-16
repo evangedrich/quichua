@@ -1,7 +1,7 @@
 'use client';
 
 import styles from '@/app/ui/home.module.css';
-import { tocapuLibrary } from '@/app/ui/tocapu.tsx';
+import { tocapuLibrary } from '@/app/ui/tocapu';
 import useWindowWidth from '@/app/hooks/useWindowWidth';
 
 interface unkuProps {
@@ -12,19 +12,19 @@ interface tocapuObj {
   name: string,
   svg: React.ReactNode,
 }
-function randomInt(min, max) {
+function randomInt(min: number, max: number) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 export default function UnkuRibbon({ pattern, top }: unkuProps) {
-  const pattern1: string[] = [
+  const pattern1: string[][] = [
     ["twoEyes2","firstAid","waves","curls","maskaypacha","sinchi","key2","earthquake","owl","waves","esses","key1"],
     ["sinchi","key1","snakes","escalators","owl","firstAid","teeth2","staircases","exes","sinchi","escalators","worms"],
     ["waves","secret","exes","pants2","fourEyes","waves","esses","bigExes","curls","fourEyes","altMaskaypacha","twoEyes1"]
   ];
-  const pattern2: string[] = [
+  const pattern2: string[][] = [
     ["escalators","threeEyes","owl","altEarthquake","key3","sinchi","twoEyes1","pants1","twoEyes2","secret","teeth2","sinchi"],
     ["worms","bigExes","teeth1","twoEyes1","snakes","anvil","worms","waves","sinchi","key1","altEarthquake","exes"],
     ["key1","sinchi","waves","maskaypacha","pants2","firstAid","key1","esses","anvil","worms","waves","snakes"]
