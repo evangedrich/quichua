@@ -1,0 +1,690 @@
+.svgBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 100ms ease-in-out;
+}
+.svgBox svg {
+  stroke: var(--color-front);
+  stroke-width: 0;
+  stroke-linecap: round;
+  fill: transparent;
+}
+.svgBox:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+.svgBox:active {
+  transform: scale(1);
+  filter: grayscale(50%);
+  /*transform: rotate(360deg);*/
+}
+/*.svgBox {
+  filter: invert(1);
+}*/
+
+/* Turn all .svgMove back into .svgBox:hover for manual animation triggers */
+.svgMove .zigzag {
+  animation-duration: 500ms;
+  animation-name: sinchiScroll;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+@keyframes sinchiScroll {
+  from { transform: translate(0px); }
+  to { transform: translate(10px); }
+}
+
+.svgMove .tucu1a {
+  transform-origin: 32.5px 32.5px;
+  animation-name: swoop1;
+}
+.svgMove .tucu2a {
+  transform-origin: 67.5px 32.5px;
+  animation-name: swoop2;
+}
+.svgMove .tucu1b {
+  transform-origin: 67.5px 67.5px;
+  animation-name: swoop3;
+}
+.svgMove .tucu2b {
+  transform-origin: 32.5px 67.5px;
+  animation-name: swoop4;
+}
+.svgMove .tucu1a, .svgMove .tucu2a, .svgMove .tucu1b, .svgMove .tucu2b {
+  animation-duration: 900ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+@keyframes swoop1 {
+  0% { transform: translate(0,0) rotate(0); }
+  25% { transform: translate(35px,35px) rotate(360deg); }
+  100% { transform: translate(35px,35px) rotate(360deg); }
+}
+@keyframes swoop2 {
+  0% { transform: translate(0,0) rotate(0); }
+  25% { transform: translate(-35px,35px) rotate(360deg); }
+  100% { transform: translate(-35px,35px) rotate(360deg); }
+}
+@keyframes swoop3 {
+  0% { transform: translate(0,0) rotate(0); }
+  25% { transform: translate(-35px,-35px) rotate(360deg); }
+  100% { transform: translate(-35px,-35px) rotate(360deg); }
+}
+@keyframes swoop4 {
+  0% { transform: translate(0,0) rotate(0); }
+  25% { transform: translate(35px,-35px) rotate(360deg); }
+  100% { transform: translate(35px,-35px) rotate(360deg); }
+}
+
+.feather1 {
+  transform-origin: 17.5px 65px;
+}
+.feather2 {
+  transform-origin: 27.5px 65px;
+}
+.feather3 {
+  transform-origin: 37.5px 65px;
+}
+.svgMove .feather1, .svgMove .feather2, .svgMove .feather3 {
+  animation-duration: 1500ms;
+  animation-name: breeze;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+@keyframes breeze {
+  25% { transform: rotate(8deg); }
+  75% { transform: rotate(-8deg); }
+}
+.pastoralEye {
+  transform-origin: 90px 10px;
+}
+.svgMove .pastoralEye {
+  animation-duration: 750ms;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+@keyframes pulse {
+  20% { transform: scale(1); }
+  32.5% { transform: scale(1.13); }
+  45% { transform: scale(1); }
+}
+
+.svgMove .kiru1, .svgMove .kiru2 {
+  animation-duration: 450ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+}
+.svgMove .kiru1 {
+  animation-name: slideUp;
+}
+@keyframes slideUp {
+  from { transform: translate(0,0); }
+  to { transform: translate(0,-16px); }
+}
+.svgMove .kiru2 {
+  animation-name: slideDown;
+}
+@keyframes slideDown {
+  from { transform: translate(0,0); }
+  to { transform: translate(0,16px); }
+}
+
+.svgMove .anvil1, .svgMove .anvil2 {
+  animation-duration: 550ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+}
+.svgMove .anvil1 {
+  animation-name: pulseUp;
+}
+@keyframes pulseUp {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(0,5px); }
+}
+.svgMove .anvil2 {
+  animation-name: pulseDown;
+}
+@keyframes pulseDown {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(0,-5px); }
+}
+
+.svgMove .hampi1a, .svgMove .hampi1b, .svgMove .hampi2a, .svgMove .hampi2b {
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+}
+.hampi1a, .hampi1b {
+  animation-delay: 125ms;
+}
+.svgMove .hampi1a {
+  animation-name: shift1;
+}
+.svgMove .hampi1b {
+  animation-name: shift2;
+}
+.svgMove .hampi2a {
+  animation-name: shift3;
+}
+.svgMove .hampi2b {
+  animation-name: shift4;
+}
+@keyframes shift1 {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(42px); }
+  100% { transform: translateY(42px); }
+}
+@keyframes shift2 {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-42px); }
+  100% { transform: translateY(-42px); }
+}
+@keyframes shift3 {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(54px); }
+  100% { transform: translateX(54px); }
+}
+@keyframes shift4 {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-54px); }
+  100% { transform: translateX(-54px); }
+}
+
+.svgMove .wave1, .svgMove .wave2 {
+  animation-duration: 400ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+.svgMove .wave1 {
+  animation-name: waveUp;
+}
+@keyframes waveUp {
+  from { transform: translate(0,0); }
+  to { transform: translate(0,-14px); }
+}
+.svgMove .wave2 {
+  animation-name: waveDown;
+}
+@keyframes waveDown {
+  from { transform: translate(0,0); }
+  to { transform: translate(0,14px); }
+}
+
+.blink1 {
+  transform-origin: 11.25px 22.5px;
+}
+.blink2 {
+  transform-origin: 11.25px 52.5px;
+  animation-delay: 200ms;
+}
+.blink3 {
+  transform-origin: 11.25px 82.5px;
+  animation-delay: 100ms;
+}
+.blink4 {
+  transform-origin: 56.25px 17.5px;
+  animation-delay: 300ms;
+}
+.blink5 {
+  transform-origin: 56.25px 47.5px;
+}
+.blink6 {
+  transform-origin: 56.25px 77.5px;
+  animation-delay: 275ms;
+}
+.svgMove .blink1, .svgMove .blink2, .svgMove .blink3, .svgMove .blink4, .svgMove .blink5, .svgMove .blink6 {
+  animation-duration: 400ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-name: blink;
+}
+@keyframes blink {
+  0% { transform: scaleX(1); }
+  20% { transform: scaleX(0.25); }
+  40% { transform: scaleX(1); }
+}
+
+.chukchuy1 {
+  transform-origin: 24px 24px;
+}
+.chukchuy2 {
+  transform-origin: 80px 24px;
+  animation-delay: 100ms;
+}
+.chukchuy3 {
+  transform-origin: center;
+  animation-delay: 50ms;
+}
+.chukchuy4 {
+  transform-origin: 24px 80px;
+  animation-delay: 100ms;
+}
+.chukchuy5 {
+  transform-origin: 80px 80px;
+}
+.svgMove .chukchuy1, .svgMove .chukchuy2, .svgMove .chukchuy3, .svgMove .chukchuy4, .svgMove .chukchuy5 {
+  animation-duration: 275ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-name: tremble;
+}
+@keyframes tremble {
+  0% { transform: rotate(0deg); }
+  5% { transform: rotate(5deg); }
+  30% { transform: translateX(1px) rotate(-5deg); }
+  50% { transform: translateX(-2px) rotate(5deg); }
+  70% { transform: translateX(1px) rotate(-5deg); }
+  95% { transform: rotate(0deg); }
+}
+
+/*.kuruSlide1, .kuruSlide2 {
+  transition: transform 250ms ease-in-out;
+}
+.svgMove .kuruSlide1 {
+  transform: translate(-45px);
+}
+.svgMove .kuruSlide2 {
+  transform: translate(45px);
+}*/
+.svgMove .kuruSlide1, .svgMove .kuruSlide2 {
+  animation-duration: 900ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease;
+}
+.svgMove .kuruSlide1 {
+  animation-name: kuruSlide1;
+}
+.svgMove .kuruSlide2 {
+  animation-name: kuruSlide2;
+}
+@keyframes kuruSlide1 {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(-45px,0); }
+  50% { transform: translate(-45px,45px); }
+  100% { transform: translate(-45px,45px); }
+}
+@keyframes kuruSlide2 {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(45px,0); }
+  50% { transform: translate(45px,-45px); }
+  100% { transform: translate(45px,-45px); }
+}
+
+.invert1, .invert2, .invert3, .invert4 {
+  transition: transform 200ms linear;
+}
+.svgMove .invert1 {
+  transform-origin: 30px 30px;
+  animation-name: invertA;
+}
+.svgMove .invert2 {
+  transform-origin: 70px 30px;
+  animation-name: invertB;
+}
+.svgMove .invert3 {
+  transform-origin: 30px 70px;
+  animation-name: invertC;
+}
+.svgMove .invert4 {
+  transform-origin: 70px 70px;
+  animation-name: invertD;
+}
+.svgMove .invert1, .svgMove .invert2, .svgMove .invert3, .svgMove .invert4 {
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+@keyframes invertA {
+  0% { transform: rotate3d(0,0,0,0); }
+  10% { transform: rotate3d(1,0,0,-180deg); }
+  50% { transform: rotate3d(1,0,0,-180deg); }
+  60% { transform: rotate3d(0,0,0,0); }
+}
+@keyframes invertB {
+  0% { transform: rotate3d(0,0,0,0); }
+  5% { transform: rotate3d(0,0,0,0); }
+  15% { transform: rotate3d(1,0,0,-180deg); }
+  55% { transform: rotate3d(1,0,0,-180deg); }
+  65% { transform: rotate3d(0,0,0,0); }
+}
+@keyframes invertC {
+  0% { transform: rotate3d(0,0,0,0); }
+  7.5% { transform: rotate3d(0,0,0,0); }
+  17.5% { transform: rotate3d(1,0,0,-180deg); }
+  57.5% { transform: rotate3d(1,0,0,-180deg); }
+  67.5% { transform: rotate3d(0,0,0,0); }
+}
+@keyframes invertD {
+  0% { transform: rotate3d(0,0,0,0); }
+  2.5% { transform: rotate3d(0,0,0,0); }
+  12.5% { transform: rotate3d(1,0,0,-180deg); }
+  52.5% { transform: rotate3d(1,0,0,-180deg); }
+  62.5% { transform: rotate3d(0,0,0,0); }
+}
+
+.svgMove .eye1a, .svgMove .eye1b, .svgMove .eye1c, .svgMove .eye1d,
+.svgMove .eye2a, .svgMove .eye2b, .svgMove .eye2c, .svgMove .eye2d,
+.svgMove .eye3a, .svgMove .eye3b, .svgMove .eye3c, .svgMove .eye3d,
+.svgMove .eye1bX, .svgMove .eye2bX, .svgMove .eye3bX  {
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-name: blinks;
+}
+.eye1a { transform-origin: 20px 20px; animation-delay: 0ms; }
+.eye1b { transform-origin: 40px 20px; animation-delay: 0ms; }
+.eye1c { transform-origin: 60px 20px; animation-delay: 0ms; }
+.eye1d { transform-origin: 80px 20px; animation-delay: 0ms; }
+.eye2a { transform-origin: 20px 50px; animation-delay: 50ms; }
+.eye2b { transform-origin: 40px 50px; animation-delay: 50ms; }
+.eye2c { transform-origin: 60px 50px; animation-delay: 50ms; }
+.eye2d { transform-origin: 80px 50px; animation-delay: 50ms; }
+.eye3a { transform-origin: 20px 80px; animation-delay: 0ms; }
+.eye3b { transform-origin: 40px 80px; animation-delay: 0ms; }
+.eye3c { transform-origin: 60px 80px; animation-delay: 0ms; }
+.eye3d { transform-origin: 80px 80px; animation-delay: 0ms; }
+@keyframes blinks {
+  0% { transform: scaleX(1); }
+  15% { transform: scaleX(0.3); }
+  30% { transform: scaleX(1); }
+  45% { transform: scaleX(0.3); }
+  60% { transform: scaleX(1); }
+}
+.eye1bX { transform-origin: 50px 20px; animation-delay: 0ms; }
+.eye2bX { transform-origin: 50px 50px; animation-delay: 50ms; }
+.eye3bX { transform-origin: 50px 80px; animation-delay: 0ms; }
+
+.svgMove .curlPair {
+  transform-origin: 45px 50px;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-name: curlBump;
+}
+@keyframes curlBump {
+  25% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+.svgMove .enclose1, .svgMove .enclose2, .svgMove .expand {
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+.svgMove .enclose1 {
+  animation-name: encloseA;
+}
+.svgMove .enclose2 {
+  animation-name: encloseB;
+}
+.svgMove .expand {
+  animation-name: widen;
+  transform-origin: center;
+}
+@keyframes encloseA {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-6px); }
+  50% { transform: translateX(-6px); }
+  60% { transform: translateX(0); }
+}
+@keyframes encloseB {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(6px); }
+  50% { transform: translateX(6px); }
+  60% { transform: translateX(0); }
+}
+@keyframes widen {
+  0% { transform: scaleX(1); }
+  10% { transform: scaleX(1.5); }
+  50% { transform: scaleX(1.5); }
+  60% { transform: scaleX(1); }
+}
+
+.svgMove .suddenly1 {
+  animation: 1500ms putRight infinite steps(1);
+}
+.svgMove .suddenly2 {
+  animation: 1500ms putLeft infinite steps(1);
+}
+@keyframes putRight {
+  0% { transform: translateX(40px); }
+  50% { transform: translateX(0); }
+}
+@keyframes putLeft {
+  0% { transform: translateX(-40px); }
+  50% { transform: translateX(0); }
+}
+
+.svgMove .bob, .svgMove .antibob {
+  animation-duration: 200ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-name: bobbing;
+}
+.svgMove .antibob {
+  animation-direction: reverse;
+}
+@keyframes bobbing {
+  25% { transform: translateY(1px); }
+  75% { transform: translateY(-1px); }
+}
+
+.svgMove .tightenH1, .svgMove .tightenH2, .svgMove .tightenV1, .svgMove .tightenV2 {
+  animation-duration: 750ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+.svgMove .tightenH1 {
+  animation-name: tightenRight;
+}
+@keyframes tightenRight {
+  10% { transform: translateX(1px); }
+  50% { transform: translateX(1px); }
+  60% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+.svgMove .tightenH2 {
+  animation-name: tightenLeft;
+}
+@keyframes tightenLeft {
+  10% { transform: translateX(-1px); }
+  50% { transform: translateX(-1px); }
+  60% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+.svgMove .tightenV1 {
+  animation-name: tightenDown;
+}
+@keyframes tightenDown {
+  10% { transform: translateY(1px); }
+  50% { transform: translateY(1px); }
+  60% { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+.svgMove .tightenV2 {
+  animation-name: tightenUp;
+}
+@keyframes tightenUp {
+  10% { transform: translateY(-1px); }
+  50% { transform: translateY(-1px); }
+  60% { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+.svgMove .twoEyes1A, .svgMove .twoEyes1B, .svgMove .twoEyes2A, .svgMove .twoEyes2B {
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+.svgMove .twoEyes1A {
+  animation-name: turnBlinkA;
+  transform-origin: -23.75px -23.75px;
+}
+.svgMove .twoEyes2A {
+  animation-name: turnBlinkB;
+  transform-origin: 23.75px -23.75px;
+}
+@keyframes turnBlinkA {
+  8% { transform: rotate(90deg); }
+  16% { transform: rotate(90deg); }
+  24% { transform: rotate(90deg) scaleX(0.2); }
+  32% { transform: rotate(90deg) scaleX(1); }
+  40% { transform: rotate(90deg) scaleX(1); }
+  48% { transform: rotate(0deg); }
+}
+.svgMove .twoEyes1B {
+  animation-name: turnBlinkB;
+  transform-origin: 23.75px 23.75px;
+}
+.svgMove .twoEyes2B {
+  animation-name: turnBlinkA;
+  transform-origin: -23.75px 23.75px;
+}
+@keyframes turnBlinkB {
+  8% { transform: rotate(-90deg); }
+  16% { transform: rotate(-90deg); }
+  24% { transform: rotate(-90deg) scaleX(0.2); }
+  32% { transform: rotate(-90deg) scaleX(1); }
+  40% { transform: rotate(-90deg) scaleX(1); }
+  48% { transform: rotate(0deg); }
+}
+
+.svgMove .excel1, .svgMove .excel2, .svgMove .excel3, .svgMove .excel4 {
+  animation-duration: 1250ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  transform-origin: 0px 0px;
+}
+.svgMove .excel1 {
+  animation-name: ex1;
+}
+.svgMove .excel2 {
+  animation-name: ex2;
+}
+.svgMove .excel3 {
+  animation-name: ex3;
+}
+.svgMove .excel4 {
+  animation-name: ex4;
+}
+@keyframes ex1 {
+  25% { transform: rotate3d(1,0,0,180deg); }
+  50% { transform: rotate3d(1,0,0,180deg); }
+  75% { transform: rotate3d(1,0,0,180deg) translateX(50px); }
+  100% { transform: rotate3d(1,0,0,180deg) translateX(50px); }
+}
+@keyframes ex2 {
+  25% { transform: rotate3d(0,1,0,180deg); }
+  50% { transform: rotate3d(0,1,0,180deg); }
+  75% { transform: rotate3d(0,1,0,180deg) translateY(50px); }
+  100% { transform: rotate3d(0,1,0,180deg) translateY(50px); }
+}
+@keyframes ex3 {
+  25% { transform: rotate3d(0,1,0,-180deg); }
+  50% { transform: rotate3d(0,1,0,-180deg); }
+  75% { transform: rotate3d(0,1,0,-180deg) translateY(-50px); }
+  100% { transform: rotate3d(0,1,0,-180deg) translateY(-50px); }
+}
+@keyframes ex4 {
+  25% { transform: rotate3d(1,0,0,-180deg); }
+  50% { transform: rotate3d(1,0,0,-180deg); }
+  75% { transform: rotate3d(1,0,0,-180deg) translateX(-50px); }
+  100% { transform: rotate3d(1,0,0,-180deg) translateX(-50px); }
+}
+
+
+.svgMove .bigEx1, .svgMove .bigEx2 {
+  animation-duration: 1250ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.bigEx1 {
+  transform-origin: -48px 48px;
+  transform: scaleX(1.04);
+}
+.svgMove .bigEx1 {
+  animation-name: exGrow1;
+}
+@keyframes exGrow1 {
+  10% { transform: scaleX(0.7); }
+  30% { transform: scaleX(0.7); }
+  40% { transform: scaleX(1.38); }
+  60% { transform: scaleX(1.38); }
+  70% { transform: scaleX(1.04); }
+  90% { transform: scaleX(1.04); }
+}
+.bigEx2 {
+  transform-origin: 48px 48px;
+  transform: scaleX(1.04);
+}
+.svgMove .bigEx2 {
+  animation-name: exGrow2;
+}
+@keyframes exGrow2 {
+  10% { transform: scaleX(1.38); }
+  30% { transform: scaleX(1.38); }
+  40% { transform: scaleX(0.7); }
+  60% { transform: scaleX(0.7); }
+  70% { transform: scaleX(1.04); }
+  90% { transform: scaleX(1.04); }
+}
+
+/*.incaKey, .incaKeyAlt {
+  transition: d 250ms ease;
+}
+.svgMove:hover .incaKey {
+  d: path("M37.5,87.5 12.5,87.5 12.5,62.5 37.5,62.5 62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M12.5,12.5 37.5,12.5 37.5,37.5 12.5,37.5z M62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z");
+}
+.svgMove:hover .incaKeyAlt {
+  d: path("M37.5,37.5 12.5,37.5 12.5,12.5 37.5,12.5 62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M12.5,62.5 37.5,62.5 37.5,87.5 12.5,87.5z M62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z");
+}*/
+.svgMove .incaKey, .svgMove .incaKeyAlt {
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease;
+}
+.svgMove .incaKey {
+  animation-name: key1;
+}
+.svgMove .incaKeyAlt {
+  animation-name: key2;
+}
+@keyframes key1 {
+  10% { d: path("M37.5,87.5 12.5,87.5 12.5,62.5 37.5,62.5 62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M12.5,12.5 37.5,12.5 37.5,37.5 12.5,37.5z M62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z"); }
+  60% { d: path("M37.5,37.5 12.5,37.5 12.5,12.5 37.5,12.5 62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M12.5,62.5 37.5,62.5 37.5,87.5 12.5,87.5z M62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z"); }
+  50% { d: path("M37.5,87.5 12.5,87.5 12.5,62.5 37.5,62.5 62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M12.5,12.5 37.5,12.5 37.5,37.5 12.5,37.5z M62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z"); }
+}
+@keyframes key2 {
+  10% { d: path("M37.5,37.5 12.5,37.5 12.5,12.5 37.5,12.5 62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M12.5,62.5 37.5,62.5 37.5,87.5 12.5,87.5z M62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z"); }
+  60% { d: path("M37.5,87.5 12.5,87.5 12.5,62.5 37.5,62.5 62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M12.5,12.5 37.5,12.5 37.5,37.5 12.5,37.5z M62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z"); }
+  50% { d: path("M37.5,37.5 12.5,37.5 12.5,12.5 37.5,12.5 62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M12.5,62.5 37.5,62.5 37.5,87.5 12.5,87.5z M62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z"); }
+}
+
+@media screen and (max-width: 800px) {
+
+}

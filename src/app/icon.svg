@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 36 36">
+  <title>Quichua Logo</title>
+  <desc>Site logo for Quichua language learning app.</desc>
+  <rect width="34" height="34" x="-1" y="-1" fill="#e85538" stroke="#f0d699" stroke-width="2" rx="4" shape-rendering="geometricPrecision"/>
+  <path fill="#f0d699" d="M12,28 4,28 4,20 12,20 20,4 28,4 28,12 20,12z M4,4 12,4 12,12 4,12z M20,20 28,20 28,28 20,28z" shape-rendering="geometricPrecision"/>
+  <path fill="#e85538" d="M6 6h4v4H6zm16 16h4v4h-4zM6 22h4v4H6zM22 6h4v4h-4z" shape-rendering="geometricPrecision"/>
+</svg>

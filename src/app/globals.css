@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --color-back: #ede9e3;
+  --color-front: #282828;
+  --color-mid: rgba(0,0,0,0.1);
+  --color-mid-hover: rgba(0,0,0,0.15);
+  --color-mid-active: rgba(0,0,0,0.2);
+  --color-theme: #8a3a32;
+}
+.dark {
+  --color-back: #241c21;
+  --color-front: #ede9e3;
+  --color-mid: rgba(255,255,255,0.1);
+  --color-mid-hover: rgba(255,255,255,0.15);
+  --color-mid-active: rgba(255,255,255,0.2);
+  --color-theme: #8a3a32;
+}
+
+body {
+  background-color: var(--color-back);
+  color: var(--color-front);
+}

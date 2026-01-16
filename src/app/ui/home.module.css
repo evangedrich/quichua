@@ -1,0 +1,59 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.banner h1, .banner h2 {
+  text-align: center;
+}
+.banner h1 {
+  font-size: 68px;
+  line-height: 1em;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+.banner h2 {
+  font-size: 20px;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-bottom: 8vh;
+}
+
+.customButton {
+  padding: 0.25em 0.6em 0.25em 0.6em;
+  background-color: var(--color-mid);
+  border-radius: 0.4em;
+  cursor: pointer;
+  transition: transform 50ms linear;
+}
+.customButton:hover {
+  background-color: var(--color-mid-hover);
+  transform: scale(1.05);
+}
+.customButton:active {
+  background-color: var(--color-mid-active);
+  transform: scale(1);
+}
+.customButton:focus-visible {
+  outline: 2px solid var(--color-theme);
+}
+
+.unkuTop, .unkuBottom {
+  position: absolute;
+  left: 0;
+  width: auto;
+  background-color: var(--color-theme);
+  border-top: 8px solid var(--color-theme);
+  border-bottom: 8px solid var(--color-theme);
+}
+.unkuTop {
+  top: 0;
+  margin-top: 6vh;
+}
+.unkuBottom {
+  bottom: 0;
+  margin-bottom: 6vh;
+}

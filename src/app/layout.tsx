@@ -1,0 +1,30 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import Script from 'next/script';
+
+export const metadata: Metadata = {
+  title: "Quichua",
+  description: "A language learning tool for Quichua",
+};
+
+const setThemeMode = () => {
+  const savedTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+  document.documentElement.classList.add(initialTheme);
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `(${setThemeMode.toString()})();` }} />
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}
