@@ -55,7 +55,7 @@ export default function UnkuRibbon({ pattern, top }: unkuProps) {
   }
   const ribbon: tocapuObj[] = stitch((pattern===1)?pattern1:pattern2);
   return (
-    <div className={`${(top)?styles.unkuTop:styles.unkuBottom}`}>
+    <div className={styles.unku}>
       {ribbon.map(tocapu => (
         <div
           className={`bg-transparent-500 float-left`}

@@ -6,12 +6,18 @@ import UnkuRibbon from '@/app/ui/unku-ribbon';
 export default function Home() {
   return (
     <main>
-      <UnkuRibbon pattern={1} top={true} />
-      <UnkuRibbon pattern={2} top={false} />
-      <div className={styles.banner}>
-        <h1 className={`${montserrat.className}`}>QUICHUA</h1>
-        <h2 className={`${josefinSans.className}`}>in 10 easy lessons</h2>
-        <Button text="enter →" />
+      <div className={styles.container}>
+        <div className={styles.ribbon}>
+          <UnkuRibbon pattern={1} top={true} />
+        </div>
+        <div className={styles.banner}>
+          <h1 className={`${montserrat.className}`}>QUICHUA</h1>
+          <h2 className={`${josefinSans.className}`}>in 10 easy lessons</h2>
+          <Button text="enter →" />
+        </div>
+        <div className={styles.ribbon}>
+          <UnkuRibbon pattern={2} top={false} />
+        </div>
       </div>
     </main>
   );
