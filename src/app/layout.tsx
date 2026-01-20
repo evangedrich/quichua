@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from 'next/script';
+import { ContextProvider } from './ui/app-context'
 
 export const metadata: Metadata = {
   title: "Quichua",
@@ -24,7 +25,9 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: `(${setThemeMode.toString()})();` }} />
       </head>
-      <body>{children}</body>
+      <body>
+        <ContextProvider>{children}</ContextProvider>
+      </body>
     </html>
   );
 }

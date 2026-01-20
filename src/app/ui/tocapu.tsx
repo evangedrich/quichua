@@ -14,7 +14,7 @@ interface tocapu {
   svg: React.ReactNode,
 }
 
-const move: boolean = true;
+const move: boolean = false;
 
 export const tocapuLibrary: tocapu[] = [
   {

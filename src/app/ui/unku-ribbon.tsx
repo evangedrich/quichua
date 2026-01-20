@@ -1,8 +1,12 @@
 'use client';
 
 import styles from '@/app/ui/home.module.css';
+import tocapuStyles from '@/app/ui/tocapu.module.css';
 import { tocapuLibrary } from '@/app/ui/tocapu';
 import useWindowWidth from '@/app/hooks/useWindowWidth';
+import useTheme from '@/app/hooks/useTheme';
+import useMotion from '@/app/hooks/useMotion';
+import useLang from '@/app/hooks/useLang';
 
 interface unkuProps {
   pattern: number,
@@ -18,7 +22,10 @@ function randomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-export default function UnkuRibbon({ pattern, top }: unkuProps) {
+export default function UnkuRibbon({ pattern }: unkuProps) {
+  const { theme, toggleTheme } = useTheme();
+  const { motion, toggleMotion } = useMotion();
+  const { lang, toggleLang } = useLang();
   const pattern1: string[][] = [
     ["twoEyes2","firstAid","waves","curls","maskaypacha","sinchi","key2","earthquake","owl","waves","esses","key1"],
     ["sinchi","key1","snakes","escalators","owl","firstAid","teeth2","staircases","exes","sinchi","escalators","worms"],
@@ -41,7 +48,9 @@ export default function UnkuRibbon({ pattern, top }: unkuProps) {
     for (let i=0; i<nRows; i++) {
       for (let j=0; j<realCount; j++) {
         const k: number = (j<order[i].length) ? j : (j<order[i].length*2) ? j-order[i].length : (j<order[i].length*3) ? j-order[i].length*2 : 0;
-        tocapuLibrary.forEach(item => { if (item.name===order[i][k]) { orderedTocapu.push(item); } });
+        tocapuLibrary.forEach(item => {
+          if (item.name===order[i][k]) { orderedTocapu.push(item); }
+        });
       }
     }
     const arr: tocapuObj[] = orderedTocapu;
@@ -54,13 +63,20 @@ export default function UnkuRibbon({ pattern, top }: unkuProps) {
     return tocapuArray;
   }
   const ribbon: tocapuObj[] = stitch((pattern===1)?pattern1:pattern2);
+  function clicked(id: string): void {
+    if (id==='esses') { toggleTheme(); }
+    else if (id==='earthquake' || id==="altEarthquake") { toggleMotion(); }
+    else if (id==='owl') { toggleLang(); }
+    // else { console.log(id); }
+  }
   return (
     <div className={styles.unku}>
       {ribbon.map(tocapu => (
         <div
-          className={`bg-transparent-500 float-left`}
+          className={`bg-transparent-500 float-left ${(motion)?tocapuStyles.svgMove:""}`}
           style={{width:newTocSize+"px", height:newTocSize+"px"}}
-          key={`${tocapu.name}_${randomInt(1,1000000)}`}
+          key={`${tocapu.name}_${crypto.randomUUID()}`}
+          onClick={() => clicked(tocapu.name)}
         >
           {tocapu.svg}
         </div>

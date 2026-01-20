@@ -9,8 +9,8 @@
   --color-theme: #8a3a32;
 }
 .dark {
-  --color-back: #241c21;
-  --color-front: #ede9e3;
+  --color-back: #241b21;
+  --color-front: white;
   --color-mid: rgba(255,255,255,0.1);
   --color-mid-hover: rgba(255,255,255,0.15);
   --color-mid-active: rgba(255,255,255,0.2);

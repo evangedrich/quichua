@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-const useWindowWidth = ():number => {
+const useWindowWidth = (): number => {
   const [width, setWidth] = useState<number>(0);
   useEffect(() => {
     const handleResize = () => {
