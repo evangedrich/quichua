@@ -2,11 +2,21 @@
 
 import React, { createContext, useContext, useState, useCallback } from 'react';
 
-export const AppContext = createContext(undefined);
+interface ContextType {
+  theme: string,
+  setTheme: React.Dispatch<React.SetStateAction<string>>,
+  toggleTheme: () => void,
+  motion: boolean,
+  toggleMotion: () => void,
+  lang: string,
+  toggleLang: () => void,
+}
+
+export const AppContext = createContext<ContextType | undefined>(undefined);
 
 // this allows global reach for the variables here defined
 // consume context in split off custom hooks, e.g. "useTheme", "useMotion"
-export const ContextProvider = ({ children }) => {
+export const ContextProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState('light');
   const [motion, setMotion] = useState(true);
   const [lang, setLang] = useState('en');
@@ -22,7 +32,7 @@ export const ContextProvider = ({ children }) => {
   }, []);
 
   const contextValue = {
-    theme, toggleTheme,
+    theme, setTheme, toggleTheme,
     motion, toggleMotion,
     lang, toggleLang
   };

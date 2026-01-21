@@ -1,18 +1,19 @@
 'use client';
 
 import { useContext } from 'react';
-import { AppContext } from '@/app/ui/app-context';
+import { AppContext } from '@/app/ui/context';
 
 interface motionType {
-  motion: string,
+  motion: boolean,
   toggleMotion: () => void;
 }
 
 const useMotion = (): motionType => {
-  const { motion, toggleMotion } = useContext(AppContext);
-  if (useContext(AppContext) === undefined) {
+  const context = useContext(AppContext);
+  if (context === undefined) {
     throw new Error('useMotion must be used within an AppProvider');
   }
+  const { motion, toggleMotion } = context;
   return { motion, toggleMotion };
 };
 

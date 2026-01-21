@@ -4,7 +4,7 @@ import { montserrat, josefinSans } from '@/app/ui/fonts';
 import useLang from '@/app/hooks/useLang';
 
 export default function Banner() {
-  const { lang, toggleLang } = useLang();
+  const { lang } = useLang();
   return (
     <>
       <h1 className={`${montserrat.className}`}>QUICHUA</h1>

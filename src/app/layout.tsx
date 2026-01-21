@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from 'next/script';
-import { ContextProvider } from './ui/app-context'
+import { ContextProvider } from './ui/context'
 
 export const metadata: Metadata = {
   title: "Quichua",

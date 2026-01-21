@@ -1,7 +1,7 @@
 'use client';
 
 import { useContext, useEffect } from 'react';
-import { AppContext } from '@/app/ui/app-context';
+import { AppContext } from '@/app/ui/context';
 
 interface themeType {
   theme: string,
@@ -9,22 +9,22 @@ interface themeType {
 }
 
 const useTheme = (): themeType => {
-  const { theme, toggleTheme } = useContext(AppContext);
+  const context = useContext(AppContext);
+  if (context === undefined) {
+    throw new Error('useTheme must be used within an AppProvider');
+  }
+  const { theme, setTheme, toggleTheme } = context;
 
   useEffect(() => {
-    const savedTheme: string = localStorage.getItem('theme');
+    const savedTheme: string | null = localStorage.getItem('theme');
     const systemPrefersDark: boolean = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    // setTheme(savedTheme || (systemPrefersDark ? 'dark' : 'light'));
+    setTheme(savedTheme || (systemPrefersDark ? 'dark' : 'light'));
   }, []);
   useEffect(() => {
     document.documentElement.classList.remove('light', 'dark');
     document.documentElement.classList.add(theme);
     localStorage.setItem('theme', theme);
   }, [theme]);
-
-  if (useContext(AppContext) === undefined) {
-    throw new Error('useTheme must be used within an AppProvider');
-  }
 
   return { theme, toggleTheme };
 };

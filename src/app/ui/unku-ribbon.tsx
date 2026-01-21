@@ -10,7 +10,6 @@ import useLang from '@/app/hooks/useLang';
 
 interface unkuProps {
   pattern: number,
-  top: boolean,
 }
 interface tocapuObj {
   name: string,
