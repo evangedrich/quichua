@@ -5,6 +5,7 @@
   background-color: transparent;
   cursor: pointer;
   transition: transform 100ms ease-in-out;
+  z-index: 0;
 }
 .svgBox svg {
   stroke: var(--color-front);
@@ -12,15 +13,15 @@
   stroke-linecap: round;
   fill: transparent;
 }
-.svgBox:hover {
+/*.svgBox:hover {
   transform: scale(1.5);
-  z-index: 1;
-}
+  z-index: 2;
+}*//*
 .svgBox:active {
   transform: scale(1);
   filter: grayscale(50%);
-  /*transform: rotate(360deg);*/
-}
+  transform: rotate(360deg);
+}*/
 /*.svgBox {
   filter: invert(1);
 }*/
@@ -683,6 +684,86 @@
   10% { d: path("M37.5,37.5 12.5,37.5 12.5,12.5 37.5,12.5 62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M12.5,62.5 37.5,62.5 37.5,87.5 12.5,87.5z M62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z"); }
   60% { d: path("M37.5,87.5 12.5,87.5 12.5,62.5 37.5,62.5 62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M12.5,12.5 37.5,12.5 37.5,37.5 12.5,37.5z M62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z"); }
   50% { d: path("M37.5,37.5 12.5,37.5 12.5,12.5 37.5,12.5 62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M12.5,62.5 37.5,62.5 37.5,87.5 12.5,87.5z M62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z"); }
+}
+
+.incaKey, .incaKeyAlt {
+  transition: d 250ms ease;
+}
+.svgHover:hover .incaKey {
+  d: path("M37.5,87.5 12.5,87.5 12.5,62.5 37.5,62.5 62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M12.5,12.5 37.5,12.5 37.5,37.5 12.5,37.5z M62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z");
+}
+.svgHover:hover .incaKeyAlt {
+  d: path("M37.5,37.5 12.5,37.5 12.5,12.5 37.5,12.5 62.5,62.5 87.5,62.5 87.5,87.5 62.5,87.5z M12.5,62.5 37.5,62.5 37.5,87.5 12.5,87.5z M62.5,12.5 87.5,12.5 87.5,37.5 62.5,37.5z M23,73 27,73 27,77 23,77z M73,23 77,23 77,27 73,27z M23,23 27,23 27,27 23,27z M73,73 77,73 77,77 73,77z");
+}
+
+.svgHover:hover .eye1a, .svgHover:hover .eye1b, .svgHover:hover .eye1c, .svgHover:hover .eye1d,
+.svgHover:hover .eye2a, .svgHover:hover .eye2b, .svgHover:hover .eye2c, .svgHover:hover .eye2d,
+.svgHover:hover .eye3a, .svgHover:hover .eye3b, .svgHover:hover .eye3c, .svgHover:hover .eye3d,
+.svgHover:hover .eye1bX, .svgHover:hover .eye2bX, .svgHover:hover .eye3bX  {
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-name: blinks;
+}
+
+.svgHover:hover .kiru1, .svgHover:hover .kiru2 {
+  animation-duration: 450ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+}
+.svgHover:hover .kiru1 {
+  animation-name: slideUp;
+}
+.svgHover:hover .kiru2 {
+  animation-name: slideDown;
+}
+
+.svgHover:hover .suddenly1 {
+  animation: 1500ms putRight infinite steps(1);
+}
+.svgHover:hover .suddenly2 {
+  animation: 1500ms putLeft infinite steps(1);
+}
+
+.svgHover:hover .tucu1a {
+  transform-origin: 32.5px 32.5px;
+  animation-name: swoop1;
+}
+.svgHover:hover .tucu2a {
+  transform-origin: 67.5px 32.5px;
+  animation-name: swoop2;
+}
+.svgHover:hover .tucu1b {
+  transform-origin: 67.5px 67.5px;
+  animation-name: swoop3;
+}
+.svgHover:hover .tucu2b {
+  transform-origin: 32.5px 67.5px;
+  animation-name: swoop4;
+}
+.svgHover:hover .tucu1a, .svgHover:hover .tucu2a, .svgHover:hover .tucu1b, .svgHover:hover .tucu2b {
+  animation-duration: 900ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+.svgHover:hover .chukchuy1, .svgHover:hover .chukchuy2, .svgHover:hover .chukchuy3, .svgHover:hover .chukchuy4, .svgHover:hover .chukchuy5 {
+  animation-duration: 275ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-name: tremble;
+}
+
+.svgHover:hover .zigzag {
+  animation-duration: 500ms;
+  animation-name: sinchiScroll;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
 }
 
 @media screen and (max-width: 800px) {

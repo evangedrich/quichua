@@ -1,4 +1,4 @@
-import styles from '@/app/ui/tocapu.module.css'
+import styles from '@/app/ui/tocapu.module.css';
 
 const black: string = "#282e20";
 const white: string = "#e6dfd3";
@@ -864,3 +864,10 @@ export const tocapuLibrary: tocapu[] = [
     </svg></div>
   }
 ];
+
+export const tocapuSearch = (name: string):tocapu => {
+  let hit: React.ReactNode = tocapuLibrary[0].svg;
+  tocapuLibrary.forEach(tocapu => {
+    if (name===tocapu.name) { hit = tocapu.svg; }
+  }); return hit;
+};

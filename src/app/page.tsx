@@ -12,7 +12,7 @@ export default function Home() {
         </div>
         <div className={styles.banner}>
           <Banner />
-          <Button text="enter →" />
+          <Button text="enter →" to='lessons' />
         </div>
         <div className={styles.ribbon}>
           <UnkuRibbon pattern={2}  />

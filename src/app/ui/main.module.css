@@ -1,0 +1,120 @@
+.header a {
+  display: block;
+  width: fit-content;
+  cursor: default;
+}
+
+.homeIcon {
+  display: flex;
+  width: fit-content;
+  margin: 1rem;
+  cursor: pointer;
+}
+.iconSvg {
+  width: 4.8rem;
+  height: 4.8rem;
+  z-index: 2;
+  border-radius: 0.75rem;
+  background-color: #e85538;
+  padding: 0.3rem;
+}
+.iconText {
+
+}
+.homeIcon:hover h2 {
+
+}
+.homeIcon:active .iconText {
+
+}
+.homeIcon h1, .homeIcon h2 {
+  margin-left: 0.6rem;
+}
+.homeIcon h1 {
+  font-weight: 900;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  margin-top: 0.4rem;
+
+}
+.homeIcon h2 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.1em;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  display: grid;
+  justify-items: end;
+}
+.nav button {
+  width: fit-content;
+  display: flex;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+}
+.navSvg {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 100ms linear;
+  box-sizing: border-box;
+  /*box-shadow: 0 0 0 0.1rem var(--color-theme);*/
+}
+.navText {
+  line-height: 2.8rem;
+  padding-right: 0.5rem;
+  transform: translateX(100%) scaleX(0);
+  opacity: 0;
+  transition: transform 100ms linear, opacity 100ms linear;
+  z-index: -1;
+}
+.nav button:hover .navSvg {
+  transform: scale(1.05);
+}
+.nav button:hover .navText {
+  transform: translateX(0) scaleX(1);
+  opacity: 1;
+}
+.nav button:active .navSvg {
+  transform: scale(0.95);
+}
+
+.settingsButtons {
+  display: grid;
+  justify-items: end;
+  max-height: 11.35rem;
+  overflow: hidden;
+  transition: max-height 200ms ease-out, padding-bottom 200ms ease-out;
+  margin-right: -0.1rem;
+  padding-right: 0.1rem;
+  margin-top: -0.1rem;
+  padding-top: 0.1rem;
+}
+.hideSettings {
+  max-height: 0;
+  padding-bottom: 0;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.footer a {
+  color: var(--color-theme);
+}
+.footer a:hover {
+  text-decoration: underline;
+}

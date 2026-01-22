@@ -66,13 +66,13 @@ export default function UnkuRibbon({ pattern }: unkuProps) {
     if (id==='esses') { toggleTheme(); }
     else if (id==='earthquake' || id==="altEarthquake") { toggleMotion(); }
     else if (id==='owl') { toggleLang(); }
-    // else { console.log(id); }
+    else { console.log(id); }
   }
   return (
     <div className={styles.unku}>
       {ribbon.map(tocapu => (
         <div
-          className={`bg-transparent-500 float-left ${(motion)?tocapuStyles.svgMove:""}`}
+          className={`bg-transparent-500 float-left ${(motion)?tocapuStyles.svgMove:""} ${tocapuStyles.svgBox}`}
           style={{width:newTocSize+"px", height:newTocSize+"px"}}
           key={`${tocapu.name}_${crypto.randomUUID()}`}
           onClick={() => clicked(tocapu.name)}
