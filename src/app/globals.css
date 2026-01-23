@@ -7,6 +7,7 @@
   --color-mid-hover: rgba(0,0,0,0.15);
   --color-mid-active: rgba(0,0,0,0.2);
   --color-theme: #8a3a32;
+  --color-highlight: #8a3a32;
 }
 .dark {
   --color-back: #241b21;
@@ -15,6 +16,7 @@
   --color-mid-hover: rgba(255,255,255,0.15);
   --color-mid-active: rgba(255,255,255,0.2);
   --color-theme: #8a3a32;
+  --color-highlight: #ff6040;
 }
 
 body {
