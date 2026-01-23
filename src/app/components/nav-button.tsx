@@ -29,7 +29,7 @@ export default function NavButton({ text, icon, color, func }: navProps) {
     else if (icon==='sinchi') { router.push(text); }
   };
   return (
-    <button className={`${(motion)?tocapuStyles.svgHover:''}`} onClick={func?func:clicked}>
+    <button className={`${(motion)?tocapuStyles.svgHover:''} ${styles.navButton}`} onClick={func?func:clicked}>
       <p className={`${styles.navText}`}>{text}</p>
       <div className={`${styles.navSvg}`} style={{backgroundColor:color}}>{tocapuSearch(icon)}</div>
     </button>

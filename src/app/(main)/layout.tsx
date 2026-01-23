@@ -8,9 +8,11 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <Header />
-      {children}
+      <main className={styles.container}>
+        <div className={styles.content}>{children}</div>
+      </main>
       <Footer />
     </div>
   )

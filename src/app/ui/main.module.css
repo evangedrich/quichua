@@ -1,3 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  height: 0;
+}
 .header a {
   display: block;
   width: fit-content;
@@ -17,12 +28,13 @@
   border-radius: 0.75rem;
   background-color: #e85538;
   padding: 0.3rem;
+  transition: transform 100ms linear;
 }
 .iconText {
 
 }
-.homeIcon:hover h2 {
-
+.homeIcon:hover .iconSvg {
+  transform: scale(1.03);
 }
 .homeIcon:active .iconText {
 
@@ -51,7 +63,7 @@
   display: grid;
   justify-items: end;
 }
-.nav button {
+.navButton {
   width: fit-content;
   display: flex;
   margin-bottom: 0.75rem;
@@ -75,15 +87,41 @@
   transition: transform 100ms linear, opacity 100ms linear;
   z-index: -1;
 }
-.nav button:hover .navSvg {
+.navButton:hover .navSvg {
   transform: scale(1.05);
 }
-.nav button:hover .navText {
+.navButton:hover .navText {
   transform: translateX(0) scaleX(1);
   opacity: 1;
 }
-.nav button:active .navSvg {
+.navButton:active .navSvg {
   transform: scale(0.95);
+}
+
+.mobileToggle {
+  display: none;
+  width: 3rem;
+  height: 1.5rem;
+  padding: 0.25rem;
+  margin-bottom: 0.75rem;
+  border-radius: 10px;
+  background-color: var(--color-mid-hover);
+}
+.mobileToggle svg {
+  height: 100%;
+  width: 100%;
+}
+.navGroup {
+  max-height: 22.5rem;
+  overflow: hidden;
+  transition: max-height 200ms ease-out;
+  margin-right: -0.1rem;
+  padding-right: 0.1rem;
+  margin-top: -0.1rem;
+  padding-top: 0.1rem;
+}
+.hideNav {
+  max-height: 0;
 }
 
 .settingsButtons {
@@ -102,19 +140,48 @@
   padding-bottom: 0;
 }
 
+.container {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  flex: 1;
+}
+.content {
+  width: 800px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.content p {
+  margin-bottom: 0.75rem;
+}
+
 .footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   text-align: center;
   font-size: 0.8rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 .footer a {
-  color: var(--color-theme);
+  color: var(--color-highlight);
 }
 .footer a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .mobileToggle {
+    display: block;
+  }
+  .content {
+    width: 90vw;
+  }
+  .content p {
+    text-align: left;
+  }
 }
