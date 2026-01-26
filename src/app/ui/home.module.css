@@ -26,12 +26,15 @@
   font-size: 20px;
   line-height: 1em;
   text-transform: uppercase;
-  margin-bottom: 8vh;
+  margin-bottom: 4vh;
 }
 
 .customButton {
   align-self: center;
   padding: 0.25em 0.6em 0.25em 0.6em;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   background-color: var(--color-mid);
   border-radius: 0.4em;
   cursor: pointer;

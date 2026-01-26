@@ -16,6 +16,8 @@ export default function Button({ text, to }: buttonProps): React.ReactNode {
       alert("This site is under construction. Check back February 16th, 2026, for more.");
     } else { (to==='back') ? router.back() : router.push(to); }
   }
+  if (text==='back') { text = '← back'; }
+  if (text==='next') { text = 'next →'; }
   return (
     <button className={styles.customButton} onClick={enter}>{text}</button>
   )

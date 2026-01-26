@@ -26,7 +26,7 @@ export default function NavButton({ text, icon, color, func }: navProps) {
     else if (icon==='esses') { toggleTheme(); }
     else if (icon==='earthquake') { toggleMotion(); }
     else if (icon==='owl') { toggleLang(); }
-    else if (icon==='sinchi') { router.push(text); }
+    else if (icon==='sinchi') { router.push(`/${text}`); }
   };
   return (
     <button className={`${(motion)?tocapuStyles.svgHover:''} ${styles.navButton}`} onClick={func?func:clicked}>
