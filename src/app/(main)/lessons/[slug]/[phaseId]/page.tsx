@@ -4,6 +4,7 @@ import Button from '@/app/components/custom-button';
 
 import Models from '@/app/components/models';
 import Vocab from '@/app/components/vocab';
+import Ex from '@/app/components/ex';
 
 export async function generateStaticParams() {
   return lessons.flatMap(lesson =>
@@ -13,7 +14,6 @@ export async function generateStaticParams() {
     }))
   );
 }
-
 
 function getLessonBySlug(slug) {
   return lessons.find(lesson => lesson.slug === slug);
@@ -29,7 +29,7 @@ function getPhaseIndex(slug,phaseId) {
   const contents = lessons.find(lesson => lesson.slug === slug).contents;
   return contents.findIndex(content => content.phaseId === phaseId);
 }
-function getPhaseTitle(phaseId) {
+function getPhaseTitle(phaseId: string): { en: string, es: string } {
   let title: {en: string, es: string} = {en: 'default', es: 'default'};
   if (phaseId==='models') { title = {en: 'Models', es: 'Modelos'}; }
   else if (phaseId==='vocab') { title = {en: 'Vocabulary', es: 'Vocabulario'}; }
@@ -39,10 +39,23 @@ function getPhaseTitle(phaseId) {
   else if (phaseId==='grammar') { title = {en: 'Grammar', es: 'Gramática'}; }
   return title;
 }
+function getPhaseSvg(phaseId: string): React.ReactNode {
+  let phaseSvg: React.ReactNode = <></>;
+  if (phaseId==='models') { phaseSvg = <></>; }
+  else if (phaseId==='vocab') { phaseSvg = <></>; }
+  else if (phaseId==='exercises') { phaseSvg = <></>; }
+  else if (phaseId==='more-exercises') { phaseSvg = <></>; }
+  else if (phaseId==='pronunciation') { phaseSvg = <></>; }
+  else if (phaseId==='grammar') { phaseSvg = <></>; }
+  return phaseSvg;
+}
 function sortIntoElement(thisPhase): React.ReactNode {
   let element: React.ReactNode = <></>;
   if (thisPhase.phaseId==='models') { element = <Models>{thisPhase}</Models>; }
   else if (thisPhase.phaseId==='vocab') { element = <Vocab>{thisPhase}</Vocab>; }
+  else if (thisPhase.phaseId==='exercises' || thisPhase.phaseId==='more-exercises') { element = <Ex>{thisPhase}</Ex>; }
+  else if (thisPhase.phaseId==='pronunciation') { element = <Ex>{thisPhase}</Ex>; }
+  else if (thisPhase.phaseId==='grammar') { element = <Ex>{thisPhase}</Ex>; }
   return element;
 }
 

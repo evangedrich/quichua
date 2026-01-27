@@ -3,7 +3,7 @@ import { textParser } from './text-parser';
 import styles from '@/app/ui/lessons.module.css';
 
 export default function Vocab({ children }: { children: React.ReactNode }) {
-  const items = children.items;
+  const items = Array.isArray(children.items[0]) ? children.items.flat() : children.items;
   return (
     <table className={styles.columns}>
       <tbody>
