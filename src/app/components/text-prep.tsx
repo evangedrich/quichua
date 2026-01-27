@@ -1,6 +1,7 @@
 'use client';
 
 import useLang from '@/app/hooks/useLang';
+import parse from 'html-react-parser';
 
 interface objType {
   en: string,
@@ -13,8 +14,10 @@ interface inputType {
 type CombinedProps = React.PropsWithChildren<inputType>;
 
 function textParser (text: { text: string }): React.ReactNode {
+  let htmlString = text.replace(/(\*|_)(.*?)\1/g, '<i>$2</i>');
+  htmlString = htmlString.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
   return (
-    <>{text}</>
+    <>{parse(htmlString)}</>
   )
 }
 

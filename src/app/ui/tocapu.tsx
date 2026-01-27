@@ -128,7 +128,7 @@ export const tocapuLibrary: tocapu[] = [
   },
   {
     name: "owl",
-    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""}`}><svg viewBox="5 5 90 90" xmlns="http://www.w3.org/2000/svg">
+    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""} ${styles.svgCursor}`}><svg viewBox="5 5 90 90" xmlns="http://www.w3.org/2000/svg">
       <rect x="5" y="5" width="90" height ="90" fill={green} />
       <rect x="10" y="10" width="80" height ="80" fill={red} />
       <rect x="15" y="15" width="35" height ="35" fill={yellow} />
@@ -325,7 +325,7 @@ export const tocapuLibrary: tocapu[] = [
   },
   {
     name: "earthquake",
-    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""}`}><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""} ${styles.svgCursor}`}><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <rect x="0" y="0" width="100" height="100" fill={red} />
       <rect x="4" y="4" width="92" height="92" fill={white} />
       <rect x="8" y="8" width="28" height="28" fill={brown} />
@@ -357,7 +357,7 @@ export const tocapuLibrary: tocapu[] = [
   },
   {
     name: "altEarthquake",
-    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""}`}><svg viewBox="4 4 92 92" xmlns="http://www.w3.org/2000/svg">
+    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""} ${styles.svgCursor}`}><svg viewBox="4 4 92 92" xmlns="http://www.w3.org/2000/svg">
       <rect x="0" y="0" width="100" height="100" fill={red} />
       <rect x="4" y="4" width="92" height="92" fill={white} />
       <rect x="8" y="8" width="28" height="28" fill={brown} />
@@ -647,7 +647,7 @@ export const tocapuLibrary: tocapu[] = [
   },
   {
     name: "esses",
-    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""}`}><svg viewBox="4 4 92 92" xmlns="http://www.w3.org/2000/svg">
+    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""} ${styles.svgCursor}`}><svg viewBox="4 4 92 92" xmlns="http://www.w3.org/2000/svg">
       <rect x="4" y="4" width="92" height="92" fill={black} />
       <rect x="8" y="8" width="84" height="84" fill={white} />
 

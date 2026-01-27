@@ -1,6 +1,6 @@
 interface bilingualType {
-  en: string,
-  es: string,
+  en: string | string[],
+  es: string | string[],
 }
 interface trilingualType {
   qui: string,
@@ -23,7 +23,7 @@ export const lessons: lessonType = [
     slug: '1',
     topic: {
       en: 'Greetings; roots and suffixes; -chu; -mi',
-      es: 'Saludos; raíces y sufijos; -chu; -mi'
+      es: 'Saludos; raíces y sufijos; -chu; -mi',
     },
     contents: [
       {
@@ -52,7 +52,7 @@ export const lessons: lessonType = [
     slug: '2',
     topic: {
       en: '-ca; -pish; greetings; final accent; present singular of cana',
-      es: '-ca; -pish; saludos; acento final; presente singular de cana'
+      es: '-ca; -pish; saludos; acento final; presente singular de cana',
     },
     contents: [
       {

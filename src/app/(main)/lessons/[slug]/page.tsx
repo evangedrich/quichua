@@ -29,8 +29,8 @@ export default async function LessonPage({ params }: { params: Promise<{ slug: s
 
   return (
     <>
-      <h1>Lesson {lesson.slug}</h1>
-      <h2><Text textObj={lesson.topic} /></h2>
+      <Text type="h1">{{en: `Lesson ${lesson.slug}`, es: `Lección ${lesson.slug}`}}</Text>
+      <Text type="h2">{lesson.topic}</Text>
       {!isFirst ? <Button text="back" to="back" /> : <></>}
       <Button text="next" to={`${lesson.slug}/${lesson.contents[0].phase}`} />
     </>

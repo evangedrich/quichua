@@ -28,7 +28,7 @@ function getPhaseIndex(slug,phaseId) {
 function getPhaseTitle(phaseId) {
   let title: {en: string, es: string} = {en: 'default', es: 'default'};
   if (phaseId==='models') { title = {en: 'Models', es: 'Modelos'}; }
-  else if (phaseId==='vocab') { title = {en: 'Vocabulary', es: 'Modelos'}; }
+  else if (phaseId==='vocab') { title = {en: 'Vocabulary', es: 'Vocabulario'}; }
   else if (phaseId==='exercises') { title = {en: 'Exercises', es: 'Ejercicios'}; }
   else if (phaseId==='more-exercises') { title = {en: 'More Exercises', es: 'Más Ejercisios'}; }
   else if (phaseId==='pronunciation') { title = {en: 'Pronunciation', es: 'Pronunciación'}; }
