@@ -13,7 +13,7 @@ interface navProps {
   text: string | React.ReactNode,
   icon: string,
   color: string,
-  func: () => void,
+  func?: () => void,
 }
 
 export default function NavButton({ text, icon, color, func }: navProps) {

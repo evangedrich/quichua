@@ -6,6 +6,25 @@ import Models from '@/app/components/models';
 import Vocab from '@/app/components/vocab';
 import Ex from '@/app/components/ex';
 
+interface bilingualType {
+  en: string | string[],
+  es: string | string[],
+}
+interface trilingualType {
+  qu: string,
+  en: string,
+  es: string,
+}
+interface phaseType {
+  phaseId: string,
+  items: bilingualType[] | trilingualType[],
+}
+interface lessonType {
+  slug: string,
+  topic: bilingualType,
+  contents: phaseType[],
+}
+
 export async function generateStaticParams() {
   return lessons.flatMap(lesson =>
     lesson.contents.map(content => ({
@@ -15,19 +34,19 @@ export async function generateStaticParams() {
   );
 }
 
-function getLessonBySlug(slug) {
+function getLessonBySlug(slug: string) {
   return lessons.find(lesson => lesson.slug === slug);
 }
-function getLessonIndexBySlug(slug) {
+function getLessonIndexBySlug(slug: string) {
   return lessons.findIndex(lesson => lesson.slug === slug);
 }
-function getPhase(slug,phaseId) {
-  const contents = lessons.find(lesson => lesson.slug === slug).contents;
-  return contents.find(content => content.phaseId === phaseId);
+function getPhase(slug: string, phaseId: string): phaseType | undefined {
+  const contents = lessons.find(lesson => lesson.slug === slug)?.contents;
+  return contents?.find(content => content.phaseId === phaseId);
 }
-function getPhaseIndex(slug,phaseId) {
-  const contents = lessons.find(lesson => lesson.slug === slug).contents;
-  return contents.findIndex(content => content.phaseId === phaseId);
+function getPhaseIndex(slug: string, phaseId: string) {
+  const contents = lessons.find(lesson => lesson.slug === slug)?.contents;
+  return contents?.findIndex(content => content.phaseId === phaseId);
 }
 function getPhaseTitle(phaseId: string): { en: string, es: string } {
   let title: {en: string, es: string} = {en: 'default', es: 'default'};
@@ -49,25 +68,25 @@ function getPhaseSvg(phaseId: string): React.ReactNode {
   else if (phaseId==='grammar') { phaseSvg = <></>; }
   return phaseSvg;
 }
-function sortIntoElement(thisPhase): React.ReactNode {
+function sortIntoElement(thisPhase: phaseType | undefined): React.ReactNode {
   let element: React.ReactNode = <></>;
-  if (thisPhase.phaseId==='models') { element = <Models>{thisPhase}</Models>; }
-  else if (thisPhase.phaseId==='vocab') { element = <Vocab>{thisPhase}</Vocab>; }
-  else if (thisPhase.phaseId==='exercises' || thisPhase.phaseId==='more-exercises') { element = <Ex>{thisPhase}</Ex>; }
-  else if (thisPhase.phaseId==='pronunciation') { element = <Ex>{thisPhase}</Ex>; }
-  else if (thisPhase.phaseId==='grammar') { element = <Ex>{thisPhase}</Ex>; }
+  if (thisPhase?.phaseId==='models') { element = <Models obj={thisPhase} />; }
+  else if (thisPhase?.phaseId==='vocab') { element = <Vocab obj={thisPhase} />; }
+  else if (thisPhase?.phaseId==='exercises' || thisPhase?.phaseId==='more-exercises') { element = <Ex obj={thisPhase} />; }
+  else if (thisPhase?.phaseId==='pronunciation') { element = <Ex obj={thisPhase} />; }
+  else if (thisPhase?.phaseId==='grammar') { element = <Ex obj={thisPhase} />; }
   return element;
 }
 
 export default async function Phase({ params }: { params: Promise<{ slug: string, phaseId: string }> }) {
   const { slug, phaseId } = await params;
-  const thisPhase = getPhase(slug,phaseId);
-  const phaseIndex = getPhaseIndex(slug,phaseId);
-  const phaseTitle: string = getPhaseTitle(phaseId);
-  const contents = getLessonBySlug(slug).contents;
-  const lessonIndex = getLessonIndexBySlug(slug);
+  const thisPhase: phaseType | undefined = getPhase(slug,phaseId);
+  const phaseIndex = getPhaseIndex(slug,phaseId) ?? -1;
+  const phaseTitle: {en: string, es: string} = getPhaseTitle(phaseId);
+  const contents = getLessonBySlug(slug)?.contents;
+  const lessonIndex: number = getLessonIndexBySlug(slug);
   const nextSlug = (lessonIndex<lessons.length-1 || lessonIndex%10===0) ? `${lessons[lessonIndex+1].slug}` : 'review';
-  const url: string = (phaseIndex<contents.length-1) ? `/lessons/${slug}/${contents[phaseIndex+1]?.phaseId}` : `/lessons/${nextSlug}`;
+  const url: string = (phaseIndex<(contents?.length??0)-1) ? `/lessons/${slug}/${contents?.[phaseIndex+1]?.phaseId}` : `/lessons/${nextSlug}`;
   return (
     <>
       <h1 style={{marginBottom:'1rem'}}><Text>{phaseTitle}</Text></h1>

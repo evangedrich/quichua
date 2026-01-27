@@ -2,8 +2,8 @@ import Text from './text-prep';
 import { textParser } from './text-parser';
 import styles from '@/app/ui/lessons.module.css';
 
-export default function Models({ children }: { children: React.ReactNode }) {
-  const items = Array.isArray(children.items[0]) ? children.items.flat() : children.items;
+export default function Models({ obj }) {
+  const items = Array.isArray(obj.items[0]) ? obj.items.flat() : obj.items;
   return (
     <table className={styles.columns}>
       <tbody>

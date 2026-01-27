@@ -17,7 +17,7 @@ interface lessonType {
   contents: phaseType[],
 }
 
-export const lessons: lessonType = [
+export const lessons: lessonType[] = [
   {
     slug: '1',
     topic: {
@@ -176,7 +176,7 @@ export const lessons: lessonType = [
             es: `5. Los sonidos de **gui**, **n**, **r**`,
           },
           {
-            en: `**gui** sounds like the gee in “geese”, being written thus because we are conforming to Spanish orthography, in which a silent ways inserted between a *gi* sequence (if the is a “hard *g*”).`,
+            en: `**gui** sounds like the gee in “geese”, being written thus because we are conforming to Spanish orthography, in which a silent *u* is always inserted between a *gi* sequence (if the is a “hard *g*”).`,
             es: `**gui** se pronuncia como en español, con una y "sorda". Se escribe así para conformarse a la ortografía del español.`,
           },
           {

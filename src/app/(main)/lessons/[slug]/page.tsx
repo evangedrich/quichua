@@ -8,10 +8,10 @@ export async function generateStaticParams() {
   }));
 }
 
-function getLessonBySlug(slug) {
+function getLessonBySlug(slug: string) {
   return lessons.find(lesson => lesson.slug === slug);
 }
-function getLessonIndexBySlug(slug) {
+function getLessonIndexBySlug(slug: string) {
   return lessons.findIndex(lesson => lesson.slug===slug);
 }
 
@@ -21,7 +21,7 @@ export default async function LessonPage({ params }: { params: Promise<{ slug: s
 
   const currentIndex: number = getLessonIndexBySlug(slug);
   const isFirst: boolean = currentIndex===0;
-  const isLast: boolean = !currentIndex<lessons.length-1;
+  const isLast: boolean = !(currentIndex<lessons.length-1);
 
   if (!lesson) {
     return <div>Lesson not found</div>;

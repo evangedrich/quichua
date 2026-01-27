@@ -11,8 +11,8 @@ export async function generateStaticParams() {
       Array.isArray(content.items[0])
       ? content.items.map((item,i) => ({
         slug: lesson.slug,
-        phaseId: content.phase,
-        partId: i+1,
+        phaseId: content.phaseId,
+        partId: `${i+1}`,
       })) : []
     )
   );
@@ -21,6 +21,6 @@ export async function generateStaticParams() {
 export default async function Phase({ params }: { params: Promise<{ slug: string, phaseId: string, partId: string }> }) {
   const { slug, phaseId, partId } = await params;
   return (
-    <></>
+    <>{phaseId} {partId}</>
   )
 }
