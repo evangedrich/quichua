@@ -9,10 +9,8 @@ export default function Lessons() {
   };
   return (
     <>
-      <div>
-        <Text type="p">{introText}</Text>
-      </div>
-      <Button text="Let's go! →" to={`lessons/${lessons[0].slug}`} />
+      <Text type="p">{introText}</Text>
+      <Button text="let's go! →" to={`lessons/${lessons[0].slug}`} />
     </>
   )
 }
