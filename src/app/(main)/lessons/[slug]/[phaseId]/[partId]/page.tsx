@@ -2,10 +2,13 @@ import { lessons } from '@/app/lib/lessons';
 import { getLessonBySlug, getLessonIndexBySlug } from '@/app/(main)/lessons/[slug]/page.tsx';
 import { getPhase, getPhaseIndex, getPhaseData } from '@/app/(main)/lessons/[slug]/[phaseId]/page.tsx';
 import Text from '@/app/components/text-prep';
+import ProgressBar from '@/app/components/progress-bar';
+import ProgressDots from '@/app/components/progress-dots';
 import Button from '@/app/components/custom-button';
 
 import Models from '@/app/components/models';
 import Vocab from '@/app/components/vocab';
+import Ex from '@/app/components/ex';
 
 import { tocapuLibrary, tocapuSearch } from '@/app/ui/tocapu';
 import tocapuStyles from '@/app/ui/tocapu.module.css';
@@ -36,15 +39,18 @@ export default async function Part({ params }: { params: Promise<{ slug: string,
   const { slug, phaseId, partId } = await params;
   const { title, svgId } = getPhaseData(slug,phaseId);
   const part = getPart(slug,phaseId,partId);
+  const subPhase = { phase: phaseId, items: part }; // this is the part formatted as a phase for Models/Vocab/Ex components
   const partIndex = Number(partId)-1;
   const partLength = getPartLength(slug,phaseId,partId);
-  const progress = partIndex/partLength;
+  const progress = (partIndex+1)/partLength;
   const url: string = (partIndex<(partLength-1)) ? `/lessons/${slug}/${phaseId}/${partIndex+2}` : '';
   return (
     <>
-      <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i> ({partId}/{partLength})</h1>
-      <div className={`${tocapuStyles.svgMove} w-10 h-10 bg-blue-500 mx-auto mb-4`}>{tocapuSearch(svgId)}</div>
-      <Vocab obj={{ phase: phaseId, items: part }} />
+      <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
+      <div className={`${tocapuStyles.svgMove} w-10 h-10 bg-blue-500 mx-auto mb-1`}>{tocapuSearch(svgId)}</div>
+      <ProgressDots on={partIndex+1} of={partLength} />
+      {/*<ProgressBar complete={progress} size="s" />*/}
+      {(phaseId==='models') ? <Models obj={subPhase} /> : (phaseId==='vocab') ? <Vocab obj={subPhase} /> : <Ex obj={subPhase} />}
       <Button text="←" to="back" />
       <Button text="→" to={url} />
     </>
