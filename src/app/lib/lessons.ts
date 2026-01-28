@@ -21,8 +21,8 @@ export const lessons: lessonType[] = [
   {
     slug: '1',
     topic: {
-      en: 'Greetings; roots and suffixes; **-chu**; **-mi**',
-      es: 'Saludos; raíces y sufijos; **-chu**; **-mi**',
+      en: 'greetings; roots and suffixes; **‑chu**; **‑mi**',
+      es: 'saludos; raíces y sufijos; **‑chu**; **‑mi**',
     },
     contents: [
       {
@@ -76,8 +76,8 @@ export const lessons: lessonType[] = [
             es: `1. La variación dialectal (a veces abreviada VD)`,
           },
           {
-            en: `Although there are a number of dialects of Highland Quichua in Ecuador, there exists between them a very high degree of mutual intelligibility. However, some differences do appear, especially in the pronunciation of certain frequently used suffixes. Only the more important dialect variations are noted in these lessons. Your language helper will probably point out others to you as you check through the material with them.`,
-            es: `Aunque hay un gran número de dialectos del quichua de la sierra del Ecuador, existe entre ellos un gran nivel de comprensión mutua. Sin embargo, sí existen varias diferencias, especialmente en la pronunciación de ciertos sufijos de uso frecuente. Sólo las variaciones dialectales más importantes se notan en estas lecciones. Probablemente su ayudante quichua le indicará otros mientras estudia este material con él.`,
+            en: `Although there are a number of dialects of the Highland Quichua languages in Ecuador, there exists between them a very high degree of mutual intelligibility. However, some differences do appear, especially in the pronunciation of certain frequently used suffixes. Only the more important dialect variations are noted in these lessons. Your language helper will probably point out others to you as you check through the material with them.`,
+            es: `Aunque hay un gran número de dialectos de los idomas del quichua de la sierra del Ecuador, existe entre ellos un gran nivel de comprensión mutua. Sin embargo, sí existen varias diferencias, especialmente en la pronunciación de ciertos sufijos de uso frecuente. Sólo las variaciones dialectales más importantes se notan en estas lecciones. Probablemente su ayudante quichua le indicará otros mientras estudia este material con él.`,
           },
           {
             en: `Central Highland Quichua (CHQ)\n*dialects*: Colta, Pulucate, Caliata`,
@@ -132,8 +132,8 @@ export const lessons: lessonType[] = [
             es: `En el quichua la acentuación de las palabras es muy regular, ya que como regla general cae en la sílaba penúltima de cada palabra. En los siguientes ejemplos la sílaba acentuada de cada palabra está escrita con todas mayúsculas:`,
           },
           {
-            en: `**a*LLI*lla**\n**allilli*LLA*chu**\n** *CAN*gui**\n** *A*ri**`,
-            es: `**a*LLI*lla**\n**allilli*LLA*chu**\n** *CAN*gui**\n** *A*ri**`,
+            en: `**a·*LLI*·lla**\n**a·lli·*LLA*·chu**\n** *CAN*·gui**\n** *A*·ri**`,
+            es: `**a·*LLI*·lla**\n**a·lli·*LLA*·chu**\n** *CAN*·gui**\n** *A*·ri**`,
           },
           {
             en: `Sometimes, for added emphasis, the accent is shifted to the final syllable of a word. This is indicated by the use of a written accent mark over the accented syllable. An example of such a “displaced” accent will be seen in the next lesson.`,

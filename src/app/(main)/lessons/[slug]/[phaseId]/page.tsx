@@ -1,10 +1,14 @@
 import { lessons } from '@/app/lib/lessons';
+import { getLessonBySlug, getLessonIndexBySlug } from '@/app/(main)/lessons/[slug]/page.tsx';
 import Text from '@/app/components/text-prep';
 import Button from '@/app/components/custom-button';
 
 import Models from '@/app/components/models';
 import Vocab from '@/app/components/vocab';
 import Ex from '@/app/components/ex';
+
+import { tocapuLibrary, tocapuSearch } from '@/app/ui/tocapu';
+import tocapuStyles from '@/app/ui/tocapu.module.css';
 
 interface bilingualType {
   en: string | string[],
@@ -34,66 +38,44 @@ export async function generateStaticParams() {
   );
 }
 
-function getLessonBySlug(slug: string) {
-  return lessons.find(lesson => lesson.slug === slug);
-}
-function getLessonIndexBySlug(slug: string) {
-  return lessons.findIndex(lesson => lesson.slug === slug);
-}
-function getPhase(slug: string, phaseId: string): phaseType | undefined {
+export function getPhase(slug: string, phaseId: string): phaseType {
   const contents = lessons.find(lesson => lesson.slug === slug)?.contents;
   return contents?.find(content => content.phaseId === phaseId);
 }
-function getPhaseIndex(slug: string, phaseId: string) {
+export function getPhaseIndex(slug: string, phaseId: string) {
   const contents = lessons.find(lesson => lesson.slug === slug)?.contents;
   return contents?.findIndex(content => content.phaseId === phaseId);
 }
-function getPhaseTitle(phaseId: string): { en: string, es: string } {
+export function getPhaseData(slug: string, phaseId: string): { title: { en: string, es: string }, svgId: string, element: React.ReactNode } {
   let title: {en: string, es: string} = {en: 'default', es: 'default'};
-  if (phaseId==='models') { title = {en: 'Models', es: 'Modelos'}; }
-  else if (phaseId==='vocab') { title = {en: 'Vocabulary', es: 'Vocabulario'}; }
-  else if (phaseId==='exercises') { title = {en: 'Exercises', es: 'Ejercicios'}; }
-  else if (phaseId==='more-exercises') { title = {en: 'More Exercises', es: 'Más Ejercisios'}; }
-  else if (phaseId==='pronunciation') { title = {en: 'Pronunciation', es: 'Pronunciación'}; }
-  else if (phaseId==='grammar') { title = {en: 'Grammar', es: 'Gramática'}; }
-  return title;
-}
-function getPhaseSvg(phaseId: string): React.ReactNode {
-  let phaseSvg: React.ReactNode = <></>;
-  if (phaseId==='models') { phaseSvg = <></>; }
-  else if (phaseId==='vocab') { phaseSvg = <></>; }
-  else if (phaseId==='exercises') { phaseSvg = <></>; }
-  else if (phaseId==='more-exercises') { phaseSvg = <></>; }
-  else if (phaseId==='pronunciation') { phaseSvg = <></>; }
-  else if (phaseId==='grammar') { phaseSvg = <></>; }
-  return phaseSvg;
-}
-function sortIntoElement(thisPhase: phaseType | undefined): React.ReactNode {
-  let element: React.ReactNode = <></>;
-  if (thisPhase?.phaseId==='models') { element = <Models obj={thisPhase} />; }
-  else if (thisPhase?.phaseId==='vocab') { element = <Vocab obj={thisPhase} />; }
-  else if (thisPhase?.phaseId==='exercises' || thisPhase?.phaseId==='more-exercises') { element = <Ex obj={thisPhase} />; }
-  else if (thisPhase?.phaseId==='pronunciation') { element = <Ex obj={thisPhase} />; }
-  else if (thisPhase?.phaseId==='grammar') { element = <Ex obj={thisPhase} />; }
-  return element;
+  let svgId: string = 'key3'; let el: React.ReactNode = <></>; const phase: phaseType = getPhase(slug,phaseId);
+  if (phaseId==='models') { title={en:'Models',es:'Modelos'}; svgId='maskaypacha'; el=<Models obj={phase} />; }
+  else if (phaseId==='vocab') { title={en:'Vocabulary',es:'Vocabulario'}; svgId='anvil'; el=<Vocab obj={phase} />; }
+  else if (phaseId==='exercises') { title={en:'Exercises',es:'Ejercicios'}; svgId='exes'; el=<Ex obj={phase} />; }
+  else if (phaseId==='more-exercises') { title={en:'More Exercises',es:'Más Ejercisios'}; svgId='pants1'; el=<Ex obj={phase} />; }
+  else if (phaseId==='pronunciation') { title={en:'Pronunciation',es:'Pronunciación'}; svgId='worms'; el=<Ex obj={phase} />; }
+  else if (phaseId==='grammar') { title={en:'Grammar',es:'Gramática'}; svgId='firstAid'; el=<Ex obj={phase} />; }
+  return { title: title, svgId: svgId, element: el };
 }
 
 export default async function Phase({ params }: { params: Promise<{ slug: string, phaseId: string }> }) {
   const { slug, phaseId } = await params;
   const thisPhase: phaseType | undefined = getPhase(slug,phaseId);
   const phaseIndex = getPhaseIndex(slug,phaseId) ?? -1;
-  const phaseTitle: {en: string, es: string} = getPhaseTitle(phaseId);
+  const { title, svgId, element } = getPhaseData(slug,phaseId);
   const contents = getLessonBySlug(slug)?.contents;
   const lessonIndex: number = getLessonIndexBySlug(slug);
   const nextSlug = (lessonIndex<lessons.length-1 || lessonIndex%10===0) ? `${lessons[lessonIndex+1].slug}` : 'review';
   const url: string = (phaseIndex<(contents?.length??0)-1) ? `/lessons/${slug}/${contents?.[phaseIndex+1]?.phaseId}` : `/lessons/${nextSlug}`;
   return (
     <>
-      <h1 style={{marginBottom:'1rem'}}><Text>{phaseTitle}</Text></h1>
-      <>{sortIntoElement(thisPhase)}</>
+      <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
+      <div className={`${tocapuStyles.svgMove} w-10 h-10 bg-blue-500 mx-auto mb-4`}>{tocapuSearch(svgId)}</div>
+      <>{element}</>
       {/*<Text type="p">{thisPhase.items[0]}</Text>*/}
       <Button text="back" to="back" />
       <Button text="next" to={url} />
+      <div className={`${tocapuStyles.svgMove} w-10 h-10 bg-transparent-500 mx-auto`}></div>
     </>
   )
 }

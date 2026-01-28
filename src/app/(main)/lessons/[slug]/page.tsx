@@ -1,6 +1,7 @@
 import { lessons } from '@/app/lib/lessons';
 import Text from '@/app/components/text-prep';
 import Button from '@/app/components/custom-button';
+import { montserrat, inter } from '@/app/ui/fonts';
 
 export async function generateStaticParams() {
   return lessons.map(lesson => ({
@@ -8,10 +9,10 @@ export async function generateStaticParams() {
   }));
 }
 
-function getLessonBySlug(slug: string) {
+export function getLessonBySlug(slug: string) {
   return lessons.find(lesson => lesson.slug === slug);
 }
-function getLessonIndexBySlug(slug: string) {
+export function getLessonIndexBySlug(slug: string) {
   return lessons.findIndex(lesson => lesson.slug===slug);
 }
 
@@ -29,8 +30,10 @@ export default async function LessonPage({ params }: { params: Promise<{ slug: s
 
   return (
     <>
-      <Text type="h1">{{en: `Lesson ${lesson.slug}`, es: `Lección ${lesson.slug}`}}</Text>
-      <Text type="h2">{lesson.topic}</Text>
+      <h1 className={`${montserrat.className} font-extrabold text-4xl mb-2 uppercase`}>
+        <Text>{{en: `Lesson ${lesson.slug}`, es: `Lección ${lesson.slug}`}}</Text>
+      </h1>
+      <h2 className={`${inter.className} font-light text-lg`}><Text>{lesson.topic}</Text></h2>
       {!isFirst ? <Button text="back" to="back" /> : <></>}
       <Button text="next" to={`${lesson.slug}/${lesson.contents[0].phaseId}`} />
     </>
