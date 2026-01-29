@@ -35,6 +35,25 @@ function getPartLength(slug: string, phaseId: string, partId: string) {
   return Array.isArray(items[0]) ? items.length : null;
 }
 
+export function getURL(slug,phaseId,partId) {
+  const contents = getLessonBySlug(slug).contents;
+  const phaseIndex = getPhaseIndex(slug,phaseId);
+  const partIndex = Number(partId)-1;
+  const partLength = getPartLength(slug,phaseId,partId);
+  const ifMoreParts: boolean = partIndex<(partLength-1);
+  const ifNextHasParts: boolean = Array.isArray(contents[phaseIndex+1]?.items[0]);
+  const ifLessonEnd: boolean = phaseIndex===((contents?.length??0)-1);
+  const ifToReview: boolean = getLessonIndexBySlug(slug)<lessons.length-1 || getLessonIndexBySlug(slug)%10===0;
+  const nextSlug = ifToReview ? `${lessons[getLessonIndexBySlug(slug)+1].slug}` : 'review';
+  let url: string = ifMoreParts
+    ? `/lessons/${slug}/${phaseId}/${partIndex+2}`
+    : ifNextHasParts
+      ? `/lessons/${slug}/${contents?.[phaseIndex+1]?.phaseId}/1`
+      : `/lessons/${slug}/${contents?.[phaseIndex+1]?.phaseId}`;
+  url = (ifLessonEnd && !ifMoreParts) ? `/lessons/${nextSlug}` : url;
+  return url;
+}
+
 export default async function Part({ params }: { params: Promise<{ slug: string, phaseId: string, partId: string }> }) {
   const { slug, phaseId, partId } = await params;
   const { title, svgId } = getPhaseData(slug,phaseId);
@@ -42,17 +61,16 @@ export default async function Part({ params }: { params: Promise<{ slug: string,
   const subPhase = { phase: phaseId, items: part }; // this is the part formatted as a phase for Models/Vocab/Ex components
   const partIndex = Number(partId)-1;
   const partLength = getPartLength(slug,phaseId,partId);
-  const progress = (partIndex+1)/partLength;
-  const url: string = (partIndex<(partLength-1)) ? `/lessons/${slug}/${phaseId}/${partIndex+2}` : '';
+  const progress = partIndex/partLength; //(partIndex+1)/partLength;
   return (
     <>
       <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
       <div className={`${tocapuStyles.svgMove} w-10 h-10 bg-blue-500 mx-auto mb-1`}>{tocapuSearch(svgId)}</div>
-      <ProgressDots on={partIndex+1} of={partLength} />
-      {/*<ProgressBar complete={progress} size="s" />*/}
+      {(true) ? <ProgressDots on={partIndex+1} of={partLength} /> : <ProgressBar complete={progress} size="s" />}
       {(phaseId==='models') ? <Models obj={subPhase} /> : (phaseId==='vocab') ? <Vocab obj={subPhase} /> : <Ex obj={subPhase} />}
       <Button text="←" to="back" />
-      <Button text="→" to={url} />
+      <Button text="→" to={getURL(slug,phaseId,partId)} />
+      <div className={`${tocapuStyles.svgMove} w-10 h-10 bg-transparent-500 mx-auto`}></div>
     </>
   )
 }

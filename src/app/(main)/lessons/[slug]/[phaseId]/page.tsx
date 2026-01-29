@@ -62,11 +62,18 @@ export default async function Phase({ params }: { params: Promise<{ slug: string
   const { slug, phaseId } = await params;
   const thisPhase: phaseType | undefined = getPhase(slug,phaseId);
   const phaseIndex = getPhaseIndex(slug,phaseId) ?? -1;
+
   const { title, svgId, element } = getPhaseData(slug,phaseId);
+
   const contents = getLessonBySlug(slug)?.contents;
   const lessonIndex: number = getLessonIndexBySlug(slug);
-  const nextSlug = (lessonIndex<lessons.length-1 || lessonIndex%10===0) ? `${lessons[lessonIndex+1].slug}` : 'review';
-  const url: string = (phaseIndex<(contents?.length??0)-1) ? `/lessons/${slug}/${contents?.[phaseIndex+1]?.phaseId}` : `/lessons/${nextSlug}`;
+
+  const ifToReview: boolean = lessonIndex<lessons.length-1 || lessonIndex%10===0;
+  const ifLessonEnd: boolean = phaseIndex<(contents?.length??0)-1;
+  const ifNextHasParts: boolean = Array.isArray(contents[phaseIndex+1]?.items[0]);
+  const nextSlug = ifToReview ? `${lessons[lessonIndex+1].slug}` : 'review';
+  let url: string = ifLessonEnd ? `/lessons/${slug}/${contents?.[phaseIndex+1]?.phaseId}` : `/lessons/${nextSlug}`;
+  url = ifNextHasParts ? `/lessons/${slug}/${contents?.[phaseIndex+1]?.phaseId}/1` : url;
   return (
     <>
       <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
