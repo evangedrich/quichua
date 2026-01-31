@@ -302,14 +302,221 @@ export const lessons: lessonType[] = [
       },
       {
         phaseId: 'vocab',
+        items: [
+          [
+            {
+              qu: `ñuca`,
+              en: `I, my`,
+              es: `yo, mi (posesivo)`,
+            },
+            {
+              qu: `can`,
+              en: `you`,
+              es: `tú`,
+            },
+            {
+              qu: `pai`,
+              en: `he, she, they`,
+              es: `él, ella`,
+            },
+            {
+              qu: `cambaj`,
+              en: `your, yours`,
+              es: `tu(yo)`,
+            },
+            {
+              qu: `cana`,
+              en: `to be`,
+              es: `ser, estar`,
+            },
+          ],
+          [
+            {
+              qu: `-cá`,
+              en: `“and how about…?”`,
+              es: `“y qué de…?”`,
+            },
+            {
+              qu: `-pish`,
+              en: `also, too`,
+              es: `también`,
+            },
+          ],
+          [
+            {
+              qu: `churi`,
+              en: `son`,
+              es: `hijo`,
+            },
+            {
+              qu: `ushushi __(Imb.__ ushi__)__`,
+              en: `daughter`,
+              es: `hija`,
+            },
+            {
+              qu: `mama`,
+              en: `mother`,
+              es: `mamá, madre`,
+            },
+            {
+              qu: `yaya __(DV__ taita__)__`,
+              en: `father`,
+              es: `papá, padre`,
+            },
+            {
+              qu: `cayacama`,
+              en: `“see you tomorrow”`,
+              es: `“hasta mañana”`,
+            },
+            {
+              qu: `cancá`,
+              en: `and you?`,
+              es: `¿y tú?`,
+            },
+          ],
+        ],
+      },
+      {
+        phaseId: 'exercises',
+        items: [
+          {
+            en: `These exercises are a type of “substitution drill”, built on the Models already studied. Be sure first that you can repeat each one as given, not only correctly, but to the point of ease and fluency, and translate it into English. Then vary it by substituting for the underlined part the successive “fillers” given in parentheses. Each time be sure to repeat the entire sentence or phrase, and if a question-answer sequence is given, repeat the whole thing. Practice each different substitution several times too. Unless a sentence slips smoothly and automatically from our lips under ideal conditions such as those of private study, we can never expect it to come out even half-properly under the pressure of actual conversation with a Quichua speaker.`,
+            es: `(Estos ejercicios son un tipo de "práctica de sustitución", siguiendo los Modelos ya estudiados. Primero asegúrese de que pueda repetir cada uno tal como se da, no sólo correctamente, sino hasta el punto de facilidad y fluidez, y traduzcalo al español. Entonces varíalo sustituyendo por la parte subrayada cada uno de los "sustitutos" dados en paréntesis. Cada vez no se le olvide repetir la oración o frase entera, y si se da una secuencia de pregunta y respuesta, repita todo. Practique cada una de las sustituciones varias veces también. Si cada oración no sale fácil y automáticamente de nuestros labios bajo las condiciones ideales del estudio privado, nunca podemos esperar que salga siquiera medio correcto bajo la presión de la conversación propia con un quichuahablante.)`,
+          }
+        ],
+      },
+      {
+        phaseId: 'more-exercises',
+        items: [
+          {
+            en: `Be sure that you have thoroughly mastered all the Models of this lesson. After working them over alone, go through the entire conversation with a partner if possible. Then switch sides, making sure that you can take either part fluently and confidently. Then try standing in the middle of the room with your costar (and without the book). See if your fluency and confidence stay with you. If not, more study is indicated, and *more practice*.`,
+            es: `Asegúrese de que sepa a fondo todos los Modelos de esta lección. Después de estudiarlos bien a solas, haga toda la conversación con otro estudiante si es posible. Entonces cambien de papeles, hasta que los dos puedan tomar cada papel con fluidez y confianza. Entonces haga la práctica con su compañero parados en el cuarto, y sin el libro. Así verán si su fluidez y confianza permanecen. Si no, más estudio está indicado, y *más práctica*.`,
+          }
+        ],
+      },
+      {
+        phaseId: 'pronunciation',
+        items: [
+          [
+            {
+              en: `Sounds of **ai**, **j**, **ñ**, **p**, **sh**`,
+              es: `Los sonidos de **ai**, **j**, **ñ**, **p**, **sh**`,
+            },
+            {
+              en: `**ai** is pronounced somewhat like the *ie* in “pie”.`,
+              es: `**ai** se pronuncia igual como en español.`,
+            },
+            {
+              en: `**j** at the end of a word (as in **cambaj** “yours”) sounds rather like a heavily rasped English h, or like the sound made in clearing the throat. When it begins a word (as in **jatun** “big”), **j** has much less “rasp,” and more closely resembles a normal English *h* as in “him”.`,
+              es: `**j** se pronuncia igual como en el español de la Sierra del Ecuador, aunque tiene más fricción a fin de palabra (como en **cambaj** "tuyo") que al principio (como en **jatun** "grande"). A principio de palabra es más como el *h* del inglés.`,
+            },
+            {
+              en: `**ñ** is like the *ni* of “onion”, or the first sound of “new” if you pronounce this “nyoo”.`,
+              es: `**ñ** se pronuncia igual como en español.`,
+            },
+          ],
+          [
+            {
+              en: `**p** is unaspirated (like **c** and **ch**). To work on eliminating English aspiration from this, use the exercise already described. Begin with the word “spy”, then “sssspy” and finally contrast “-py” with “pie”.`,
+              es: `**p** se pronuncia igual como en español (pero no si está seguida por un apóstrofe “**'**”).`,
+            },
+            {
+              en: `Practice the word **paipish** with special attention to the **p**.`,
+              es: ``,
+            },
+            {
+              en: `**sh** is pronounced as in “sheep”.`,
+              es: `**sh** se pronuncia igual como en inglés, como en la palabra “sheep”.`,
+            },
+          ],
+          [
+            {
+              en: `Sound of **n** when followed by **b** or **p**`,
+              es: `El sonido de **n** seguida por **b** o **p**`,
+            },
+            {
+              en: `The word for “you”—**can**—ends in **n**. However, whenever the **n** is immediately followed by a **b** or a **p**, it is changed to **m** as in **cambaj** “your”. This always happens in the pronunciation when an **n** is followed by a **b** or a **p**, though the spelling will not always represent this, as in **ñanpi** “on the road”, which is pronounced **ñampi**. The same thing also happens in Spanish pronunciation, but does not necessarily occur in English, or at least not in all dialects.`,
+              es: `La palabra **can** “tú” termina con **n**. Sin embargo, cuando la **n** está seguida inmediatamente por **b** o **p**, cambia a **m**, como en **cambaj** “tuyo“. Esto siempre ocurre en la pronunciación cuando una **n** esté seguida por **b** o **p**, aunque la ortografia no siempre representa esto, como en **ñanpi** “en el camino”, que se pronuncia **ñampi**. Lo mismo siempre ocurre en la pronunciación del español, pero no siempre ocurre en inglés, o por lo menos no en todos los dialectos.`,
+            },
+          ],
+        ],
+      },
+      {
+        phaseId: 'grammar',
+        items: [
+          [
+            {
+              en: `1. Suffixes **-ca** and **-pish** (Imb. **-pash**)`,
+              es: `1. Los sufijos **-ca** y **-pish** (Imb. **-pash**)`,
+            },
+            {
+              en: `Both of these suffixes indicate a secondary emphasis on the words to which they are attached. They do not, however, indicate the *mood* of the sentence (as do suffixes of primary emphasis like **-chu** and **-mi**).`,
+              es: `Estos dos sufijos indican un énfasis secundario en las palabras en que se encuentran. No indican el *modo* de la oración (tal como hacen los sufijos de énfasis primaria como **-chu** y **-mi**).`,
+            },
+            {
+              en: `In Models 2b and 5b, **-ca** is used with the subject to highlight the fact that there has been a change of subject, although the understood verb remains the same.`,
+              es: `En los Modelos 2b y 5b, el **-ca** se usa en el sujeto para resaltar el hecho de que ha sido un cambio de sujeto, aunque el verbo implícito sigue igual. En otras palabras, frecuentemente se usa el sufijo **-ca** como *marcador de tópico*, para marcar el *tópico* actual.`,
+            },
+            {
+              en: `In Models 3, 5a and 6, **-pish** is used with the subject to highlight the fact that the same thing holds true of each one of these different subjects.`,
+              es: `En los Modelos 3, 5a y 6, se usa **-pish** en el sujeto para resaltar el hecho de que *se está diciendo la misma cosa* acerca de cada uno de estos sujetos distintos.`,
+            },
+          ],
+          [
+            {
+              en: `2. Final accent in “**¿Cancá?**”`,
+              es: `2. El acento final en “**¿Cancá?**”`,
+            },
+            {
+              en: `This final accent has the effect of referring back to the original question and making it unnecessary to repeat the verb:`,
+              es: `Este acento final tiene el efecto de referirse a la pregunta original, así que no es necesario repetir el verbo:`,
+            },
+            {
+              en: `**¿Cancá?**\n*(literally)* And you?\n*(freely)* And how are you?`,
+              es: `**¿Cancá?**\n*(literalmente)* ¿Y tú?\n*(libremente)* ¿Y tú cómo estás?`,
+            },
+          ],
+          [
+            {
+              en: `3. Present singular of the verb **cana** “to be”`,
+              es: `3. El presente singular del verbo **cana** "ser, estar"`,
+            },
+            {
+              en: `**ca_ni_**:	I am\n**ca_ngui_**:	you are\n**ca_n_**:	he (she, it) is`,
+              es: `**ca_ni_**:	soy, estoy\n**ca_ngui_**:	eres, estás\n**ca_n_**:	es, está`,
+            },
+            {
+              en: `The Quichua verb is almost completely regular, so once you have learned the forms for one verb, you have learned them for all verbs. The present singular is formed by attaching to the root **ca-** the suffixes **‑ni**, **‑ngui**, **‑n**. Note that these suffixes indicate both the person of the subject and the tense of the verb. Because the subject is already stated in the verb itself, it is often not explicitly given in a separate word, just like in Spanish, as in Model 1 **¿Allillachu cangui?** “Are you well?”`,
+              es: `El verbo en quichua es casi completamente regular, así cuando haya aprendido las formas de algún verbo, ya las sabe para todos los verbos. Se forma el presente singular añadiendo a la raíz **ca-** los sufijos **‑ni**, **‑ngui**, **‑n**. Note que estos sufijos indican tanto la persona del sujeto como el tiempo del verbo. Ya que ya se especifica el sujeto dentro del verbo mismo, muchas veces no se expresa explícitamente como palabra aparte, igual como en español, como en el Modelo 1 **¿Allillachu cangui?** "¿Estás bien?"`,
+            },
+          ],
+          [
+            {
+              en: `Conversely, if a third person subject (he, she, it) is explicitly named in the sentence, the verbal form **can** “he (she, it) is” is almost always omitted, as in Models 4, 5, and 6. This is something we need to watch in our own speechin Quichua, as our English tendency is to feel that a verb is needed, but such redundant use of **can** may sound rather stilted and pedantic to Quichua ears.`,
+              es: `Por el otro lado, si en la oración se expresa explícitamente un sujeto de tercera persona (él, ella), casi siempre se omite la forma verbal **can** "es, está", como en los Modelos 4, 5, y 6. En nuestra propia habla del quichua debemos tener cuidado con esto, ya que nuestra tendencia como hispanohablantes será ver el verbo como necesario, pero tal uso superfluo de **can** a lo mejor se oira algo afectado y artificial a los oidos de los quichuas.`,
+            },
+          ],
+        ],
+      },
+    ],
+  },
+  {
+    slug: '3',
+    topic: {
+      en: 'types of suffixes; **-man**; **-taj~** as question marker; **-cu**',
+      es: 'tipos de sufijos;  **-man**; **-taj~** como marcador de pregunta; **-cu**',
+    },
+    contents: [
+      {
+        phaseId: 'models',
+        items: [],
+      },
+      {
+        phaseId: 'vocab',
         items: [],
       },
       {
         phaseId: 'exercises',
-        items: [],
-      },
-      {
-        phaseId: 'more-exercises',
         items: [],
       },
       {
@@ -322,4 +529,36 @@ export const lessons: lessonType[] = [
       },
     ],
   },
+  {
+    slug: '4',
+    topic: {
+      en: '**-man** used as “for”; **-na** of infinitive; roots vs. stems',
+      es: '**-man** usado como “por”; **-na** del infinitivo; raíces simples y compuestas',
+    },
+    contents: [
+      {
+        phaseId: 'models',
+        items: [],
+      },
+      {
+        phaseId: 'vocab',
+        items: [],
+      },
+      {
+        phaseId: 'exercises',
+        items: [],
+      },
+      {
+        phaseId: 'grammar',
+        items: [],
+      },
+    ],
+  },
 ];
+
+/*
+{
+  phaseId: 'grammar',
+  items: [],
+},
+*/

@@ -39,8 +39,8 @@
 .homeIcon:hover .iconSvg {
   transform: scale(1.03);
 }
-.homeIcon:active .iconText {
-
+.homeIcon:active .iconSvg {
+  transform: scale(0.97);
 }
 .homeIcon h1, .homeIcon h2 {
   margin-left: 0.6rem;
@@ -80,6 +80,7 @@
   overflow: hidden;
   transition: transform 100ms linear;
   box-sizing: border-box;
+  z-index: 7;
   /*box-shadow: 0 0 0 0.1rem var(--color-theme);*/
 }
 .navText {
@@ -88,7 +89,8 @@
   transform: translateX(100%) scaleX(0);
   opacity: 0;
   transition: transform 100ms linear, opacity 100ms linear;
-  z-index: -1;
+  z-index: 2;
+  text-shadow: -1px -1px 1px var(--color-back), 1px -1px 1px var(--color-back), -1px 1px 1px var(--color-back), 1px 1px 1px var(--color-back);
 }
 .navButton:hover .navSvg {
   transform: scale(1.05);
@@ -96,6 +98,10 @@
 .navButton:hover .navText {
   transform: translateX(0) scaleX(1);
   opacity: 1;
+}
+.navButton:hover .navTextHide {
+  transform: translateX(100%) scaleX(0);
+  opacity: 0;
 }
 .navButton:active .navSvg {
   transform: scale(0.95);

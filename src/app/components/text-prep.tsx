@@ -18,6 +18,11 @@ interface inputType {
   children?: bilingualType,
 }
 
+export function translator(obj: {en: string, es: string}): string {
+  const { lang } = useLang();
+  return lang==='en' ? obj.en : obj.es;
+}
+
 export default function Text({ textObj, type, children }: inputType): React.ReactNode {
   const { lang } = useLang();
   const inputText: objType = children ? children : (obj) ? obj : textObj;

@@ -14,9 +14,10 @@ interface navProps {
   icon: string,
   color: string,
   func?: () => void,
+  textHide: boolean,
 }
 
-export default function NavButton({ text, icon, color, func }: navProps) {
+export default function NavButton({ text, icon, color, func, textHide }: navProps) {
   const router = useRouter();
   const { theme, toggleTheme } = useTheme();
   const { motion, toggleMotion } = useMotion();
@@ -30,7 +31,7 @@ export default function NavButton({ text, icon, color, func }: navProps) {
   };
   return (
     <button className={`${(motion)?tocapuStyles.svgHover:''} ${styles.navButton}`} onClick={func?func:clicked}>
-      <p className={`${styles.navText}`}>{text}</p>
+      <p className={`${styles.navText} ${(textHide)?styles.navTextHide:''}`}>{text}</p>
       <div className={`${styles.navSvg}`} style={{backgroundColor:color}}>{tocapuSearch(icon)}</div>
     </button>
   )

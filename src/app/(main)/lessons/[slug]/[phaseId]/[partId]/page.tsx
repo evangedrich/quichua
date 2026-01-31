@@ -26,11 +26,11 @@ export async function generateStaticParams() {
   );
 }
 
-function getPart(slug: string, phaseId: string, partId: string) {
+export function getPart(slug: string, phaseId: string, partId: string) {
   const items = getPhase(slug,phaseId)?.items;
   return Array.isArray(items[0]) ? items[Number(partId)-1] : null;
 }
-function getPartLength(slug: string, phaseId: string, partId: string) {
+export function getPartLength(slug: string, phaseId: string, partId: string) {
   const items = getPhase(slug,phaseId)?.items;
   return Array.isArray(items[0]) ? items.length : null;
 }
@@ -61,12 +61,12 @@ export default async function Part({ params }: { params: Promise<{ slug: string,
   const subPhase = { phase: phaseId, items: part }; // this is the part formatted as a phase for Models/Vocab/Ex components
   const partIndex = Number(partId)-1;
   const partLength = getPartLength(slug,phaseId,partId);
-  const progress = partIndex/partLength; //(partIndex+1)/partLength;
+  const progress = partIndex/(partLength-1); //(partIndex+1)/partLength;
   return (
     <>
       <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
       <div className={`${tocapuStyles.svgMove} w-10 h-10 bg-blue-500 mx-auto mb-1`}>{tocapuSearch(svgId)}</div>
-      {(true) ? <ProgressDots on={partIndex+1} of={partLength} /> : <ProgressBar complete={progress} size="s" />}
+      {(partLength<=6) ? <ProgressDots on={partIndex+1} of={partLength} /> : <ProgressBar complete={progress} size="s" />}
       {(phaseId==='models') ? <Models obj={subPhase} /> : (phaseId==='vocab') ? <Vocab obj={subPhase} /> : <Ex obj={subPhase} />}
       <Button text="←" to="back" />
       <Button text="→" to={getURL(slug,phaseId,partId)} />

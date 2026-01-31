@@ -1,6 +1,8 @@
 'use client';
 
 import HomeIcon from '@/app/components/home-icon';
+import KhipuIndex from '@/app/components/khipu';
+import KhipuMobile from '@/app/components/khipu-mobile';
 import NavButton from '@/app/components/nav-button';
 import Link from 'next/link';
 import styles from '@/app/ui/main.module.css';
@@ -13,6 +15,7 @@ import useWindowWidth from '@/app/hooks/useWindowWidth';
 
 export default function Header() {
   const [navVisible,setNavVisible] = useState(false);
+  const [showIndex,setShowIndex] = useState(false);
   const [settingsVisible,setSettingsVisible] = useState(false);
   const { theme, toggleTheme } = useTheme();
   const { motion, toggleMotion } = useMotion();
@@ -22,6 +25,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link href="/"><HomeIcon /></Link>
+      {!isMobile ? <KhipuIndex show={showIndex} onLeave={setShowIndex} /> : <KhipuMobile show={showIndex} />}
       <div className={styles.nav} onMouseLeave={() => setSettingsVisible(false)}>
         <button
           className={styles.mobileToggle}
@@ -35,7 +39,7 @@ export default function Header() {
           </svg>
         </button>
         <div className={`grid justify-items-end ${styles.navGroup} ${(navVisible || !isMobile)?'':styles.hideNav}`}>
-          <NavButton icon="fourEyes" text="index" color="#f0d699" />
+          <NavButton icon="fourEyes" text="index" color="#f0d699" func={() => setShowIndex(!showIndex)} textHide={showIndex} />
           <NavButton icon="teeth1" text="settings" color="#d9b484" func={() => setSettingsVisible(!settingsVisible)} />
           <div className={`${styles.settingsButtons} ${settingsVisible?'':styles.hideSettings}`}>
             <NavButton icon="esses" text={theme==='light' ? <><b>light</b> | dark</>:<>light | <b>dark</b></>} color="#5f633a" />
