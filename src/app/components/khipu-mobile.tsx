@@ -3,7 +3,8 @@
 import { lessons } from '@/app/lib/lessons';
 import styles from '@/app/ui/khipu.module.css';
 import { montserrat, barlowCondensed } from '@/app/ui/fonts'
-import { getIndexArray, knots } from '@/app/components/khipu';
+import { knots, getIndexArray, convertIdToTitle } from '@/app/components/khipu';
+import { translator } from '@/app/components/text-prep';
 import React, { Fragment } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -51,7 +52,7 @@ export default function KhipuMobile({ show, toClose }) {
                       <foreignObject x={(cordGap*i)+bumper*2-knotSize} y={bumper+cordGap*j+cordGap-(j/2)} height={knotSize*4} width={knotSize*2} className={styles.mSectionKnot}>
                         <div>{knots[j]}</div>
                       </foreignObject>
-                      <text x={(cordGap*i)+bumper*2+2} y={bumper+cordGap*j+cordGap+knotSize} fill="var(--color-front)" fontSize="4" dominantBaseline="middle" className={barlowCondensed.className}>{section.id}</text>
+                      <text x={(cordGap*i)+bumper*2+2} y={bumper+cordGap*j+cordGap+knotSize} fill="var(--color-front)" fontSize="4" dominantBaseline="middle" className={barlowCondensed.className}>{translator(convertIdToTitle(section.id))}</text>
                     </g>
                   ))}
                 </React.Fragment>

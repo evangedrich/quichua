@@ -87,7 +87,7 @@ export const knots: React.ReactNode[] = [
   </svg>,
 ];
 
-function convertIdToTitle(id: string): { en: string, es: string } {
+export function convertIdToTitle(id: string): { en: string, es: string } {
   let en: string = ''; let es: string = '';
   if (id==='models') { en='Models'; es='Modelos'; }
   else if (id==='vocab') { en='Vocabulary'; es='Vocabulario'; }
