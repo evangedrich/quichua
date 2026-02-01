@@ -554,6 +554,160 @@ export const lessons: lessonType[] = [
       },
     ],
   },
+  {
+    slug: '5',
+    topic: {
+      en: '**-manta**; demonstratives; movability of emphatic suffixes',
+      es: '**-manta**; demostrativos; que los sufijos enfáticos son movibles',
+    },
+    contents: [
+      {
+        phaseId: 'models',
+        items: [],
+      },
+      {
+        phaseId: 'vocab',
+        items: [],
+      },
+      {
+        phaseId: 'exercises',
+        items: [],
+      },
+      {
+        phaseId: 'grammar',
+        items: [],
+      },
+    ],
+  },
+  {
+    slug: '6',
+    topic: {
+      en: 'demonstratives used as nouns; **-ta** of direct object; suffix order',
+      es: 'demostrativos usado como sustantivos; **-ta** de complemento directo; orden de sufijos',
+    },
+    contents: [
+      {
+        phaseId: 'models',
+        items: [],
+      },
+      {
+        phaseId: 'vocab',
+        items: [],
+      },
+      {
+        phaseId: 'exercises',
+        items: [],
+      },
+      {
+        phaseId: 'grammar',
+        items: [],
+      },
+    ],
+  },
+  {
+    slug: '7',
+    topic: {
+      en: 'voiced sounds and their influence on other sounds; **imanalla**; possessive **-paj**',
+      es: 'sonidos sonoros y su incluencia en los otros sonidos; **imanalla**; **-paj** posesivo',
+    },
+    contents: [
+      {
+        phaseId: 'models',
+        items: [],
+      },
+      {
+        phaseId: 'vocab',
+        items: [],
+      },
+      {
+        phaseId: 'exercises',
+        items: [],
+      },
+      {
+        phaseId: 'pronunciation',
+        items: [],
+      },
+      {
+        phaseId: 'grammar',
+        items: [],
+      },
+    ],
+  },
+  {
+    slug: '8',
+    topic: {
+      en: '**-paj** used purposively; **-ngapaj**; **‑pajman**; **‑pajmanta**',
+      es: '**-paj** de propósito; **-ngapaj**; **‑pajman**; **‑pajmanta**',
+    },
+    contents: [
+      {
+        phaseId: 'models',
+        items: [],
+      },
+      {
+        phaseId: 'vocab',
+        items: [],
+      },
+      {
+        phaseId: 'exercises',
+        items: [],
+      },
+      {
+        phaseId: 'grammar',
+        items: [],
+      },
+    ],
+  },
+  {
+    slug: '9',
+    topic: {
+      en: 'singular and plural imperative; immediate and future imperative; **-hua** “me”, “us”; **-pa** of respect',
+      es: 'imperativo singular y plural; imperativo inmediato y futuro; **-hua** “me”, “nos”; **-pa** de respeto',
+    },
+    contents: [
+      {
+        phaseId: 'models',
+        items: [],
+      },
+      {
+        phaseId: 'vocab',
+        items: [],
+      },
+      {
+        phaseId: 'exercises',
+        items: [],
+      },
+      {
+        phaseId: 'grammar',
+        items: [],
+      },
+    ],
+  },
+  {
+    slug: '10',
+    topic: {
+      en: 'noun and pronoun plurals; verb plural; negative imperative',
+      es: 'plurales de sustantivos y pronombres; plurales de verbos; imperativos negativos',
+    },
+    contents: [
+      {
+        phaseId: 'models',
+        items: [],
+      },
+      {
+        phaseId: 'vocab',
+        items: [],
+      },
+      {
+        phaseId: 'exercises',
+        items: [],
+      },
+      {
+        phaseId: 'grammar',
+        items: [],
+      },
+    ],
+  },
 ];
 
 /*

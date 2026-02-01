@@ -17,7 +17,7 @@ interface indexType {
   }[],
 }
 
-const knots: React.ReactNode[] = [
+export const knots: React.ReactNode[] = [
   <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <path d="M25,75 75,25" strokeWidth="40" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
     <path d="M75,75 25,25" strokeWidth="40" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
@@ -52,21 +52,53 @@ const knots: React.ReactNode[] = [
     <path d="M140,80 160,20" strokeWidth="30" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
     <path d="M170,80 190,20" strokeWidth="30" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
   </svg>,
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="50" cy="50" r="50" fill="var(--color-theme)"/>
+  <svg viewBox="0 0 210 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20,83 40,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M45,83 65,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M70,83 90,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M95,83 115,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M120,83 140,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M145,83 165,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M170,83 190,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
   </svg>,
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="50" cy="50" r="50" fill="var(--color-theme)"/>
+  <svg viewBox="0 0 240 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20,83 40,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M45,83 65,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M70,83 90,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M95,83 115,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M120,83 140,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M145,83 165,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M170,83 190,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M195,83 215,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
   </svg>,
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="50" cy="50" r="50" fill="var(--color-theme)"/>
+  <svg viewBox="0 0 270 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20,83 40,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M45,83 65,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M70,83 90,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M95,83 115,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M120,83 140,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M145,83 165,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M170,83 190,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M195,83 215,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
+    <path d="M220,83 240,17" strokeWidth="25" strokeLinecap="round" stroke="var(--color-theme)" fill="none" />
   </svg>,
   <svg viewBox="-20 0 140 100" xmlns="http://www.w3.org/2000/svg">
-    <path d="M50,50 25,75 0,50 25,25 75,75 100,50 75,25 z" strokeWidth="30" strokeLinejoin="round" stroke="var(--color-theme)" fill="none" />
+    <circle cx="50" cy="50" r="50" fill="var(--color-theme)"/>
   </svg>,
 ];
 
-function getIndexArray() {
+function convertIdToTitle(id: string): { en: string, es: string } {
+  let en: string = ''; let es: string = '';
+  if (id==='models') { en='Models'; es='Modelos'; }
+  else if (id==='vocab') { en='Vocabulary'; es='Vocabulario'; }
+  else if (id==='exercises') { en='Exercises'; es='Ejercisios'; }
+  else if (id==='more-exercises') { en='More Exercises'; es='Más Ejercisios'; }
+  else if (id==='pronunciation') { en='Pronunciation'; es='Pronunciación'; }
+  else if (id==='grammar') { en='Grammar'; es='Gramática'; }
+  return { en: en, es: es, };
+}
+
+export function getIndexArray() {
   let index: indexType[] = [];
   lessons.forEach(lesson => {
     let sections: { id: string, url: string, parts: {id: string, url: string}[] }[] = [];
@@ -87,7 +119,7 @@ function getIndexArray() {
 export default function KhipuIndex({ show, onLeave }) {
   const index = getIndexArray();
   const lessonLength: string = (show) ? `${3+((2)*index.length)}rem` : '0';
-  const lessonNodeVis = (show) ? 'block' : 'none';
+  const lessonNodeVis = (show) ? 'flex' : 'none';
 
   const getSectionLineHeight = (lesson) => {
     return `${0.75+2*lesson.sections.length}rem`;
@@ -103,7 +135,7 @@ export default function KhipuIndex({ show, onLeave }) {
         <div className={styles.lessonLine} style={{width:lessonLength}}>
         </div>
 
-        <div className={styles.knots}>
+        <div className={styles.knots} style={{display:lessonNodeVis}}>
           {index.map((lesson,i) => (
             <div className={styles.lessonWrapper} key={`knotBox${i}`}>
               <Link href={lesson.url}>
@@ -120,7 +152,7 @@ export default function KhipuIndex({ show, onLeave }) {
                     <div key={`sectionKnot${j}`}>
                       <Link href={section.url}>
                         <div className={styles.sectionKnot}>
-                          <div className={styles.sectionText}>{section.id}</div>
+                          <div className={styles.sectionText}>{translator(convertIdToTitle(section.id))}</div>
                           <div className={`${styles.knotSvg} rotate-90`}>{knots[j]}</div>
                         </div>
                       </Link>

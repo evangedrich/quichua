@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link href="/"><HomeIcon /></Link>
-      {!isMobile ? <KhipuIndex show={showIndex} onLeave={setShowIndex} /> : <KhipuMobile show={showIndex} />}
+      {!isMobile ? <KhipuIndex show={showIndex} onLeave={setShowIndex} /> : <KhipuMobile show={showIndex} toClose={setShowIndex} />}
       <div className={styles.nav} onMouseLeave={() => setSettingsVisible(false)}>
         <button
           className={styles.mobileToggle}
