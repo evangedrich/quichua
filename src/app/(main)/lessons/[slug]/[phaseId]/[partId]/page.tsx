@@ -66,7 +66,7 @@ export default async function Part({ params }: { params: Promise<{ slug: string,
   return (
     <>
       <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
-      <PhaseIcon id={svgId} />
+      <PhaseIcon id={svgId} margin={false} />
       {(partLength<=6) ? <ProgressDots on={partIndex+1} of={partLength} /> : <ProgressBar complete={progress} size="s" />}
       {(phaseId==='models') ? <Models obj={subPhase} /> : (phaseId==='vocab') ? <Vocab obj={subPhase} /> : <Ex obj={subPhase} />}
       <Button text="←" to="back" />

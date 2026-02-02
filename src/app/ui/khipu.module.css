@@ -127,6 +127,7 @@
   opacity: 0;
   transition: opacity 10ms linear 40ms;
   text-transform: capitalize;
+  text-shadow: -1px -1px 1px var(--color-back), 1px -1px 1px var(--color-back), -1px 1px 1px var(--color-back), 1px 1px 1px var(--color-back);
 }
 .sectionBarrier {
   position: absolute;

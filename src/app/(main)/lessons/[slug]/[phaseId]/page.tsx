@@ -78,7 +78,7 @@ export default async function Phase({ params }: { params: Promise<{ slug: string
   return (
     <>
       <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
-      <PhaseIcon id={svgId} />
+      <PhaseIcon id={svgId} margin={true} />
       <>{element}</>
       {/*<Text type="p">{thisPhase.items[0]}</Text>*/}
       <Button text="back" to="back" />
