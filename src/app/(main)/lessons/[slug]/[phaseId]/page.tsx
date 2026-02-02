@@ -1,5 +1,6 @@
 import { lessons } from '@/app/lib/lessons';
 import { getLessonBySlug, getLessonIndexBySlug } from '@/app/(main)/lessons/[slug]/page.tsx';
+import PhaseIcon from '@/app/components/phase-icon';
 import Text from '@/app/components/text-prep';
 import Button from '@/app/components/custom-button';
 
@@ -77,7 +78,7 @@ export default async function Phase({ params }: { params: Promise<{ slug: string
   return (
     <>
       <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
-      <div className={`${tocapuStyles.svgMove} w-10 h-10 bg-blue-500 mx-auto mb-4`}>{tocapuSearch(svgId)}</div>
+      <PhaseIcon id={svgId} />
       <>{element}</>
       {/*<Text type="p">{thisPhase.items[0]}</Text>*/}
       <Button text="back" to="back" />

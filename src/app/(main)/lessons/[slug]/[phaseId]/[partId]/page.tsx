@@ -1,6 +1,7 @@
 import { lessons } from '@/app/lib/lessons';
 import { getLessonBySlug, getLessonIndexBySlug } from '@/app/(main)/lessons/[slug]/page.tsx';
 import { getPhase, getPhaseIndex, getPhaseData } from '@/app/(main)/lessons/[slug]/[phaseId]/page.tsx';
+import PhaseIcon from '@/app/components/phase-icon';
 import Text from '@/app/components/text-prep';
 import ProgressBar from '@/app/components/progress-bar';
 import ProgressDots from '@/app/components/progress-dots';
@@ -65,7 +66,7 @@ export default async function Part({ params }: { params: Promise<{ slug: string,
   return (
     <>
       <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
-      <div className={`${tocapuStyles.svgMove} w-10 h-10 bg-blue-500 mx-auto mb-1`}>{tocapuSearch(svgId)}</div>
+      <PhaseIcon id={svgId} />
       {(partLength<=6) ? <ProgressDots on={partIndex+1} of={partLength} /> : <ProgressBar complete={progress} size="s" />}
       {(phaseId==='models') ? <Models obj={subPhase} /> : (phaseId==='vocab') ? <Vocab obj={subPhase} /> : <Ex obj={subPhase} />}
       <Button text="←" to="back" />

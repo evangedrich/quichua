@@ -1,7 +1,7 @@
 'use client';
 
 import styles from '@/app/ui/main.module.css';
-import { montserrat, josefinSans } from '@/app/ui/fonts';
+import { montserrat } from '@/app/ui/fonts';
 import { tocapuLibrary, tocapuSearch } from '@/app/ui/tocapu';
 import tocapuStyles from '@/app/ui/tocapu.module.css';
 
@@ -16,7 +16,7 @@ export default function HomeIcon() {
       <div className={`${styles.iconSvg}`}>{tocapuSearch("key1")}</div>
       <div className={styles.iconText}>
         <h1 className={montserrat.className}>QUICHUA</h1>
-        <h2 className={josefinSans.className}>
+        <h2 className={montserrat.className}>
           {(lang==='en')?"IN 10 EASY":"EN 10 LECCIONES"}<br/>{(lang==='en')?"LESSONS":"FÁCILES"}
         </h2>
       </div>

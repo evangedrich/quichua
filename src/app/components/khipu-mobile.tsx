@@ -21,6 +21,12 @@ export default function KhipuMobile({ show, toClose }) {
   let maxSecTot: number = 0; index.forEach(lesson => { maxSecTot = lesson.sections.length>maxSecTot ? lesson.sections.length : maxSecTot; });
   const maxHeight: number = maxSecTot*cordGap+(bumper*2);
 
+  const lineBr = (txt,x) => {
+    const results = txt.includes(' ')
+    ? txt.split(' ').map((word,i) => <tspan key={i} x={x} dy={i===0?'-0.5em':'1em'}>{word}</tspan>)
+    : txt; return results;
+  }
+
   return (
     <div className={`${styles.mKhipuIndex} ${show?'block':'hidden'}`}>
       <div className={`${styles.mContainer} fixed top-0 w-screen h-${show?'screen':0} bg-[var(--color-back)] z-10`}>
@@ -38,7 +44,7 @@ export default function KhipuMobile({ show, toClose }) {
                   <foreignObject x={(cordGap*i)+bumper*2-knotSize*2.5} y={bumper-knotSize} height={knotSize*2} width={knotSize*5}>
                     {knots[i]}
                   </foreignObject>
-                  <text x={(cordGap*i)+bumper*2} y={bumper-2} fill="var(--color-front)" fontSize="4" textAnchor="middle" className={`${montserrat.className} font-extrabold`}>{i+1}</text>
+                  <text x={(cordGap*i)+bumper*2} y={bumper-2} fill="var(--color-front)" fontSize="4" textAnchor="middle" className={`${montserrat.className} font-black`}>{i+1}</text>
                 </g>
               ))}
               {index.map((lesson,i) => (
@@ -52,7 +58,7 @@ export default function KhipuMobile({ show, toClose }) {
                       <foreignObject x={(cordGap*i)+bumper*2-knotSize} y={bumper+cordGap*j+cordGap-(j/2)} height={knotSize*4} width={knotSize*2} className={styles.mSectionKnot}>
                         <div>{knots[j]}</div>
                       </foreignObject>
-                      <text x={(cordGap*i)+bumper*2+2} y={bumper+cordGap*j+cordGap+knotSize} fill="var(--color-front)" fontSize="4" dominantBaseline="middle" className={barlowCondensed.className}>{translator(convertIdToTitle(section.id))}</text>
+                      <text x={(cordGap*i)+bumper*2+2} y={bumper+cordGap*j+cordGap+knotSize} fill="var(--color-front)" fontSize="4" dominantBaseline="middle" className={barlowCondensed.className}>{lineBr(translator(convertIdToTitle(section.id)),(cordGap*i)+bumper*2+2)}</text>
                     </g>
                   ))}
                 </React.Fragment>
