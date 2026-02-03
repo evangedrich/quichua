@@ -1,5 +1,6 @@
 import { lessons } from '@/app/lib/lessons';
 import { getLessonBySlug, getLessonIndexBySlug } from '@/app/(main)/lessons/[slug]/page.tsx';
+import { getNeighbor } from '@/app/components/khipu';
 import PhaseIcon from '@/app/components/phase-icon';
 import Text from '@/app/components/text-prep';
 import Button from '@/app/components/custom-button';
@@ -75,15 +76,16 @@ export default async function Phase({ params }: { params: Promise<{ slug: string
   const nextSlug = ifToReview ? `${lessons[lessonIndex+1].slug}` : 'review';
   let url: string = ifLessonEnd ? `/lessons/${slug}/${contents?.[phaseIndex+1]?.phaseId}` : `/lessons/${nextSlug}`;
   url = ifNextHasParts ? `/lessons/${slug}/${contents?.[phaseIndex+1]?.phaseId}/1` : url;
+  const { prev, next } = getNeighbor(`/lessons/${slug}/${phaseId}`);
   return (
     <>
       <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
       <PhaseIcon id={svgId} margin={true} />
       <>{element}</>
       {/*<Text type="p">{thisPhase.items[0]}</Text>*/}
-      <Button text="back" to="back" />
+      <Button text="back" to={prev} />
       <Button text="next" to={url} />
-      <div className={`${tocapuStyles.svgMove} w-10 h-10 bg-transparent-500 mx-auto`}></div>
+      <div className={`w-10 h-10 bg-transparent-500 mx-auto`}></div>
     </>
   )
 }

@@ -115,6 +115,18 @@ export function getIndexArray() {
   });
   return index;
 }
+export function getNeighbor(url) {
+  const index = getIndexArray(lessons);
+  const flatIndex = index.flatMap(lesson => [
+    lesson,
+    ...lesson.sections.flatMap(section =>
+      section.parts.length>0 ? section.parts : section
+    )
+  ]);
+  const prev: string = flatIndex[flatIndex.findIndex(item => item.url===url)-1]?.url ?? '/lessons';
+  const next: string = flatIndex[flatIndex.findIndex(item => item.url===url)+1]?.url ?? '/review';
+  return { prev: prev, next: next }
+}
 
 export default function KhipuIndex({ show, onLeave }) {
   const index = getIndexArray();

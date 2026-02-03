@@ -9,7 +9,7 @@ export default function Vocab({ obj }) {
       <tbody>
         {items.map((item,i) => (
           <tr key={`tr${i}`}>
-            <td><b>{textParser(item.qu)}</b>: </td>
+            <td><b>{textParser(item.qu)}</b> </td>
             <td><Text>{{en:item.en,es:item.es}}</Text></td>
           </tr>
         ))}

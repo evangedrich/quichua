@@ -2,6 +2,7 @@
 
 import styles from '@/app/ui/home.module.css';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 interface buttonProps {
   text: string,
@@ -19,6 +20,11 @@ export default function Button({ text, to }: buttonProps): React.ReactNode {
   if (text==='back') { text = '←'; }
   if (text==='next') { text = '→'; }
   return (
-    <button className={styles.customButton} onClick={enter}>{text}</button>
+    <>
+      {underConstruction || to==='back'
+      ? <button className={styles.customButton} onClick={enter}>{text}</button>
+      : <Link href={to} className={styles.customButton}>{text}</Link>
+      }
+    </>
   )
 }

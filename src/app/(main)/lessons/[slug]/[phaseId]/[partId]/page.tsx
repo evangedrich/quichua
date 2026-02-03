@@ -1,6 +1,7 @@
 import { lessons } from '@/app/lib/lessons';
 import { getLessonBySlug, getLessonIndexBySlug } from '@/app/(main)/lessons/[slug]/page.tsx';
 import { getPhase, getPhaseIndex, getPhaseData } from '@/app/(main)/lessons/[slug]/[phaseId]/page.tsx';
+import { getNeighbor } from '@/app/components/khipu';
 import PhaseIcon from '@/app/components/phase-icon';
 import Text from '@/app/components/text-prep';
 import ProgressBar from '@/app/components/progress-bar';
@@ -63,13 +64,15 @@ export default async function Part({ params }: { params: Promise<{ slug: string,
   const partIndex = Number(partId)-1;
   const partLength = getPartLength(slug,phaseId,partId);
   const progress = partIndex/(partLength-1); //(partIndex+1)/partLength;
+  const offset: number = partIndex>0 ? getPart(slug,phaseId,partId-1).length : 0;
+  const { prev, next } = getNeighbor(`/lessons/${slug}/${phaseId}/${partId}`);
   return (
     <>
       <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
       <PhaseIcon id={svgId} margin={false} />
       {(partLength<=6) ? <ProgressDots on={partIndex+1} of={partLength} /> : <ProgressBar complete={progress} size="s" />}
-      {(phaseId==='models') ? <Models obj={subPhase} /> : (phaseId==='vocab') ? <Vocab obj={subPhase} /> : <Ex obj={subPhase} />}
-      <Button text="←" to="back" />
+      {(phaseId==='models') ? <Models obj={subPhase} offset={offset} /> : (phaseId==='vocab') ? <Vocab obj={subPhase} /> : <Ex obj={subPhase} />}
+      <Button text="←" to={prev} />
       <Button text="→" to={getURL(slug,phaseId,partId)} />
       <div className={`${tocapuStyles.svgMove} w-10 h-10 bg-transparent-500 mx-auto`}></div>
     </>
