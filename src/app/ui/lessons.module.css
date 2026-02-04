@@ -4,6 +4,7 @@
 }
 .columns td {
   vertical-align: top;
+  padding-bottom: 0.25rem;
 }
 .columns td:first-child {
   text-align: right;
