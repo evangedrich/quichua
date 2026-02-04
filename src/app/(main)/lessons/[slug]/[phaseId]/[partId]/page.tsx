@@ -47,8 +47,7 @@ export default async function Part({ params }: { params: Promise<{ slug: string,
   const partIndex = Number(partId)-1;
   const partLength = getPartLength(slug,phaseId,partId) ?? 1;
   const progress = partIndex/(partLength-1 || 1); //(partIndex+1)/partLength;
-  const prevPart = getPart(slug,phaseId,(Number(partId)-1).toString());
-  const offset: number = (partIndex>0 && Array.isArray(prevPart)) ? (prevPart?.length ?? 0) : 0;
+  let offset = 0; for (let i=0; i<partIndex; i++) { offset += getPhase(slug,phaseId).items[i].length; }
   const { prev, next } = getNeighbor(`/lessons/${slug}/${phaseId}/${partId}`);
   return (
     <>

@@ -124,7 +124,7 @@ export function getNeighbor(url) {
     )
   ]);
   const prev: string = flatIndex[flatIndex.findIndex(item => item.url===url)-1]?.url ?? '/lessons';
-  const next: string = flatIndex[flatIndex.findIndex(item => item.url===url)+1]?.url ?? '/review';
+  const next: string = flatIndex[flatIndex.findIndex(item => item.url===url)+1]?.url ?? '/lessons/review';
   return { prev: prev, next: next }
 }
 
