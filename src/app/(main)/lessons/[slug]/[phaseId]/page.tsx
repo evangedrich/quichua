@@ -1,5 +1,5 @@
 import { lessons } from '@/app/lib/lessons';
-import { getLessonBySlug, getLessonIndexBySlug } from '@/app/(main)/lessons/[slug]/page.tsx';
+import { getLessonBySlug, getLessonIndexBySlug } from '@/app/(main)/lessons/[slug]/page';
 import { getNeighbor } from '@/app/components/khipu';
 import PhaseIcon from '@/app/components/phase-icon';
 import Text from '@/app/components/text-prep';
@@ -23,7 +23,7 @@ interface trilingualType {
 }
 interface phaseType {
   phaseId: string,
-  items: bilingualType[] | trilingualType[],
+  items: bilingualType[] | trilingualType[] | bilingualType[][] | trilingualType[][],
 }
 interface lessonType {
   slug: string,
@@ -40,7 +40,7 @@ export async function generateStaticParams() {
   );
 }
 
-export function getPhase(slug: string, phaseId: string): phaseType {
+export function getPhase(slug: string, phaseId: string): phaseType | undefined {
   const contents = lessons.find(lesson => lesson.slug === slug)?.contents;
   return contents?.find(content => content.phaseId === phaseId);
 }
@@ -50,8 +50,8 @@ export function getPhaseIndex(slug: string, phaseId: string) {
 }
 export function getPhaseData(slug: string, phaseId: string): { title: { en: string, es: string }, svgId: string, element: React.ReactNode } {
   let title: {en: string, es: string} = {en: 'default', es: 'default'};
-  let svgId: string = 'key3'; let el: React.ReactNode = <></>; const phase: phaseType = getPhase(slug,phaseId);
-  if (phaseId==='models') { title={en:'Models',es:'Modelos'}; svgId='maskaypacha'; el=<Models obj={phase} />; }
+  let svgId: string = 'key3'; let el: React.ReactNode = <></>; const phase: phaseType = getPhase(slug,phaseId)!;
+  if (phaseId==='models') { title={en:'Models',es:'Modelos'}; svgId='maskaypacha'; el=<Models obj={phase} offset={0} />; }
   else if (phaseId==='vocab') { title={en:'Vocabulary',es:'Vocabulario'}; svgId='anvil'; el=<Vocab obj={phase} />; }
   else if (phaseId==='exercises') { title={en:'Exercises',es:'Ejercicios'}; svgId='exes'; el=<Ex obj={phase} />; }
   else if (phaseId==='more-exercises') { title={en:'More Exercises',es:'Más Ejercisios'}; svgId='pants1'; el=<Ex obj={phase} />; }
@@ -70,21 +70,14 @@ export default async function Phase({ params }: { params: Promise<{ slug: string
   const contents = getLessonBySlug(slug)?.contents;
   const lessonIndex: number = getLessonIndexBySlug(slug);
 
-  const ifToReview: boolean = lessonIndex<lessons.length-1 || lessonIndex%10===0;
-  const ifLessonEnd: boolean = phaseIndex<(contents?.length??0)-1;
-  const ifNextHasParts: boolean = Array.isArray(contents[phaseIndex+1]?.items[0]);
-  const nextSlug = ifToReview ? `${lessons[lessonIndex+1].slug}` : 'review';
-  let url: string = ifLessonEnd ? `/lessons/${slug}/${contents?.[phaseIndex+1]?.phaseId}` : `/lessons/${nextSlug}`;
-  url = ifNextHasParts ? `/lessons/${slug}/${contents?.[phaseIndex+1]?.phaseId}/1` : url;
   const { prev, next } = getNeighbor(`/lessons/${slug}/${phaseId}`);
   return (
     <>
       <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
       <PhaseIcon id={svgId} margin={true} />
       <>{element}</>
-      {/*<Text type="p">{thisPhase.items[0]}</Text>*/}
       <Button text="back" to={prev} />
-      <Button text="next" to={url} />
+      <Button text="next" to={next} />
       <div className={`w-10 h-10 bg-transparent-500 mx-auto`}></div>
     </>
   )

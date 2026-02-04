@@ -2369,7 +2369,7 @@ export const lessons: lessonType[] = [
             },
             {
               en: `This greeting is frequently used instead of **¿Allillachu cangui?** When someone does greet you in Quichua, be sure to notice which of these forms is used, as the answer must vary accordingly. **¿Allillachu cangui?** requires a “Yes” or “No” answer, while the other requires a statement like “I’m just fine,” or “I’m feeling simply awful.” The **-taj~** is very often dropped and simply “**¿Imanalla cangui?**” or even just “**¿Imanalla?**” is used.`,
-              es: `Se usa este saludo con frecuencia en lugar de ¿Allillachu cangui? Cuando alguien le salude en quichua, tome el tiempo de notar cuál de estas formas usa, ya que la respuesta varía de acuerdo con la pregunta. ¿Allillachu cangui? requiere una respuesta de "si" o "no" mientras que la otra requiere un declaración como “Estoy bien”, o “Me siento terrible”. Muchas veces se omite el **-taj~**, y se dice “**¿Imanalla cangui?**” o aun simplemente “**¿Imanalla?**”`,
+              es: `Se usa este saludo con frecuencia en lugar de **¿Allillachu cangui?** Cuando alguien le salude en quichua, tome el tiempo de notar cuál de estas formas usa, ya que la respuesta varía de acuerdo con la pregunta. **¿Allillachu cangui?** requiere una respuesta de “sí” o “no” mientras que la otra requiere un declaración como “Estoy bien”, o “Me siento terrible”. Muchas veces se omite el **-taj~**, y se dice “**¿Imanalla cangui?**” o aun simplemente “**¿Imanalla?**”`,
             },
           ],
           [
@@ -2521,7 +2521,28 @@ export const lessons: lessonType[] = [
 
 /*
 {
-  phaseId: 'grammar',
-  items: [],
+  slug: '11',
+  topic: {
+    en: '',
+    es: '',
+  },
+  contents: [
+    {
+      phaseId: 'models',
+      items: [],
+    },
+    {
+      phaseId: 'vocab',
+      items: [],
+    },
+    {
+      phaseId: 'exercises',
+      items: [],
+    },
+    {
+      phaseId: 'grammar',
+      items: [],
+    },
+  ],
 },
 */
