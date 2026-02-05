@@ -49,15 +49,15 @@ export default function KhipuMobile({ show, toClose }: { show: boolean; toClose:
                 </g>
               ))}
               {index.map((lesson,i) => (
-                <line x1={(cordGap*i)+bumper*2} y1={bumper} x2={(cordGap*i)+bumper*2} y2={bumper+lesson.sections.length*cordGap} stroke="var(--color-theme)" key={`lessonCord${i}`} />
+                <line x1={(cordGap*i)+bumper*2+((0.4-i*0.05))} y1={bumper} x2={(cordGap*i)+bumper*2+((0.4-i*0.05))} y2={bumper+lesson.sections.length*cordGap} stroke="var(--color-theme)" key={`lessonCord${i}`} />
               ))}
               {index.map((lesson,i) => (
                 <React.Fragment key={`sectionKnot${i}`}>
                   {lesson.sections.map((section,j) => (
                     <g key={`sectionKnot${i}${j}`} onClick={() => {router.push(section.url); toClose(false);}}>
                       {/* <circle cx={(cordGap*i)+bumper*2} cy={bumper+cordGap*j+cordGap} r={knotSize} fill="var(--color-theme)" /> */}
-                      <foreignObject x={(cordGap*i)+bumper*2-knotSize} y={bumper+cordGap*j+cordGap-(j/2)} height={knotSize*4} width={knotSize*2} className={styles.mSectionKnot}>
-                        <div>{knots[j]}</div>
+                      <foreignObject transform={`translate(${(cordGap*i)+bumper*2-knotSize+(3.4-(0.05*i))}, ${bumper+cordGap*j+cordGap-(j/2)-3.2+(0.6*j)}) rotate(90)`} height={knotSize*2} width={knotSize*5}>
+                        {knots[j]}
                       </foreignObject>
                       <text x={(cordGap*i)+bumper*2+2} y={bumper+cordGap*j+cordGap+knotSize} fill="var(--color-front)" fontSize="4" dominantBaseline="middle" className={barlowCondensed.className}>{lineBr(translator(convertIdToTitle(section.id)),(cordGap*i)+bumper*2+2)}</text>
                     </g>
