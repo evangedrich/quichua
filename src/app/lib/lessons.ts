@@ -240,18 +240,18 @@ export const lessons: lessonType[] = [
               es: `1. Las raíces y sufijos`,
             },
             {
-              en: `Quichua words are often quite long because of the addition of several suffixes to the root of the word. The root is the “stripped-down” essential (or basic) form of a word; a suffix is a short meaningful “bit” which may be attached to a root, thereby modifying its meaning. **Ari** is an example of a root and **-chu** an example of a suffix. (The hyphen placed before such suffixes when they are written in isolation is intended to indicate that they are not words in themselves, and cannot occur alone, but must always be attached to some root.)`,
-              es: `Muchas veces las palabras del quichua resultan muy largas, debido a que se añaden varios sufijos a la raíz de la palabra. La raíz es la forma esencial “desnuda” (o básica) de una palabra; un sufijo es un trocito significativo que se añade a la raíz, modificando así su significado. **Ari** es un ejemplo de una raíz, y **-chu** de un sufijo. (Se escribe un guion ante tales sufijos cuando se escriben de forma aislada; esto indica que no son palabras en sí, y que no pueden ocurrir solos, sino que siempre tienen que adjuntarse a alguna raíz.)`,
+              en: `Quichua words are often quite long because of the addition of several suffixes to the root of the word. The root is the “stripped-down” essential (or basic) form of a word; a suffix is a short meaningful “bit” which may be attached to a root, thereby modifying its meaning. **Ari** is an example of a root and **‑chu** an example of a suffix. (The hyphen placed before such suffixes when they are written in isolation is intended to indicate that they are not words in themselves, and cannot occur alone, but must always be attached to some root.)`,
+              es: `Muchas veces las palabras del quichua resultan muy largas, debido a que se añaden varios sufijos a la raíz de la palabra. La raíz es la forma esencial “desnuda” (o básica) de una palabra; un sufijo es un trocito significativo que se añade a la raíz, modificando así su significado. **Ari** es un ejemplo de una raíz, y **‑chu** de un sufijo. (Se escribe un guion ante tales sufijos cuando se escriben de forma aislada; esto indica que no son palabras en sí, y que no pueden ocurrir solos, sino que siempre tienen que adjuntarse a alguna raíz.)`,
             },
           ],
           [
             {
-              en: `2. Suffixes **-chu** and **-mi**`,
-              es: `2. Los sufijos **-chu** y **-mi**`,
+              en: `2. Suffixes **‑chu** and **-mi**`,
+              es: `2. Los sufijos **‑chu** y **-mi**`,
             },
             {
-              en: `Both of these are emphatic suffixes, indicating primary emphasis on the word to which they are attached—something that in English we usually do by raising the pitch and increasing the volume of the voice on the emphasized word. They are also *modal* suffixes, indicating the mood of the sentence in which they occur—again something which in English is done largely by intonation. The **-chu** is used for questions (of the true-or-false variety that must be answered by either “Yes” or “No”), while **-mi** occurs in affirmative statements.`,
-              es: `Estos dos son sufijos enfáticos, indicando un énfasis especial en la palabra a la cual están adjuntas. En español hacemos tal énfasis alzando el tono y la fuerza de la voz en la palabra enfatizada. Éstos también son sufijos modales, que indican el modo de la oración en la que ocurren. En español esta función también se expresa generalmente por la entonación de la voz. El sufijo **-chu** se usa para hacer preguntas a las cuales la respuesta tiene que ser “sí” o “no”. El sufijo **-mi** ocurre en las declaraciones afirmativas.`,
+              en: `Both of these are emphatic suffixes, indicating primary emphasis on the word to which they are attached—something that in English we usually do by raising the pitch and increasing the volume of the voice on the emphasized word. They are also *modal* suffixes, indicating the mood of the sentence in which they occur—again something which in English is done largely by intonation. The **‑chu** is used for questions (of the true-or-false variety that must be answered by either “Yes” or “No”), while **-mi** occurs in affirmative statements.`,
+              es: `Estos dos son sufijos enfáticos, indicando un énfasis especial en la palabra a la cual están adjuntas. En español hacemos tal énfasis alzando el tono y la fuerza de la voz en la palabra enfatizada. Éstos también son sufijos modales, que indican el modo de la oración en la que ocurren. En español esta función también se expresa generalmente por la entonación de la voz. El sufijo **‑chu** se usa para hacer preguntas a las cuales la respuesta tiene que ser “sí” o “no”. El sufijo **-mi** ocurre en las declaraciones afirmativas.`,
             },
           ],
         ],
@@ -460,8 +460,8 @@ export const lessons: lessonType[] = [
               es: `1. Los sufijos **-ca** y **‑pish** (Imb. **-pash**)`,
             },
             {
-              en: `Both of these suffixes indicate a secondary emphasis on the words to which they are attached. They do not, however, indicate the *mood* of the sentence (as do suffixes of primary emphasis like **-chu** and **-mi**).`,
-              es: `Estos dos sufijos indican un énfasis secundario en las palabras en que se encuentran. No indican el *modo* de la oración (tal como hacen los sufijos de énfasis primaria como **-chu** y **-mi**).`,
+              en: `Both of these suffixes indicate a secondary emphasis on the words to which they are attached. They do not, however, indicate the *mood* of the sentence (as do suffixes of primary emphasis like **‑chu** and **-mi**).`,
+              es: `Estos dos sufijos indican un énfasis secundario en las palabras en que se encuentran. No indican el *modo* de la oración (tal como hacen los sufijos de énfasis primaria como **‑chu** y **-mi**).`,
             },
             {
               en: `In Models 2b and 5b, **-ca** is used with the subject to highlight the fact that there has been a change of subject, although the understood verb remains the same.`,
@@ -881,16 +881,16 @@ export const lessons: lessonType[] = [
               es: `3. Sufijo neutral **-taj~** (**-tij~**, Imb. **-ta~**)`,
             },
             {
-              en: `This is a suffix of primary emphasis, like **-chu** and **-mi**. As well as giving primary emphasis to the word with which it occurs, **-taj~** indicates the *mood* of the sentence as being interrogative. The difference between **-taj~** and **-chu** is that:`,
-              es: `Éste es un sufijo de énfasis primario, igual como **-chu** y **-mi**. Además de dar la énfasis primaria a la palabra en que ocurre, el **-taj~** indica que el *modo* de la oración es interrogativo. La diferencia entre el **‑taj~** y el **‑chu** es así:`,
+              en: `This is a suffix of primary emphasis, like **‑chu** and **-mi**. As well as giving primary emphasis to the word with which it occurs, **-taj~** indicates the *mood* of the sentence as being interrogative. The difference between **-taj~** and **‑chu** is that:`,
+              es: `Éste es un sufijo de énfasis primario, igual como **‑chu** y **-mi**. Además de dar la énfasis primaria a la palabra en que ocurre, el **-taj~** indica que el *modo* de la oración es interrogativo. La diferencia entre el **‑taj~** y el **‑chu** es así:`,
             },
             {
               en: `**-taj~** indicates a question requiring an answer other than “Yes” or “No”. Instead, it requests *information*.`,
               es: `El **-taj~** indica una pregunta que requiere una respuesta que no sea “Sí” o “No”. En cambio, solicita *información*.`,
             },
             {
-              en: `**-chu** indicates a question requiring a “Yes” or “No” answer.`,
-              es: `El **-chu** indica una pregunta que requiere una respuesta “Sí” o “No”.`,
+              en: `**‑chu** indicates a question requiring a “Yes” or “No” answer.`,
+              es: `El **‑chu** indica una pregunta que requiere una respuesta “Sí” o “No”.`,
             },
           ],
           [
@@ -1619,8 +1619,8 @@ export const lessons: lessonType[] = [
               es: `3. Los sufijos enfáticos son “movibles”`,
             },
             {
-              en: `Suffixes of primary and secondary emphasis (so far: **-chu**, **-mi**, **-taj~** and **-ca**, **‑pish**), being neutral, can be attached to either verbs or nouns, as well as other parts of speech. Keep watching them closely, and be sure that you understand *why* they occur where they do in each particular case. But don't make the mistake of thinking that they always *have to* occur just as given in the Models. Their use is one of the most flexible things in Quichua, because emphasis can vary tremendously in this language, just as in English:`,
-              es: `Los sufijos de énfasis primaria y secundaria (hasta ahora: **-chu**, **-mi**, **-taj~** y **-ca**, **‑pish**), siendo neutrales, pueden juntarse tanto a los verbos como a los sustantivos, además de otras partes de la oración. Estúdialos con cuidado, y asegúrese que entienda por qué ocurren donde ocurren en cada caso individual. Pero no cometa el error de pensar que siempre *tienen que* ocurrir tal como se dan en los Modelos. Su uso es una de las cosas más flexibles en quichua, porque la énfasis puede variar tremendamente en este idioma, igual como en español:`,
+              en: `Suffixes of primary and secondary emphasis (so far: **‑chu**, **-mi**, **-taj~** and **-ca**, **‑pish**), being neutral, can be attached to either verbs or nouns, as well as other parts of speech. Keep watching them closely, and be sure that you understand *why* they occur where they do in each particular case. But don't make the mistake of thinking that they always *have to* occur just as given in the Models. Their use is one of the most flexible things in Quichua, because emphasis can vary tremendously in this language, just as in English:`,
+              es: `Los sufijos de énfasis primaria y secundaria (hasta ahora: **‑chu**, **-mi**, **-taj~** y **-ca**, **‑pish**), siendo neutrales, pueden juntarse tanto a los verbos como a los sustantivos, además de otras partes de la oración. Estúdialos con cuidado, y asegúrese que entienda por qué ocurren donde ocurren en cada caso individual. Pero no cometa el error de pensar que siempre *tienen que* ocurrir tal como se dan en los Modelos. Su uso es una de las cosas más flexibles en quichua, porque la énfasis puede variar tremendamente en este idioma, igual como en español:`,
             },
           ],
           [
@@ -1896,8 +1896,8 @@ export const lessons: lessonType[] = [
               es: `1. Demostrativos usados como sustantivos`,
             },
             {
-              en: `In the last lesson we saw the demonstratives **cai** “this” and **chai** “that” used as adjectives in phrases such as **cai huasi**, **chai huarmi**. They can also be used in the place of independent nouns (just as the English demonstrative pronouns “this, that”). However, to function in this way they require an emphatic suffix like **-ca**, **-chu**, or **-mi**. Notice that in Models 1 to 4 the suffix **-ca** of secondary emphasis is used with each:`,
-              es: `En la lección anterior vimos el uso de los demostrativos **cai** “este, esta” y **chai** “ese, esa, aquel, aquella” como adjetivos en frases como cai huasi, chai huarmi. También se pueden usar en vez de sustantivos independientes (igual como los pronombres demostrativos “esto, éste, ésta, eso, ése, ésa, aquello, aquél, aquélla”). Sin em-bargo, para que funcionen de esta manera requieren un sufijo enfático como **-ca**, **-chu**, o **-mi**. Note que en los Modelos 1 al 4 el sufijo **-ca** de énfasis secundaria se usa con cada uno:`,
+              en: `In the last lesson we saw the demonstratives **cai** “this” and **chai** “that” used as adjectives in phrases such as **cai huasi**, **chai huarmi**. They can also be used in the place of independent nouns (just as the English demonstrative pronouns “this, that”). However, to function in this way they require an emphatic suffix like **-ca**, **‑chu**, or **-mi**. Notice that in Models 1 to 4 the suffix **-ca** of secondary emphasis is used with each:`,
+              es: `En la lección anterior vimos el uso de los demostrativos **cai** “este, esta” y **chai** “ese, esa, aquel, aquella” como adjetivos en frases como cai huasi, chai huarmi. También se pueden usar en vez de sustantivos independientes (igual como los pronombres demostrativos “esto, éste, ésta, eso, ése, ésa, aquello, aquél, aquélla”). Sin em-bargo, para que funcionen de esta manera requieren un sufijo enfático como **-ca**, **‑chu**, o **-mi**. Note que en los Modelos 1 al 4 el sufijo **-ca** de énfasis secundaria se usa con cada uno:`,
             },
             {
               qu: `caica`,
@@ -3130,74 +3130,504 @@ export const lessons: lessonType[] = [
       {
         phaseId: 'models',
         items: [
-          {
-            qu: `¿Pipajtaj chai ovejacunaca?`,
-            en: `Whose are those sheep?`,
-            es: ``,
-          },
-          {
-            qu: `Chai ovejacunaca ñucapajmi.`,
-            en: `Those sheep are mine.`,
-            es: ``,
-          },
-          {
-            qu: ``,
-            en: ``,
-            es: ``,
-          },
-          {
-            qu: ``,
-            en: ``,
-            es: ``,
-          },
-          {
-            qu: ``,
-            en: ``,
-            es: ``,
-          },
-          {
-            qu: ``,
-            en: ``,
-            es: ``,
-          },
-          {
-            qu: ``,
-            en: ``,
-            es: ``,
-          },
-          {
-            qu: ``,
-            en: ``,
-            es: ``,
-          },
-          {
-            qu: ``,
-            en: ``,
-            es: ``,
-          },
-          {
-            qu: ``,
-            en: ``,
-            es: ``,
-          },
-          {
-            qu: ``,
-            en: ``,
-            es: ``,
-          },
+          [
+            {
+              qu: `¿Pipajtaj chai ovejacunaca?`,
+              en: `Whose are those sheep?`,
+              es: `¿De quién son esas ovejas?`,
+            },
+            {
+              qu: `Chai ovejacunaca ñucapajmi.`,
+              en: `Those sheep are mine.`,
+              es: `Esas ovejas son mías.`,
+            },
+            {
+              qu: `Chai huambracunaca ¿imatataj ruracun(cuna)?`,
+              en: `What are those youngsters doing?`,
+              es: `Esos jóvenes ¿qué están haciendo?`,
+            },
+            {
+              qu: `Trabajacun(cuna)mi.`,
+              en: `They’re working.`,
+              es: `Están trabajando.`,
+            },
+          ],
+          [
+            {
+              qu: `Cancunaca/ Quiquincunaca ¿maimantaj ricunguichij?`,
+              en: `Where are y’all going?`,
+              es: `Y Uds., ¿adónde están yendo?`,
+            },
+            {
+              qu: `Pueblomanmi ricunchij. ¿Cancunacá /Quiquincunacá?`,
+              en: `We’re going to town. What about y’all?`,
+              es: `Estamos yendo al pueblo. ¿Y Uds.?`,
+            },
+            {
+              qu: `Ñucanchijca escuelamanmi ricunchij.`,
+              en: `We’re going to school.`,
+              es: `Nosotros estamos yendo a la escuela.`,
+            },
+          ],
+          [
+            {
+              qu: `Ama shamuichu.`,
+              en: `Don’t come (right now).`,
+              es: `No vengas (ahorita).`,
+            },
+            {
+              qu: `Ama shamuichijchu.`,
+              en: `Y’all don’t come (right now).`,
+              es: `No vengan (ahorita).`,
+            },
+            {
+              qu: `Ama shamunguichu.`,
+              en: `Don’t come (in the future).`,
+              es: `No vendrás. (Mandato)`,
+            },
+            {
+              qu: `Ama shamunguichijchu.`,
+              en: `Don’t y’all come (in the future).`,
+              es: `No vendrán. (Mandato)`,
+            },
+          ],
         ],
       },
       {
         phaseId: 'vocab',
-        items: [],
+        items: [
+          [
+            {
+              qu: `ahuana`,
+              en: `to weave`,
+              es: `tejer`,
+            },
+            {
+              qu: `azadón`,
+              en: `large hoe`,
+              es: `azadón`,
+            },
+            {
+              qu: `charina`,
+              en: `to have`,
+              es: `tener`,
+            },
+            {
+              qu: `jatun`,
+              en: `large, tall, high`,
+              es: `grande, alto`,
+            },
+            {
+              qu: `pugllana`,
+              en: `to play`,
+              es: `jugar`,
+            },
+          ],
+          [
+            {
+              qu: `anacu`,
+              en: `anaco, indigenous skirt`,
+              es: `anaco, falda indígena`,
+            },
+            {
+              qu: `baita / bayeta`,
+              en: `Quichua shawl`,
+              es: `bayeta; chal`,
+            },
+            {
+              qu: `lampa / pala`,
+              en: `shovel`,
+              es: `pala, lampa`,
+            },
+            {
+              qu: `millma __(Caliata__ millhua__, Imb.__ milma__)__`,
+              en: `wool, body hair, fur`,
+              es: `lana, pelaje, vello`,
+            },
+            {
+              qu: `puchcana __(Caliata__ pushcana__, Imb.__ puchana__)__`,
+              en: `to spin`,
+              es: `hilar`,
+            },
+            {
+              qu: `tisana`,
+              en: `to card (wool)`,
+              es: `cardar, escarmenar (lana)`,
+            },
+            {
+              qu: `uchilla __(Pulucate, Caliata__ uchila__)__`,
+              en: `small, short`,
+              es: `pequeño, bajo`,
+            },
+          ],
+          [
+            {
+              qu: `ama __+ [vb.] +__ -chu`,
+              en: `«prohibition»`,
+              es: `«prohibición»`,
+            },
+            {
+              qu: `-cuna`,
+              en: `«plural» (nouns and third person verbs)`,
+              es: `«plural» (sustantivos y verbos de tercera persona)`,
+            },
+          ],
+          [
+            {
+              qu: `ñuca`,
+              en: `I`,
+              es: `yo`,
+            },
+            {
+              qu: `can`,
+              en: `you (informal)`,
+              es: `tú`,
+            },
+            {
+              qu: `quiquin`,
+              en: `you (formal)`,
+              es: `usted`,
+            },
+            {
+              qu: `pai`,
+              en: `he/she`,
+              es: `él/ella`,
+            },
+          ],
+          [
+            {
+              qu: `ñucanchij __(VD__ ñucunchij__)__`,
+              en: `we`,
+              es: `nosotros`,
+            },
+            {
+              qu: `cancuna`,
+              en: `y’all (informal)`,
+              es: `ustedes (informal)`,
+            },
+            {
+              qu: `quiquincuna`,
+              en: `y’all (formal)`,
+              es: `ustedes (formal)`,
+            },
+            {
+              qu: `paicuna`,
+              en: `they`,
+              es: `ellos, ellas`,
+            },
+          ],
+        ],
       },
       {
         phaseId: 'exercises',
-        items: [],
+        items: [
+          [
+            {
+              n: `1`,
+              q: `¿Pipajtaj chai _oveja_cunaca?`,
+              a: `Nuca yayapajmi.`,
+              subs: [ `lampa`, `azadón`, `huagra`, `mula`, `burro`, `atillpa`, `cuyi`, `cunu`, `cuchi`, `allcu`, ],
+            },
+            {
+              n: `2`,
+              q: `Chai huambracunaca ¿imatataj ruracun?`,
+              a: `_Trabaja_cuncunami.`,
+              subs: [ `jallmana`, `tarpuna`, `tsagmana`, `pugllana`, `michina`, `allana`, ],
+            },
+          ],
+          [
+            {
+              n: `3`,
+              q: `¿Imatataj ruracun chai huarmicunaca?`,
+              a: `_Trabaja_cuncunami.`,
+              subs: [ `jallmana`, `tarpuna`, `tsagmana`, `pugllana`, `michina`, `allana`, `puchcana;`, `tisana`, ],
+            },
+            {
+              n: `4`,
+              q: ``,
+              a: `Chai uchilla huambramanca _tanda_ta carai.`,
+              subs: [ `leche`, `machca`, `aicha`, `lulun`, ],
+            },
+          ],
+          [
+            {
+              n: `5`,
+              q: `Cancunaca ¿maimantaj ricunguichij?`,
+              a: `_Pueblo_manmi ricunchij.`,
+              subs: [ `escuela`, `chagra`, `culto`, `laguna`, `pugyu`, `larca`, `Quito`, `Guayaquil`, ],
+            },
+            {
+              n: `6`,
+              q: `¿Cancunacá?`,
+              a: `Ñucanchijca _escuela_manmi ricunchij.`,
+              subs: [ `chagra`, `culto`, `laguna`, `pugyu`, `larca`, `Quito`, `Guayaquil`, ],
+            },
+          ],
+          [
+            {
+              n: `7`,
+              q: `Ama _randi_chu. Ama _randi_chijchu.`,
+              a: `Ama _randi_nguichu. Ama _randi_nguichijchu.`,
+              subs: [ `randi-na`, `c'atu-na`, `trabaja-na`, `micu-na`, `apa-na`, `apamu-na`, `yacha-na`, `yachachi-na`,
+                `huaca-na`, `rura-na`, `caya-na`, `japi-na`, `jallma-na`, `tarpu-na`, `alla-na`, `cuchu-na`, ],
+            },
+          ],
+          [
+            {
+              n: `8`,
+              q: `¿_Huagra_ta charinguichu?`,
+              a: `Ari, charinimi.`,
+              subs: [ `azadón`, `lampa`, `bayeta`, `anacu`, `cullqui`, `millma`, ],
+            },
+            {
+              n: `9`,
+              q: `¿Pipajtaj chai jatun _oveja_ca?`,
+              a: `Nuca yayapajmi.`,
+              subs: [ `allcu`, `misi`, `huagra`, `cuchi`, `mula`, ],
+            },
+          ],
+          [
+            {
+              n: `10`,
+              q: `¿Pipajtaj chaita ahuacungui?`,
+              a: `Ñuca _huahua_pajmi.`,
+              subs: [ `churi`, `ushushi`, `mama`, `huauqui/turi`, ],
+            },
+            {
+              n: `11`,
+              q: `¿Pipajtaj chai uchilla _oveja_ca?`,
+              a: `Cambaj huauquipajmi/turipajmi.`,
+              subs: [ `allcu`, `misi`, `huagra`, `cuchi`, `mula`, ],
+            },
+          ],
+        ],
       },
       {
         phaseId: 'grammar',
-        items: [],
+        items: [
+          [
+            {
+              en: `1. Noun plural suffix **‑cuna** (precedes **-paj**; DV **-guna**)`,
+              es: `1. El sufijo plural nominal **‑cuna** (que precede a **-paj**; VD **-guna**)`,
+            },
+            {
+              en: `All nouns form the plural by adding **‑cuna**. Other suffixes such as **-man**, **-manta**, etc., may then be added to the plural noun:`,
+              es: `Todos los sustantivos forman su plural añadiendo **‑cuna**. Otros sufijos tales como **-man**, **-manta**, etc., pueden entonces añadirse al sustantivo plural:`,
+            },
+            {
+              qu: `huasicunaman`,
+              en: `to the houses`,
+              es: `a las casas`,
+            },
+            {
+              qu: `huasicunamanta`,
+              en: `from the houses`,
+              es: `desde las casas`,
+            },
+            {
+              qu: `huasicunata`,
+              en: `the houses (direct object)`,
+              es: `las casas (complemento directo)`,
+            },
+            {
+              qu: `huarmicunapaj`,
+              en: `of the women, for the women`,
+              es: `de las mujeres; para las mujeres`,
+            },
+          ],
+          [
+            {
+              en: `2. Plural personal pronouns`,
+              es: `2. Pronombres personales plurales`,
+            },
+            {
+              qu: `ñuca`,
+              en: `I`,
+              es: `yo`,
+            },
+            {
+              qu: `can`,
+              en: `you (informal)`,
+              es: `tú`,
+            },
+            {
+              qu: `quiquin`,
+              en: `you (formal)`,
+              es: `usted`,
+            },
+            {
+              qu: `pai`,
+              en: `he/she`,
+              es: `él/ella`,
+            },
+            {
+              qu: `ñucanchij __(VD__ ñucunchij__)__`,
+              en: `we`,
+              es: `nosotros`,
+            },
+            {
+              qu: `cancuna`,
+              en: `y’all (informal)`,
+              es: `ustedes (informal)`,
+            },
+            {
+              qu: `quiquincuna`,
+              en: `y’all (formal)`,
+              es: `ustedes (formal)`,
+            },
+            {
+              qu: `paicuna`,
+              en: `they`,
+              es: `ellos, ellas`,
+            },
+          ],
+          [
+            {
+              en: `Personal pronouns form their plurals exactly as do other nouns (by adding **‑cuna**) except in the case of the first person, which adds **-nchij**. Like their singular counterparts, plural pronouns may be omitted from a sentence, just like in Spanish, for the verb suffixes alone indicate the person and number of the subject. Model 6 is an example of such an omission of the subject pronoun.`,
+              es: `Los pronombres personales forman su plural de la misma manera que cualquier otro sustantivo (añadiendo **‑cuna**) excepto en el caso de la primera persona, que añade **-nchij**. Igual como sus contra-partes singulares, los pronombres plurales pueden omitirse de la ora-ción, igual como en español, ya que los sufijos verbales indican solitos la persona y número del sujeto. El Modelo 6 es un ejemplo de tal omisión del pronombre del sujeto.`,
+            },
+          ],
+          [
+            {
+              en: `3. Complete present-tense verb conjugation`,
+              es: `3. Conjugación completa de verbo presente`,
+            },
+            {
+              en: `The following is the complete conjugation of a present-tense verb:`,
+              es: `La siguiente es la conjugación completa de un verbo en tiempo presente:`,
+            },
+            {
+              en: `Present Tense of **ahuana** “to weave”`,
+              es: `Tiempo Presente de **ahuana** “tejer”`,
+            },
+            {
+              qu: `ahua_ni_`,
+              en: `I weave`,
+              es: `tejo`,
+            },
+            {
+              qu: `ahua_ngui_`,
+              en: `you weave`,
+              es: `tejes`,
+            },
+            {
+              qu: `ahua_n_`,
+              en: `he/she weaves`,
+              es: `teje`,
+            },
+            {
+              qu: `ahua_nchij_`,
+              en: `we weave`,
+              es: `tejemos`,
+            },
+            {
+              qu: `ahua_nguichij_`,
+              en: `y’all weave`,
+              es: `tejen ustedes`,
+            },
+            {
+              qu: `ahua_ncuna_`,
+              en: `they weave`,
+              es: `tejen ellos, ellas`,
+            },
+            {
+              en: `In Imbabura the plural forms are **ahuanchi**, **ahuanguichi**, **ahua(naju)n**, respectively.`,
+              es: `En Imbabura las formas plurales son **ahuanchi**, **ahuanguichi**, **ahua(naju)n**, respectivamente.`,
+            },
+            {
+              en: `These forms should be thoroughly memorized. They work for all Quichua verbs.`,
+              es: `Estas formas deben ser aprendidas cuidadosamente a memoria. Sirven para todo los verbos quichuas.`,
+            },
+          ],
+          [
+            {
+              en: `Note that all present tense suffixes start with **‑n^**. This **‑n^** could be considered the marker of the present tense in main verbs, to which the person-number suffixes are added, as in the following chart:`,
+              es: `Note que todos los sufijos del tiempo presente comien-zan con **‑n^**. Esta **‑n^** podría considerarse el marcador del tiempo presente en los verbos principales, al cual se añaden los sufijos de persona y número, como se ve en el siguiente cuadro:`,
+            },
+            {
+              qu: `ahua-nˆ-ni`,
+              en: `I weave`,
+              es: `tejo`,
+            },
+            {
+              qu: `ahua-nˆ-ngui `,
+              en: `you weave`,
+              es: `tejes`,
+            },
+            {
+              qu: `ahua-nˆ`,
+              en: `he/she weaves`,
+              es: `teje`,
+            },
+            {
+              qu: `ahua-nˆ-nchij`,
+              en: `we weave`,
+              es: `tejemos`,
+            },
+            {
+              qu: `ahua-nˆ-nguichij `,
+              en: `y’all weave`,
+              es: `tejen ustedes`,
+            },
+            {
+              qu: `ahua-nˆ-cuna`,
+              en: `they weave`,
+              es: `tejen ellos, ellas`,
+            },
+          ],
+          [
+            {
+              en: `However, as you can see, in the first and second person forms the person-number suffix already starts with an **-n**, so the two **n**’s are reduced to one. In the third person singular form, we see that there is no person-number suffix, only the present tense suffix.`,
+              es: `Sin embargo, como puede ver, en las formas de primera y segunda persona el sufijo de persona y número ya comienza con **-n**, así que se reducen las dos **n** a una. En la forma de tercera persona singular, vemos que no hay ningún sufijo de persona y número, sólo el sufijo de tiempo presente.`,
+            },
+            {
+              en: `In lesson 11 we will see that this exact same system holds true in the past tense as well`,
+              es: `En la lección 11 veremos que este mismo sistema también rige en el tiempo pasado.`,
+            },
+          ],
+          [
+            {
+              en: `4. Optional use of third person verb plural`,
+              es: `4. Uso opcional del plural en verbos de tercera persona`,
+            },
+            {
+              en: `In English to say “they goes” strikes one as quite incorrect, but in Quichua such a construction is perfectly acceptable. If a 3rd person plural subject having the subject **‑cuna** is explicitly stated in the sentence, the **‑cuna** need not be repeated in the verb. Thus one often hears such sentences as:`,
+              es: `En español parece muy incorrecto decir “ellos va”, pero en quichua tal construcción es perfectamente aceptable. Si se expresa explícitamente un sujeto de tercera persona plural que lleva el sufijo **‑cuna** en la oración, no es necesario repetir el **‑cuna** en el verbo. Por eso uno frecuentemente escucha oraciones tales como:`,
+            },
+            {
+              qu: `Chai huambracunaca ¿imatataj ruracun?`,
+              en: `What are those children doing?`,
+              es: `¿Qué están haciendo esos jóvenes?`,
+            },
+            {
+              qu: `Paicuna puebloman ricun.`,
+              en: `They’re going to town.`,
+              es: `Ellos está yendo al pueblo.`,
+            },
+          ],
+          [
+            {
+              en: `It may be easier to remember this by thinking of it as the observance of a sort of “principle of economy”, avoiding needless repetition of the **‑cuna** plural suffix. It seems to be more observed by older Quichua speakers than by the younger ones. The influence of Spanish is probably responsible for this. Younger Quichuas will often use a singular verb with a plural subject, then stop and “correct” themselves, adding the **‑cuna** in the verb as well.`,
+              es: `Tal vez será más fácil acordarse de esto si se le ve como seguir un “principio de economía”, evitando la repetición innecesaria del sufijo plural **‑cuna**. Parece que este principio se observan más por los quichuahablantes de edad que por los jóvenes. Es probable que esto se deba a la influencia del español. Los quichuahablantes más jóvenes frecuentemente usan un verbo singular con un sujeto plural, pero entonces se “corregirán”, añadiendo el **‑cuna** al verbo también.`,
+            },
+          ],
+          [
+            {
+              en: `They have probably had it dinned into them in school that a plural subject must always take a plural verb (which is of course quite true in Spanish), and are now trying hard to speak their own language “correctly”. The fact that each language is a grammatical law unto itself has so far escaped them. Although this repetition of the plural in the verb probably sounds stilted and affected to older Quichuas, the trend towards its use may in the end win out over the original usage. Here again you should merely follow your language helper’s choice.`,
+              es: `En la escuela se les ha sido enfatizado con insistencia que un sujeto plural tiene que tener un verbo plural (cual regla sí es absoluta en español), y ahora están haciendo un gran esfuerzo de hablar “correctamente” su propio idioma. El problema con esto es que cada idioma tiene su propio sistema gramatical y sus propias reglas. Y aunque tal repetición del plural en el verbo suena muy afectada y artificial para los quichuas de edad, la tendencia de hacerlo quizá en un futuro gane sobre el uso original. Pero aquí como siempre usted debe seguir el ejemplo de su ayudante quichua.`,
+            },
+          ],
+          [
+            {
+              en: `5. Negative imperative (or prohibitive) with **ama …-chu**`,
+              es: `5. Imperativo negativo (o prohibitivo) con **ama …-chu**`,
+            },
+            {
+              en: `The **‑chu** in Models 8 to 11 is the same neutral suffix encountered in earlier lessons. When preceded by the word **ama**, the verb form containing **‑chu** functions as a negative, the combination of **ama …-chu** being equivalent to English “Don’t” in prohibitions. If it seems hard to relate these two different functions of **‑chu**, think of its central meaning being something like “true”. When it occurs with **ama**, it still retains this central meaning, the combination meaning, freely, “Let it not be true that…” —in other words, “See to it that this does not become true of you!”`,
+              es: `El **‑chu** en los Modelos 8 al 11 es el mismo sufijo neutro encontrado en las lecciones anteriores. Cuando esté precedida por la palabra **ama**, la forma verbal que contiene **‑chu** tiene una función negativa, es decir, expresa una prohibición. Si le parece difícil relacionar estas dos funciones de **‑chu**, tal vez ayudar pensar que su significado central sea algo como “cierto”. Cuando ocurre con **ama**, aún retiene este significado central, el significado resultante siendo algo como, “qué no sea cierto que...”. (En otras palabras, “¡Asegúrate que esto no sea cierto para til”)`,
+            },
+          ],
+        ],
       },
     ],
   },
