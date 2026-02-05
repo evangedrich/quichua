@@ -15,6 +15,9 @@
 .svgCursor, .svgHover {
   cursor: pointer;
 }
+.svgMove {
+  will-change: transform;
+}
 /*.svgBox:hover {
   transform: scale(1.5);
   z-index: 2;

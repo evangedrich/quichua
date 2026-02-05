@@ -12,24 +12,7 @@ import Ex from '@/app/components/ex';
 import { tocapuLibrary, tocapuSearch } from '@/app/ui/tocapu';
 import tocapuStyles from '@/app/ui/tocapu.module.css';
 
-interface bilingualType {
-  en: string | string[],
-  es: string | string[],
-}
-interface trilingualType {
-  qu: string,
-  en: string,
-  es: string,
-}
-interface phaseType {
-  phaseId: string,
-  items: bilingualType[] | trilingualType[] | bilingualType[][] | trilingualType[][],
-}
-interface lessonType {
-  slug: string,
-  topic: bilingualType,
-  contents: phaseType[],
-}
+import { phaseType, lessonType } from '@/app/lib/lessons';
 
 export async function generateStaticParams() {
   return lessons.flatMap(lesson =>

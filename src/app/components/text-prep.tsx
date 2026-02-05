@@ -25,8 +25,9 @@ export function translator(obj: {en: string, es: string}): string {
 
 export default function Text({ textObj, type, children }: inputType): React.ReactNode {
   const { lang } = useLang();
-  const inputText: objType = children ? children : (obj) ? obj : textObj;
-  const text: string = lang==='en' ? inputText.en : inputText.es;
+  const inputText = children ? children : textObj;
+  const rawText = (lang==='en' ? inputText?.en : inputText?.es) ?? '';
+  const text = Array.isArray(rawText) ? rawText.join('\n') : rawText;
   let textEl: React.ReactNode = textParser(text);
   if (type==='h1') { textEl = <h1>{textEl}</h1>; }
   else if (type==='h2') { textEl = <h2>{textEl}</h2>; }

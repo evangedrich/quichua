@@ -6,12 +6,13 @@ import { montserrat, barlowCondensed } from '@/app/ui/fonts'
 import { knots, getIndexArray, convertIdToTitle } from '@/app/components/khipu';
 import { translator } from '@/app/components/text-prep';
 import React, { Fragment } from 'react';
+import { Dispatch, SetStateAction } from 'react';
 import { useRouter } from 'next/navigation';
 
-export default function KhipuMobile({ show, toClose }) {
+export default function KhipuMobile({ show, toClose }: { show: boolean; toClose: Dispatch<SetStateAction<boolean>> }) {
   const router = useRouter();
 
-  const index = getIndexArray(lessons);
+  const index = getIndexArray();
   const lessonTot: number = index.length;
   const cordThickness = 0.75;
   const knotSize = 1.5;
@@ -21,7 +22,7 @@ export default function KhipuMobile({ show, toClose }) {
   let maxSecTot: number = 0; index.forEach(lesson => { maxSecTot = lesson.sections.length>maxSecTot ? lesson.sections.length : maxSecTot; });
   const maxHeight: number = maxSecTot*cordGap+(bumper*2);
 
-  const lineBr = (txt,x) => {
+  const lineBr = (txt: string, x: number) => {
     const results = txt.includes(' ')
     ? txt.split(' ').map((word,i) => <tspan key={i} x={x} dy={i===0?'-0.5em':'1em'}>{word}</tspan>)
     : txt; return results;

@@ -1,6 +1,7 @@
 import { lessons } from '@/app/lib/lessons';
 import styles from '@/app/ui/khipu.module.css';
 import { montserrat } from '@/app/ui/fonts'
+import { Dispatch, SetStateAction } from 'react';
 import Link from 'next/link';
 import { translator } from '@/app/components/text-prep';
 
@@ -13,7 +14,7 @@ interface indexType {
     parts: {
       id: string,
       url: string,
-    }
+    }[]
   }[],
 }
 
@@ -115,8 +116,8 @@ export function getIndexArray() {
   });
   return index;
 }
-export function getNeighbor(url) {
-  const index = getIndexArray(lessons);
+export function getNeighbor(url: string) {
+  const index = getIndexArray();
   const flatIndex = index.flatMap(lesson => [
     lesson,
     ...lesson.sections.flatMap(section =>
@@ -128,12 +129,12 @@ export function getNeighbor(url) {
   return { prev: prev, next: next }
 }
 
-export default function KhipuIndex({ show, onLeave }) {
+export default function KhipuIndex({ show, onLeave }: { show: boolean; onLeave: Dispatch<SetStateAction<boolean>> }) {
   const index = getIndexArray();
   const lessonLength: string = (show) ? `${3+((2)*index.length)}rem` : '0';
   const lessonNodeVis = (show) ? 'flex' : 'none';
 
-  const getSectionLineHeight = (lesson) => {
+  const getSectionLineHeight = (lesson: indexType) => {
     return `${0.75+2*lesson.sections.length}rem`;
   };
 

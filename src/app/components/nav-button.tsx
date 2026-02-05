@@ -14,7 +14,7 @@ interface navProps {
   icon: string,
   color: string,
   func?: () => void,
-  textHide: boolean,
+  textHide?: boolean,
 }
 
 export default function NavButton({ text, icon, color, func, textHide }: navProps) {

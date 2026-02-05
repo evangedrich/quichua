@@ -865,7 +865,7 @@ export const tocapuLibrary: tocapu[] = [
   }
 ];
 
-export const tocapuSearch = (name: string):tocapu => {
+export const tocapuSearch = (name: string): React.ReactNode => {
   let hit: React.ReactNode = tocapuLibrary[0].svg;
   tocapuLibrary.forEach(tocapu => {
     if (name===tocapu.name) { hit = tocapu.svg; }

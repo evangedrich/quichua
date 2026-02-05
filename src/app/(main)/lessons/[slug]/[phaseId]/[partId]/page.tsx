@@ -1,4 +1,4 @@
-import { lessons } from '@/app/lib/lessons';
+import { lessons, phaseType } from '@/app/lib/lessons';
 import { getLessonBySlug, getLessonIndexBySlug } from '@/app/(main)/lessons/[slug]/page';
 import { getPhase, getPhaseIndex, getPhaseData } from '@/app/(main)/lessons/[slug]/[phaseId]/page';
 import { getNeighbor } from '@/app/components/khipu';
@@ -43,11 +43,16 @@ export default async function Part({ params }: { params: Promise<{ slug: string,
   const { slug, phaseId, partId } = await params;
   const { title, svgId } = getPhaseData(slug,phaseId);
   const part = getPart(slug,phaseId,partId);
-  const subPhase = { phase: phaseId, items: part }; // this is the part formatted as a phase for Models/Vocab/Ex components
+  const subPhase = { phaseId: phaseId, items: Array.isArray(part) ? part : (part ? [part] : []) } as phaseType; // this is the part formatted as a phase for Models/Vocab/Ex components
   const partIndex = Number(partId)-1;
   const partLength = getPartLength(slug,phaseId,partId) ?? 1;
   const progress = partIndex/(partLength-1 || 1); //(partIndex+1)/partLength;
-  let offset = 0; for (let i=0; i<partIndex; i++) { offset += getPhase(slug,phaseId).items[i].length; }
+  const phase = getPhase(slug,phaseId);
+  let offset: number = 0;
+  for (let i=0; i<partIndex; i++) {
+    const item = phase?.items[i];
+    if (Array.isArray(item)) {offset +=  item?.length;}
+  }
   const { prev, next } = getNeighbor(`/lessons/${slug}/${phaseId}/${partId}`);
   return (
     <>

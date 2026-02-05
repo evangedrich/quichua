@@ -1,17 +1,24 @@
 interface bilingualType {
-  en: string | string[],
-  es: string | string[],
+  en: string,
+  es: string,
 }
 interface trilingualType {
   qu: string,
   en: string,
   es: string,
 }
-interface phaseType {
-  phaseId: string,
-  items: bilingualType[] | trilingualType[],
+export interface subsType {
+  n: string,
+  q: string,
+  a: string,
+  subs: string[],
 }
-interface lessonType {
+export interface phaseType {
+  phaseId: string;
+  items: (string | bilingualType | trilingualType | subsType)[]
+       | (string | bilingualType | trilingualType | subsType)[][];
+}
+export interface lessonType {
   slug: string,
   topic: bilingualType,
   contents: phaseType[],
@@ -3545,32 +3552,32 @@ export const lessons: lessonType[] = [
               es: `Note que todos los sufijos del tiempo presente comien-zan con **‑n^**. Esta **‑n^** podría considerarse el marcador del tiempo presente en los verbos principales, al cual se añaden los sufijos de persona y número, como se ve en el siguiente cuadro:`,
             },
             {
-              qu: `ahua-nˆ-ni`,
+              qu: `ahua-n^-ni`,
               en: `I weave`,
               es: `tejo`,
             },
             {
-              qu: `ahua-nˆ-ngui `,
+              qu: `ahua-n^-ngui `,
               en: `you weave`,
               es: `tejes`,
             },
             {
-              qu: `ahua-nˆ`,
+              qu: `ahua-n^`,
               en: `he/she weaves`,
               es: `teje`,
             },
             {
-              qu: `ahua-nˆ-nchij`,
+              qu: `ahua-n^-nchij`,
               en: `we weave`,
               es: `tejemos`,
             },
             {
-              qu: `ahua-nˆ-nguichij `,
+              qu: `ahua-n^-nguichij `,
               en: `y’all weave`,
               es: `tejen ustedes`,
             },
             {
-              qu: `ahua-nˆ-cuna`,
+              qu: `ahua-n^-cuna`,
               en: `they weave`,
               es: `tejen ellos, ellas`,
             },
