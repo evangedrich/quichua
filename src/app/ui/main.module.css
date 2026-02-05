@@ -121,7 +121,7 @@
   width: 100%;
 }
 .navGroup {
-  max-height: 22.5rem;
+  max-height: 30.1rem; /* 3.75 x number of total buttons */
   overflow: hidden;
   transition: max-height 200ms ease-out;
   margin-right: -0.1rem;
@@ -169,11 +169,15 @@
   margin-bottom: 0.75rem;
 }
 
-.info a {
+.info a, .poems a {
   color: var(--color-theme);
 }
-.info a:hover {
+.info a:hover, .poems li:hover, .poems a:hover {
   text-decoration: underline;
+}
+.poems li {
+  display: inline-block;
+  margin-bottom: 0.25rem;
 }
 
 .footer {

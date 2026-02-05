@@ -17,6 +17,7 @@ export default function Header() {
   const [navVisible,setNavVisible] = useState(false);
   const [showIndex,setShowIndex] = useState(false);
   const [settingsVisible,setSettingsVisible] = useState(false);
+  const [moreVisible,setMoreVisible] = useState(false);
   const { theme, toggleTheme } = useTheme();
   const { motion, toggleMotion } = useMotion();
   const { lang, toggleLang } = useLang();
@@ -26,12 +27,12 @@ export default function Header() {
     <header className={styles.header}>
       <Link href="/"><HomeIcon /></Link>
       {!isMobile ? <KhipuIndex show={showIndex} onLeave={setShowIndex} /> : <KhipuMobile show={showIndex} toClose={setShowIndex} />}
-      <div className={styles.nav} onMouseLeave={() => setSettingsVisible(false)}>
+      <div className={styles.nav} onMouseLeave={() => { setSettingsVisible(false); setMoreVisible(false);}}>
         <button
           className={styles.mobileToggle}
           onClick={() => {
             setNavVisible(!navVisible);
-            if (navVisible&&settingsVisible) { setSettingsVisible(false); }
+            if (navVisible&&(settingsVisible||moreVisible)) { setSettingsVisible(false); setMoreVisible(false); }
           } }
         >
           <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +47,11 @@ export default function Header() {
             <NavButton icon="earthquake" text={motion ? <>motion <b>on</b> | off</>:<>motion on | <b>off</b></>} color="#e85538" />
             <NavButton icon="owl" text={lang==='en' ? <><b>english</b> | español</>:<>english | <b>español</b></>} color="#5f633a" />
           </div>
-          <NavButton icon="sinchi" text="info" color="#d9b484" />
+          <NavButton icon="sinchi" text="more" color="#d9b484" func={() => setMoreVisible(!moreVisible)} />
+          <div className={`${styles.settingsButtons} ${moreVisible?'':styles.hideSettings}`}>
+            <NavButton icon="twoEyes1" text="/poems" color="#e85538" />
+            <NavButton icon="curls" text="/info" color="#5f633a" />
+          </div>
       </div>
       </div>
     </header>

@@ -1,8 +1,8 @@
-interface bilingualType {
+export interface bilingualType {
   en: string,
   es: string,
 }
-interface trilingualType {
+export interface trilingualType {
   qu: string,
   en: string,
   es: string,

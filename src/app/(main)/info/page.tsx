@@ -16,7 +16,7 @@ export default function Info() {
         <Text type="p">{text1}</Text>
         <Text type="p">{text2}</Text>
       </div>
-      <Button text="← back to lessons" to="back" />
+      <Button text="← back" to="back" />
     </>
   )
 }

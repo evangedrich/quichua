@@ -9,6 +9,8 @@ import useTheme from '@/app/hooks/useTheme';
 import useMotion from '@/app/hooks/useMotion';
 import useLang from '@/app/hooks/useLang';
 
+import { renderToString } from 'react-dom/server';
+
 interface navProps {
   text: string | React.ReactNode,
   icon: string,
@@ -27,7 +29,7 @@ export default function NavButton({ text, icon, color, func, textHide }: navProp
     else if (icon==='esses') { toggleTheme(); }
     else if (icon==='earthquake') { toggleMotion(); }
     else if (icon==='owl') { toggleLang(); }
-    else if (icon==='sinchi') { router.push(`/${text}`); }
+    else if (icon==='twoEyes1' || icon==='curls') { router.push(renderToString(text)); }
   };
   return (
     <button className={`${(motion)?tocapuStyles.svgHover:''} ${styles.navButton}`} onClick={func?func:clicked}>
