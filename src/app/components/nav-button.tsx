@@ -1,7 +1,7 @@
 'use client';
 
 import styles from '@/app/ui/main.module.css';
-import { tocapuLibrary, tocapuSearch } from '@/app/ui/tocapu';
+import { tocapuLibrary, tocapuSearch } from '@/app/lib/tocapu';
 import tocapuStyles from '@/app/ui/tocapu.module.css';
 
 import { useRouter } from 'next/navigation';

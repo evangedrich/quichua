@@ -10,7 +10,7 @@ export default function Lessons() {
   return (
     <>
       <Text type="p">{introText}</Text>
-      <Button text="let's go! →" to={`lessons/${lessons[0].slug}`} />
+      <Button text="let's go! →" to={`/lessons/${lessons[0].slug}`} />
     </>
   )
 }

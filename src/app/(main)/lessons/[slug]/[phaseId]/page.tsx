@@ -9,7 +9,7 @@ import Models from '@/app/components/models';
 import Vocab from '@/app/components/vocab';
 import Ex from '@/app/components/ex';
 
-import { tocapuLibrary, tocapuSearch } from '@/app/ui/tocapu';
+import { tocapuLibrary, tocapuSearch } from '@/app/lib/tocapu';
 import tocapuStyles from '@/app/ui/tocapu.module.css';
 
 import { phaseType, lessonType } from '@/app/lib/lessons';
@@ -53,10 +53,12 @@ export default async function Phase({ params }: { params: Promise<{ slug: string
   const contents = getLessonBySlug(slug)?.contents;
   const lessonIndex: number = getLessonIndexBySlug(slug);
 
+  const sectionNo = `${(getLessonIndexBySlug(slug) ?? 0)+1}.${(getPhaseIndex(slug,phaseId) ?? 0)+1}`;
+
   const { prev, next } = getNeighbor(`/lessons/${slug}/${phaseId}`);
   return (
     <>
-      <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
+      <h1 className="text-2xl mb-4">{sectionNo} <i><Text>{title}</Text></i></h1>
       <PhaseIcon id={svgId} margin={true} />
       <>{element}</>
       <Button text="back" to={prev} />

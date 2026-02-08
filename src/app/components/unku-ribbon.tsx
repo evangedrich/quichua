@@ -2,11 +2,12 @@
 
 import styles from '@/app/ui/home.module.css';
 import tocapuStyles from '@/app/ui/tocapu.module.css';
-import { tocapuLibrary } from '@/app/ui/tocapu';
+import { tocapuLibrary } from '@/app/lib/tocapu';
 import useWindowWidth from '@/app/hooks/useWindowWidth';
 import useTheme from '@/app/hooks/useTheme';
 import useMotion from '@/app/hooks/useMotion';
 import useLang from '@/app/hooks/useLang';
+import { useRouter } from 'next/navigation';
 
 interface unkuProps {
   pattern: number,
@@ -25,6 +26,7 @@ export default function UnkuRibbon({ pattern }: unkuProps) {
   const { theme, toggleTheme } = useTheme();
   const { motion, toggleMotion } = useMotion();
   const { lang, toggleLang } = useLang();
+  const router = useRouter();
   const pattern1: string[][] = [
     ["twoEyes2","firstAid","waves","curls","maskaypacha","sinchi","key2","earthquake","owl","waves","esses","key1"],
     ["sinchi","key1","snakes","escalators","owl","firstAid","teeth2","staircases","exes","sinchi","escalators","worms"],
@@ -66,6 +68,8 @@ export default function UnkuRibbon({ pattern }: unkuProps) {
     if (id==='esses') { toggleTheme(); }
     else if (id==='earthquake' || id==="altEarthquake") { toggleMotion(); }
     else if (id==='owl') { toggleLang(); }
+    else if (id==='twoEyes1') { router.push('/poems'); }
+    else if (id==='curls') { router.push('/info'); }
     else { console.log(id); }
   }
   return (

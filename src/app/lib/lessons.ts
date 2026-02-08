@@ -253,12 +253,12 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `2. Suffixes **‑chu** and **-mi**`,
-              es: `2. Los sufijos **‑chu** y **-mi**`,
+              en: `2. Suffixes **‑chu** and **‑mi**`,
+              es: `2. Los sufijos **‑chu** y **‑mi**`,
             },
             {
-              en: `Both of these are emphatic suffixes, indicating primary emphasis on the word to which they are attached—something that in English we usually do by raising the pitch and increasing the volume of the voice on the emphasized word. They are also *modal* suffixes, indicating the mood of the sentence in which they occur—again something which in English is done largely by intonation. The **‑chu** is used for questions (of the true-or-false variety that must be answered by either “Yes” or “No”), while **-mi** occurs in affirmative statements.`,
-              es: `Estos dos son sufijos enfáticos, indicando un énfasis especial en la palabra a la cual están adjuntas. En español hacemos tal énfasis alzando el tono y la fuerza de la voz en la palabra enfatizada. Éstos también son sufijos modales, que indican el modo de la oración en la que ocurren. En español esta función también se expresa generalmente por la entonación de la voz. El sufijo **‑chu** se usa para hacer preguntas a las cuales la respuesta tiene que ser “sí” o “no”. El sufijo **-mi** ocurre en las declaraciones afirmativas.`,
+              en: `Both of these are emphatic suffixes, indicating primary emphasis on the word to which they are attached—something that in English we usually do by raising the pitch and increasing the volume of the voice on the emphasized word. They are also *modal* suffixes, indicating the mood of the sentence in which they occur—again something which in English is done largely by intonation. The **‑chu** is used for questions (of the true-or-false variety that must be answered by either “Yes” or “No”), while **‑mi** occurs in affirmative statements.`,
+              es: `Estos dos son sufijos enfáticos, indicando un énfasis especial en la palabra a la cual están adjuntas. En español hacemos tal énfasis alzando el tono y la fuerza de la voz en la palabra enfatizada. Éstos también son sufijos modales, que indican el modo de la oración en la que ocurren. En español esta función también se expresa generalmente por la entonación de la voz. El sufijo **‑chu** se usa para hacer preguntas a las cuales la respuesta tiene que ser “sí” o “no”. El sufijo **‑mi** ocurre en las declaraciones afirmativas.`,
             },
           ],
         ],
@@ -268,8 +268,8 @@ export const lessons: lessonType[] = [
   {
     slug: '2',
     topic: {
-      en: '**-ca**; **‑pish**; greetings; final accent; present singular of **cana**',
-      es: '**-ca**; **‑pish**; saludos; acento final; presente singular de **cana**',
+      en: '**‑ca**; **‑pish**; greetings; final accent; present singular of **cana**',
+      es: '**‑ca**; **‑pish**; saludos; acento final; presente singular de **cana**',
     },
     contents: [
       {
@@ -463,16 +463,16 @@ export const lessons: lessonType[] = [
         items: [
           [
             {
-              en: `1. Suffixes **-ca** and **‑pish** (Imb. **-pash**)`,
-              es: `1. Los sufijos **-ca** y **‑pish** (Imb. **-pash**)`,
+              en: `1. Suffixes **‑ca** and **‑pish** (Imb. **‑pash**)`,
+              es: `1. Los sufijos **‑ca** y **‑pish** (Imb. **‑pash**)`,
             },
             {
-              en: `Both of these suffixes indicate a secondary emphasis on the words to which they are attached. They do not, however, indicate the *mood* of the sentence (as do suffixes of primary emphasis like **‑chu** and **-mi**).`,
-              es: `Estos dos sufijos indican un énfasis secundario en las palabras en que se encuentran. No indican el *modo* de la oración (tal como hacen los sufijos de énfasis primaria como **‑chu** y **-mi**).`,
+              en: `Both of these suffixes indicate a secondary emphasis on the words to which they are attached. They do not, however, indicate the *mood* of the sentence (as do suffixes of primary emphasis like **‑chu** and **‑mi**).`,
+              es: `Estos dos sufijos indican un énfasis secundario en las palabras en que se encuentran. No indican el *modo* de la oración (tal como hacen los sufijos de énfasis primaria como **‑chu** y **‑mi**).`,
             },
             {
-              en: `In Models 2b and 5b, **-ca** is used with the subject to highlight the fact that there has been a change of subject, although the understood verb remains the same.`,
-              es: `En los Modelos 2b y 5b, el **-ca** se usa en el sujeto para resaltar el hecho de que ha sido un cambio de sujeto, aunque el verbo implícito sigue igual. En otras palabras, frecuentemente se usa el sufijo **-ca** como *marcador de tópico*, para marcar el *tópico* actual.`,
+              en: `In Models 2b and 5b, **‑ca** is used with the subject to highlight the fact that there has been a change of subject, although the understood verb remains the same.`,
+              es: `En los Modelos 2b y 5b, el **‑ca** se usa en el sujeto para resaltar el hecho de que ha sido un cambio de sujeto, aunque el verbo implícito sigue igual. En otras palabras, frecuentemente se usa el sufijo **‑ca** como *marcador de tópico*, para marcar el *tópico* actual.`,
             },
             {
               en: `In Models 3, 5a and 6, **‑pish** is used with the subject to highlight the fact that the same thing holds true of each one of these different subjects.`,
@@ -532,8 +532,8 @@ export const lessons: lessonType[] = [
   {
     slug: '3',
     topic: {
-      en: 'types of suffixes; **-man**; **-taj~** as question marker; **-cu**',
-      es: 'tipos de sufijos;  **-man**; **-taj~** como marcador de pregunta; **-cu**',
+      en: 'types of suffixes; **‑man**; **‑taj~** as question marker; **-cu**',
+      es: 'tipos de sufijos;  **‑man**; **‑taj~** como marcador de pregunta; **-cu**',
     },
     contents: [
       {
@@ -725,12 +725,12 @@ export const lessons: lessonType[] = [
               es: `1. Variaciones dialectales`,
             },
             {
-              en: `Pulucate, Caliata, Imbabura, and SHQ use **‑man**, but Colta uses **-mun**.`,
-              es: `En Pulucate, Caliata, Imbabura, y el QSS usan **-man**, pero en Colta usan **-mun**.`,
+              en: `Pulucate, Caliata, Imbabura, and SHQ use **‑man**, but Colta uses **‑mun**.`,
+              es: `En Pulucate, Caliata, Imbabura, y el QSS usan **‑man**, pero en Colta usan **‑mun**.`,
             },
             {
-              en: `Pulucate, Caliata, and SHQ use **-taj~**, but Colta, Los Ángeles, and some other sections of Chimborazo and Bolivar provinces use **-tij~**, and Imbabura uses **-ta~**. (In Imbabura a **t** following **n** usually becomes **d**, so **-ta** in such positions becomes **-da**.)`,
-              es: `En Pulucate, Caliata, y el QSS usan **-taj~**, pero en Colta, Los Ángeles, y algunos otros sectores de Chimborazo y Bolívar usan **-tij~**, y en Imbabura usan **-ta~**. (En Imbabura una **t** seguida por una **n** generalmente se convierte en **d**, así que **-ta** en tales posiciones se convierte en **-da**.)`,
+              en: `Pulucate, Caliata, and SHQ use **‑taj~**, but Colta, Los Ángeles, and some other sections of Chimborazo and Bolivar provinces use **-tij~**, and Imbabura uses **‑ta~**. (In Imbabura a **t** following **n** usually becomes **d**, so **‑ta** in such positions becomes **-da**.)`,
+              es: `En Pulucate, Caliata, y el QSS usan **‑taj~**, pero en Colta, Los Ángeles, y algunos otros sectores de Chimborazo y Bolívar usan **-tij~**, y en Imbabura usan **‑ta~**. (En Imbabura una **t** seguida por una **n** generalmente se convierte en **d**, así que **‑ta** en tales posiciones se convierte en **-da**.)`,
             },
           ],
           [
@@ -830,22 +830,22 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `The person-tense suffixes **-ni**, **-ngui**, **-n**, are examples of *verb suffixes*; **‑chu**, **‑mi**, **‑ca**, and **‑pish** are *neutral suffixes*, for they may occur with either nouns or verbs. So far no *noun suffixes* have occurred.`,
-              es: `Los sufijos de tiempo y persona **-ni**, **-ngui**, **-n**, son ejemplos de *sufijos verbales*; **‑chu**, **‑mi**, **‑ca**, y **‑pish** son *sufijos neutrales*, ya que pueden ocurrir tanto en los verbos como en los sustantivos. Hasta el momento no hemos visto ningún *sufijo nominal*.`,
+              en: `The person-tense suffixes **‑ni**, **‑ngui**, **‑n**, are examples of *verb suffixes*; **‑chu**, **‑mi**, **‑ca**, and **‑pish** are *neutral suffixes*, for they may occur with either nouns or verbs. So far no *noun suffixes* have occurred.`,
+              es: `Los sufijos de tiempo y persona **‑ni**, **‑ngui**, **‑n**, son ejemplos de *sufijos verbales*; **‑chu**, **‑mi**, **‑ca**, y **‑pish** son *sufijos neutrales*, ya que pueden ocurrir tanto en los verbos como en los sustantivos. Hasta el momento no hemos visto ningún *sufijo nominal*.`,
             },
             {
-              en: `Still another type of suffix, while it occurs with nouns, is not a noun suffix because the resultant combination no longer functions as a noun, but as an adverb. Such suffixes are called *adverbial postpositions*. The **-man** used in the Models of this lesson is such an adverbial postposition.`,
-              es: `Hay aún otro tipo de sufijo, el cual, aunque ocurre en los sustantivos, no es un sufijo nominal porque la combinación resultante ya no funciona como sustantivo, sino como adverbio. Tales sufijos se llaman *posposiciones adverbiales*. El **-man** usado en los Modelos de esta lección es una de estas posposiciones adverbiales.`,
+              en: `Still another type of suffix, while it occurs with nouns, is not a noun suffix because the resultant combination no longer functions as a noun, but as an adverb. Such suffixes are called *adverbial postpositions*. The **‑man** used in the Models of this lesson is such an adverbial postposition.`,
+              es: `Hay aún otro tipo de sufijo, el cual, aunque ocurre en los sustantivos, no es un sufijo nominal porque la combinación resultante ya no funciona como sustantivo, sino como adverbio. Tales sufijos se llaman *posposiciones adverbiales*. El **‑man** usado en los Modelos de esta lección es una de estas posposiciones adverbiales.`,
             },
           ],
           [
             {
-              en: `2. Adverbial postposition **-man** (**‑mun**)`,
-              es: `2. Posposición adverbial **-man** (**-mun**)`,
+              en: `2. Adverbial postposition **‑man** (**‑mun**)`,
+              es: `2. Posposición adverbial **‑man** (**‑mun**)`,
             },
             {
               en: `This indicates *motion to or toward* the noun with which it occurs. A word in which this **‑man** occurs functions as an adverb in the sentence, modifying the verb, since it tells *in what direction* the action takes place.`,
-              es: `Este sufijo indica *movimiento a o hacia* el sustantivo con que ocurre. Una palabra en que ocurre este **-man** funciona como un adverbio en la oración, modificando el verbo, ya que indica *en qué dirección* toma lugar la acción.`,
+              es: `Este sufijo indica *movimiento a o hacia* el sustantivo con que ocurre. Una palabra en que ocurre este **‑man** funciona como un adverbio en la oración, modificando el verbo, ya que indica *en qué dirección* toma lugar la acción.`,
             },
           ],
           [
@@ -884,16 +884,16 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `3. Neutral suffix **-taj~** (**-tij~**, Imb. **-ta~**)`,
-              es: `3. Sufijo neutral **-taj~** (**-tij~**, Imb. **-ta~**)`,
+              en: `3. Neutral suffix **‑taj~** (**-tij~**, Imb. **‑ta~**)`,
+              es: `3. Sufijo neutral **‑taj~** (**-tij~**, Imb. **‑ta~**)`,
             },
             {
-              en: `This is a suffix of primary emphasis, like **‑chu** and **-mi**. As well as giving primary emphasis to the word with which it occurs, **-taj~** indicates the *mood* of the sentence as being interrogative. The difference between **-taj~** and **‑chu** is that:`,
-              es: `Éste es un sufijo de énfasis primario, igual como **‑chu** y **-mi**. Además de dar la énfasis primaria a la palabra en que ocurre, el **-taj~** indica que el *modo* de la oración es interrogativo. La diferencia entre el **‑taj~** y el **‑chu** es así:`,
+              en: `This is a suffix of primary emphasis, like **‑chu** and **‑mi**. As well as giving primary emphasis to the word with which it occurs, **‑taj~** indicates the *mood* of the sentence as being interrogative. The difference between **‑taj~** and **‑chu** is that:`,
+              es: `Éste es un sufijo de énfasis primario, igual como **‑chu** y **‑mi**. Además de dar la énfasis primaria a la palabra en que ocurre, el **‑taj~** indica que el *modo* de la oración es interrogativo. La diferencia entre el **‑taj~** y el **‑chu** es así:`,
             },
             {
-              en: `**-taj~** indicates a question requiring an answer other than “Yes” or “No”. Instead, it requests *information*.`,
-              es: `El **-taj~** indica una pregunta que requiere una respuesta que no sea “Sí” o “No”. En cambio, solicita *información*.`,
+              en: `**‑taj~** indicates a question requiring an answer other than “Yes” or “No”. Instead, it requests *information*.`,
+              es: `El **‑taj~** indica una pregunta que requiere una respuesta que no sea “Sí” o “No”. En cambio, solicita *información*.`,
             },
             {
               en: `**‑chu** indicates a question requiring a “Yes” or “No” answer.`,
@@ -946,12 +946,12 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `4. Optional use of **-taj~** and **-mi**`,
-              es: `4. El uso opcional de **-taj~** y **-mi**`,
+              en: `4. Optional use of **‑taj~** and **‑mi**`,
+              es: `4. El uso opcional de **‑taj~** y **‑mi**`,
             },
             {
-              en: `There is a good deal of variation among the different Quichua languages and dialects with respect to the use of these suffixes, although all dialects do make use of them. Even in Colta, where they seem to be most extensively used, they are quite often dropped, especially in familiar, colloquial speech. However, whenever a question or statement is to be *emphasized*, they must be used. The Models given here are in the more complete form, using the **-taj~** and the **-mi**. If your language helper objects to them, don't insist on using them. They are given here for much the same reason that prompts us to teach a foreigner “Where did you go this morning?” before “Wheredya go s'morning?”`,
-              es: `Existe bastante variación entre los diferentes idiomas y dialectos del quichua con respecto al uso de estos sufijos, aunque todos los dialectos los utilizan. Aun en Colta, en donde se usan muy frecuentemente, muchas veces se omiten, especialmente en el habla informal y familiar. Sin embargo, en cualquier situación en que es necesario *enfatizar* una pregunta o una declaración, deben usarse. Los Modelos dados aquí están en la forma más completa, usando el **-taj~** y el **-mi**. Si a su ayudante quichua no le gusta usarlas, no insista en usarlas. Se dan aquí para que aprenda las formas más claras y completas.`,
+              en: `There is a good deal of variation among the different Quichua languages and dialects with respect to the use of these suffixes, although all dialects do make use of them. Even in Colta, where they seem to be most extensively used, they are quite often dropped, especially in familiar, colloquial speech. However, whenever a question or statement is to be *emphasized*, they must be used. The Models given here are in the more complete form, using the **‑taj~** and the **‑mi**. If your language helper objects to them, don't insist on using them. They are given here for much the same reason that prompts us to teach a foreigner “Where did you go this morning?” before “Wheredya go s'morning?”`,
+              es: `Existe bastante variación entre los diferentes idiomas y dialectos del quichua con respecto al uso de estos sufijos, aunque todos los dialectos los utilizan. Aun en Colta, en donde se usan muy frecuentemente, muchas veces se omiten, especialmente en el habla informal y familiar. Sin embargo, en cualquier situación en que es necesario *enfatizar* una pregunta o una declaración, deben usarse. Los Modelos dados aquí están en la forma más completa, usando el **‑taj~** y el **‑mi**. Si a su ayudante quichua no le gusta usarlas, no insista en usarlas. Se dan aquí para que aprenda las formas más claras y completas.`,
             },
           ],
           [
@@ -1005,8 +1005,8 @@ export const lessons: lessonType[] = [
   {
     slug: '4',
     topic: {
-      en: '**-man** used as “for”; **-na** of infinitive; roots vs. stems',
-      es: '**-man** usado como “por”; **-na** del infinitivo; raíces simples y compuestas',
+      en: '**‑man** used as “for”; **‑na** of infinitive; roots vs. stems',
+      es: '**‑man** usado como “por”; **‑na** del infinitivo; raíces simples y compuestas',
     },
     contents: [
       {
@@ -1219,22 +1219,22 @@ export const lessons: lessonType[] = [
         items: [
           [
             {
-              en: `1. **-man** used in the sense of “for”, or “to get”`,
-              es: `1. **-man** usado con el sentido de “por”, o “para recoger”`,
+              en: `1. **‑man** used in the sense of “for”, or “to get”`,
+              es: `1. **‑man** usado con el sentido de “por”, o “para recoger”`,
             },
             {
-              en: `In English we say that we are going “for water”, or “to get water”, but in Quichua one may merely say that they are going “to water”. This **-man** is the same one studied in the last lesson, but its usage here is slightly different. There is little danger of ambiguity however, for the type of noun used will suggest whether the **-man** means simply “to”, or whether it means “to get”. Movable objects of general use like water, firewood, hay grass, etc., are usually being “got”, while places like house, field, town, etc. are always being “gone to”.`,
-              es: `En español decimos que vamos “por agua”, o “para recoger agua”, pero en quichua uno puede simplemente decir que va “al agua”. Este **-man** es el mismo que fue estudiado en la lección anterior, pero su uso aquí es un poco diferente. Aun así, hay poco riesgo de ambigüedad, ya que el tipo de sustantivo usado sugerirá si el **-man** significa simplemente “a” o “hacia”, o si significa “para recoger”. Generalmente “se recogen” los objetos movibles de uso general como agua, leña, paja, etc., mientras que generalmente “se va” a los lugares como casa, chacra, pueblo, etc.`,
+              en: `In English we say that we are going “for water”, or “to get water”, but in Quichua one may merely say that they are going “to water”. This **‑man** is the same one studied in the last lesson, but its usage here is slightly different. There is little danger of ambiguity however, for the type of noun used will suggest whether the **‑man** means simply “to”, or whether it means “to get”. Movable objects of general use like water, firewood, hay grass, etc., are usually being “got”, while places like house, field, town, etc. are always being “gone to”.`,
+              es: `En español decimos que vamos “por agua”, o “para recoger agua”, pero en quichua uno puede simplemente decir que va “al agua”. Este **‑man** es el mismo que fue estudiado en la lección anterior, pero su uso aquí es un poco diferente. Aun así, hay poco riesgo de ambigüedad, ya que el tipo de sustantivo usado sugerirá si el **‑man** significa simplemente “a” o “hacia”, o si significa “para recoger”. Generalmente “se recogen” los objetos movibles de uso general como agua, leña, paja, etc., mientras que generalmente “se va” a los lugares como casa, chacra, pueblo, etc.`,
             },
           ],
           [
             {
-              en: `2. Nominalizing suffix **-na**`,
-              es: `2. Sufijo nominalizador **-na**`,
+              en: `2. Nominalizing suffix **‑na**`,
+              es: `2. Sufijo nominalizador **‑na**`,
             },
             {
-              en: `While it occurs only with verb roots, **-na** changes such roots into infinitives, which function as nouns. Hence **-na** is a *nominalizing* suffix. An infinitive form like **randina** may take most of the suffixes that a simple noun like **huasi** takes:`,
-              es: `Aunque sólo ocurre en las raíces verbales, **-na** cambia tales raíces en infinitivos, los cuales funcionan como sustantivos. Por esto **-na** es un sufijo *nominalizador*. Una forma infinitiva como **randina** puede recibir casi todos los sufijos que toma un sustantivo simple como **huasi**:`,
+              en: `While it occurs only with verb roots, **‑na** changes such roots into infinitives, which function as nouns. Hence **‑na** is a *nominalizing* suffix. An infinitive form like **randina** may take most of the suffixes that a simple noun like **huasi** takes:`,
+              es: `Aunque sólo ocurre en las raíces verbales, **‑na** cambia tales raíces en infinitivos, los cuales funcionan como sustantivos. Por esto **‑na** es un sufijo *nominalizador*. Una forma infinitiva como **randina** puede recibir casi todos los sufijos que toma un sustantivo simple como **huasi**:`,
             },
           ],
           [
@@ -1324,8 +1324,8 @@ export const lessons: lessonType[] = [
   {
     slug: '5',
     topic: {
-      en: '**-manta**; demonstratives; movability of emphatic suffixes',
-      es: '**-manta**; demostrativos; que los sufijos enfáticos son movibles',
+      en: '**‑manta**; demonstratives; movability of emphatic suffixes',
+      es: '**‑manta**; demostrativos; que los sufijos enfáticos son movibles',
     },
     contents: [
       {
@@ -1546,12 +1546,12 @@ export const lessons: lessonType[] = [
         items: [
           [
             {
-              en: `1. Adverbial postposition **-manta** “from, whence” (DV’s **-munta**, Imb. **-manda**)`,
-              es: `1. Posposición adverbial **-manta** “de, desde” (VD **-munta**, Imb. **-manda**)`,
+              en: `1. Adverbial postposition **‑manta** “from, whence” (DV’s **‑munta**, Imb. **‑manda**)`,
+              es: `1. Posposición adverbial **‑manta** “de, desde” (VD **‑munta**, Imb. **‑manda**)`,
             },
             {
-              en: `**-manta** is in direct contrast to **-man**, the former referring to the point of departure or origin, the latter to the destination point:`,
-              es: `**-manta** está en contraste directo con **-man**, aquél refiriéndose al punto de partida u origen, y éste al punto de destino:`,
+              en: `**‑manta** is in direct contrast to **‑man**, the former referring to the point of departure or origin, the latter to the destination point:`,
+              es: `**‑manta** está en contraste directo con **‑man**, aquél refiriéndose al punto de partida u origen, y éste al punto de destino:`,
             },
             {
               qu: `huasiman`,
@@ -1626,8 +1626,8 @@ export const lessons: lessonType[] = [
               es: `3. Los sufijos enfáticos son “movibles”`,
             },
             {
-              en: `Suffixes of primary and secondary emphasis (so far: **‑chu**, **-mi**, **-taj~** and **-ca**, **‑pish**), being neutral, can be attached to either verbs or nouns, as well as other parts of speech. Keep watching them closely, and be sure that you understand *why* they occur where they do in each particular case. But don't make the mistake of thinking that they always *have to* occur just as given in the Models. Their use is one of the most flexible things in Quichua, because emphasis can vary tremendously in this language, just as in English:`,
-              es: `Los sufijos de énfasis primaria y secundaria (hasta ahora: **‑chu**, **-mi**, **-taj~** y **-ca**, **‑pish**), siendo neutrales, pueden juntarse tanto a los verbos como a los sustantivos, además de otras partes de la oración. Estúdialos con cuidado, y asegúrese que entienda por qué ocurren donde ocurren en cada caso individual. Pero no cometa el error de pensar que siempre *tienen que* ocurrir tal como se dan en los Modelos. Su uso es una de las cosas más flexibles en quichua, porque la énfasis puede variar tremendamente en este idioma, igual como en español:`,
+              en: `Suffixes of primary and secondary emphasis (so far: **‑chu**, **‑mi**, **‑taj~** and **‑ca**, **‑pish**), being neutral, can be attached to either verbs or nouns, as well as other parts of speech. Keep watching them closely, and be sure that you understand *why* they occur where they do in each particular case. But don't make the mistake of thinking that they always *have to* occur just as given in the Models. Their use is one of the most flexible things in Quichua, because emphasis can vary tremendously in this language, just as in English:`,
+              es: `Los sufijos de énfasis primaria y secundaria (hasta ahora: **‑chu**, **‑mi**, **‑taj~** y **‑ca**, **‑pish**), siendo neutrales, pueden juntarse tanto a los verbos como a los sustantivos, además de otras partes de la oración. Estúdialos con cuidado, y asegúrese que entienda por qué ocurren donde ocurren en cada caso individual. Pero no cometa el error de pensar que siempre *tienen que* ocurrir tal como se dan en los Modelos. Su uso es una de las cosas más flexibles en quichua, porque la énfasis puede variar tremendamente en este idioma, igual como en español:`,
             },
           ],
           [
@@ -1903,8 +1903,8 @@ export const lessons: lessonType[] = [
               es: `1. Demostrativos usados como sustantivos`,
             },
             {
-              en: `In the last lesson we saw the demonstratives **cai** “this” and **chai** “that” used as adjectives in phrases such as **cai huasi**, **chai huarmi**. They can also be used in the place of independent nouns (just as the English demonstrative pronouns “this, that”). However, to function in this way they require an emphatic suffix like **-ca**, **‑chu**, or **-mi**. Notice that in Models 1 to 4 the suffix **-ca** of secondary emphasis is used with each:`,
-              es: `En la lección anterior vimos el uso de los demostrativos **cai** “este, esta” y **chai** “ese, esa, aquel, aquella” como adjetivos en frases como cai huasi, chai huarmi. También se pueden usar en vez de sustantivos independientes (igual como los pronombres demostrativos “esto, éste, ésta, eso, ése, ésa, aquello, aquél, aquélla”). Sin em-bargo, para que funcionen de esta manera requieren un sufijo enfático como **-ca**, **‑chu**, o **-mi**. Note que en los Modelos 1 al 4 el sufijo **-ca** de énfasis secundaria se usa con cada uno:`,
+              en: `In the last lesson we saw the demonstratives **cai** “this” and **chai** “that” used as adjectives in phrases such as **cai huasi**, **chai huarmi**. They can also be used in the place of independent nouns (just as the English demonstrative pronouns “this, that”). However, to function in this way they require an emphatic suffix like **‑ca**, **‑chu**, or **‑mi**. Notice that in Models 1 to 4 the suffix **‑ca** of secondary emphasis is used with each:`,
+              es: `En la lección anterior vimos el uso de los demostrativos **cai** “este, esta” y **chai** “ese, esa, aquel, aquella” como adjetivos en frases como cai huasi, chai huarmi. También se pueden usar en vez de sustantivos independientes (igual como los pronombres demostrativos “esto, éste, ésta, eso, ése, ésa, aquello, aquél, aquélla”). Sin em-bargo, para que funcionen de esta manera requieren un sufijo enfático como **‑ca**, **‑chu**, o **‑mi**. Note que en los Modelos 1 al 4 el sufijo **‑ca** de énfasis secundaria se usa con cada uno:`,
             },
             {
               qu: `caica`,
@@ -1919,8 +1919,8 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `2. Adverbial postposition **-ta**; its use to mark the direct object`,
-              es: `2. Posposición adverbial **-ta**; su uso para marcar el complemento directo`,
+              en: `2. Adverbial postposition **‑ta**; its use to mark the direct object`,
+              es: `2. Posposición adverbial **‑ta**; su uso para marcar el complemento directo`,
             },
             {
               qu: `¿Imataj caica?`,
@@ -1940,8 +1940,8 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `The **-ta** in the last two Models given here is an adverbial postposition (like **-man** and **-manta**), which may be added to any noun to change it into an adverb. In Quichua, the direct object of a verb may be thought of simply as a certain type of adverb, for it modifies the verb by telling *what* the action was done *to*, or *on*. The use of the **-ta** to mark the direct object is something that requires a bit of practice for English speakers, since in our language we rely mainly on word order to tell us who or what did what to whom or what, thus:`,
-              es: `El **-ta** en los últimos dos Modelos dados aquí es una posposición adverbial (tal como **-man** y **-manta**), la cual puede ser añadida a cualquier sustantivo para convertirlo en adverbio. En quichua, el complemento directo de un verbo puede considerarse simplemente como una clase específica de adverbio, ya que modifica el verbo indicando *en qué* o *a qué* se ejecutó la acción. El uso del **-ta** para marcar el complemento directo es algo que requiere bastante práctica para los hispa-nohablantes, ya que en nuestro idioma contamos principalmente con el orden de las palabras (o, en el caso de los complementos personales, la preposición “a”) para indicarnos quién o qué hizo qué a quién o a qué, así:`,
+              en: `The **‑ta** in the last two Models given here is an adverbial postposition (like **‑man** and **‑manta**), which may be added to any noun to change it into an adverb. In Quichua, the direct object of a verb may be thought of simply as a certain type of adverb, for it modifies the verb by telling *what* the action was done *to*, or *on*. The use of the **‑ta** to mark the direct object is something that requires a bit of practice for English speakers, since in our language we rely mainly on word order to tell us who or what did what to whom or what, thus:`,
+              es: `El **‑ta** en los últimos dos Modelos dados aquí es una posposición adverbial (tal como **‑man** y **‑manta**), la cual puede ser añadida a cualquier sustantivo para convertirlo en adverbio. En quichua, el complemento directo de un verbo puede considerarse simplemente como una clase específica de adverbio, ya que modifica el verbo indicando *en qué* o *a qué* se ejecutó la acción. El uso del **‑ta** para marcar el complemento directo es algo que requiere bastante práctica para los hispa-nohablantes, ya que en nuestro idioma contamos principalmente con el orden de las palabras (o, en el caso de los complementos personales, la preposición “a”) para indicarnos quién o qué hizo qué a quién o a qué, así:`,
             },
           ],
           [
@@ -1960,8 +1960,8 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `In Quichua, however, a **-ta** on a noun is what alerts us to the fact that this is the direct object. Contrary to English usage, Quichua objects usually (though not invariably) precede the verb.`,
-              es: `En quichua, sin embargo, un **-ta** en un sustantivo es lo que nos avisa que éste es el complemento directo. A diferencia del uso en español, en quichua los complementos generalmente preceden al verbo (aunque no siempre).`,
+              en: `In Quichua, however, a **‑ta** on a noun is what alerts us to the fact that this is the direct object. Contrary to English usage, Quichua objects usually (though not invariably) precede the verb.`,
+              es: `En quichua, sin embargo, un **‑ta** en un sustantivo es lo que nos avisa que éste es el complemento directo. A diferencia del uso en español, en quichua los complementos generalmente preceden al verbo (aunque no siempre).`,
             },
           ],
           [
@@ -1988,8 +1988,8 @@ export const lessons: lessonType[] = [
               es: `(progresivo) precede a`,
             },
             {
-              en: `**-ni**\n**-ngui**\n**-n**`,
-              es: `**-ni**\n**-ngui**\n**-n**`,
+              en: `**‑ni**\n**‑ngui**\n**‑n**`,
+              es: `**‑ni**\n**‑ngui**\n**‑n**`,
             },
           ],
           [
@@ -1998,8 +1998,8 @@ export const lessons: lessonType[] = [
               es: `*Posposiciones Adverbiales*`,
             },
             {
-              en: `**-man**\n**-manta**\n**-ta**`,
-              es: `**-man**\n**-manta**\n**-ta**`,
+              en: `**‑man**\n**‑manta**\n**‑ta**`,
+              es: `**‑man**\n**‑manta**\n**‑ta**`,
             },
             {
               en: `all belong to the same order, and never occur at the same time in one word.`,
@@ -2031,8 +2031,8 @@ export const lessons: lessonType[] = [
   {
     slug: '7',
     topic: {
-      en: 'voiced sounds and their influence on other sounds; **imanalla**; possessive **-paj**',
-      es: 'sonidos sonoros y su incluencia en los otros sonidos; **imanalla**; **-paj** posesivo',
+      en: 'voiced sounds and their influence on other sounds; **imanalla**; possessive **‑paj**',
+      es: 'sonidos sonoros y su incluencia en los otros sonidos; **imanalla**; **‑paj** posesivo',
     },
     contents: [
       {
@@ -2324,14 +2324,14 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `These voiced sounds noticeably affect the pronunciation of certain voiceless sounds which occur immediately before or after them. A simple way to fix this in one’s mind is to think of voicing as being contagious, the contagion reaching only as far as any sound that comes close enough to “touch” the voiced one. We have already seen one example of this in the case of **can** “you”, plus the suffix **-paj** becoming **cambaj**. The **n** (for a reason we won’t go into here) became **m**, but this was not the only change. The voiced **m** affected voiceless **p**, changing it into its voiced counterpart **b**.`,
-              es: `Estos sonidos sonoros afectan notablemente la pronunciación de ciertos sonidos sordos que ocurren inmediatamente antes o después de ellos. Una manera sencilla de fijar esto en la mente es pensar como si la sonoridad fuera contagiosa, la contagia sólo afectando un sonido que esté “tocando” el sonido sonoro. Ya hemos visto un ejemplo de esto en el caso de **can** “tú”, más el sufijo **-paj**, que se convierte en **cambaj**. La **n** (por una razón que no explicaremos acá) se convierte en **m**, pero éste no es el único cambio. La sonora m afecta a la sorda **p**, cambiándola en su contraparte sonora **b**.`,
+              en: `These voiced sounds noticeably affect the pronunciation of certain voiceless sounds which occur immediately before or after them. A simple way to fix this in one’s mind is to think of voicing as being contagious, the contagion reaching only as far as any sound that comes close enough to “touch” the voiced one. We have already seen one example of this in the case of **can** “you”, plus the suffix **‑paj** becoming **cambaj**. The **n** (for a reason we won’t go into here) became **m**, but this was not the only change. The voiced **m** affected voiceless **p**, changing it into its voiced counterpart **b**.`,
+              es: `Estos sonidos sonoros afectan notablemente la pronunciación de ciertos sonidos sordos que ocurren inmediatamente antes o después de ellos. Una manera sencilla de fijar esto en la mente es pensar como si la sonoridad fuera contagiosa, la contagia sólo afectando un sonido que esté “tocando” el sonido sonoro. Ya hemos visto un ejemplo de esto en el caso de **can** “tú”, más el sufijo **‑paj**, que se convierte en **cambaj**. La **n** (por una razón que no explicaremos acá) se convierte en **m**, pero éste no es el único cambio. La sonora m afecta a la sorda **p**, cambiándola en su contraparte sonora **b**.`,
             },
           ],
           [
             {
-              en: `However, not all **p**’s are thus influenced by a voiced sound next to them. If **can** “you” occurs with **‑pish** “too”, the result is merely **campish** (normally still spelled **canpish**). The **p** of **-paj** is susceptible to the “contagion” while the **p** of **‑pish** is immune. Both the consonants of the suffix **-paj** are thus susceptible, so whenever this suffix is immediately followed by any voiced sound, the **j** likewise changes to **g**, which is its voiced counterpart. (However, note that it is what might be called a “soft **g**”, not hard and clear as in “go”.) Thus:`,
-              es: `Sin embargo, no toda **p** es atectada de esta manera por un sonido sonoro adjunto. Si can “tú” ocurre con **‑pish** “también”, el resultado es simplemente **campish** (que normalmente se escribe **canpish**). La **p** de **‑paj** es susceptible a la “contagia”, mientras que la **p** de **‑pish** tiene inmunidad. Las dos consonantes del sufijo **-paj** son así susceptibles, así que cuando este sufijo esté seguido inmediatamente por cualquier sonido sonoro, la **j** de igual manera se convierte en **g**, la cual es su contraparte sonora. p. ej.:`,
+              en: `However, not all **p**’s are thus influenced by a voiced sound next to them. If **can** “you” occurs with **‑pish** “too”, the result is merely **campish** (normally still spelled **canpish**). The **p** of **‑paj** is susceptible to the “contagion” while the **p** of **‑pish** is immune. Both the consonants of the suffix **‑paj** are thus susceptible, so whenever this suffix is immediately followed by any voiced sound, the **j** likewise changes to **g**, which is its voiced counterpart. (However, note that it is what might be called a “soft **g**”, not hard and clear as in “go”.) Thus:`,
+              es: `Sin embargo, no toda **p** es atectada de esta manera por un sonido sonoro adjunto. Si can “tú” ocurre con **‑pish** “también”, el resultado es simplemente **campish** (que normalmente se escribe **canpish**). La **p** de **‑paj** es susceptible a la “contagia”, mientras que la **p** de **‑pish** tiene inmunidad. Las dos consonantes del sufijo **‑paj** son así susceptibles, así que cuando este sufijo esté seguido inmediatamente por cualquier sonido sonoro, la **j** de igual manera se convierte en **g**, la cual es su contraparte sonora. p. ej.:`,
             },
           ],
           [
@@ -2350,8 +2350,8 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `This “contagion” reaches even over the space that separates one word from another, so that if a word ending in **-paj** is followed by a word that begins with a voiced sound, the **j** is also pronounced more like a **g**, thus:`,
-              es: `Esta “contagia” aun alcanza pasar el espacio que separa una palabra de otra, así que si una palabra que termina con **-paj** está seguida por una palabra que comienza con un sonido sonoro, esta **j** también se pronuncia más como una **g**, p. ej.:`,
+              en: `This “contagion” reaches even over the space that separates one word from another, so that if a word ending in **‑paj** is followed by a word that begins with a voiced sound, the **j** is also pronounced more like a **g**, thus:`,
+              es: `Esta “contagia” aun alcanza pasar el espacio que separa una palabra de otra, así que si una palabra que termina con **‑paj** está seguida por una palabra que comienza con un sonido sonoro, esta **j** también se pronuncia más como una **g**, p. ej.:`,
             },
             {
               en: `**cambaj mama** (pron. **cambag mama**)\n**cambaj yaya** (pron. **cambag yaya**)`,
@@ -2360,8 +2360,8 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `Have your language helper repeat Models 3b and 10 again and listen closely to this. However, since this “contagion between words” is not quite as uniform with all voiced letters, we are from now on merely writing the **j** as a **j** in such situations. Don’t let this spelling compromise make you less alert to the actual pronunciation though, when a **-paj** is followed by a word which begins with a voiced sound (**a**, **i**, **u**, **b**, **d**, **g**, **hu**, **l**, **ll**, **m**, **n**, **ñ**, **r**, **y**, **ź**).`,
-              es: `Pida que su ayudante quichua repita los Modelos 3b y 10 otra vez, y escúchelos con mucho cuidado. Sin embargo, ya que esta “contagia entre palabras” no es tan uniforme con todas las letras sonoras, estamos simplemente escribiendo la **j** como **j** en tales situaciones. Aun así, no permita que este término medio le haga menos vigilante de hacer la pronunciación correcta, cuando un **-paj** esté seguido por algún sonido sonoro (**a**, **i**, **u**, **b**, **d**, **g**, **hu**, **l**, **ll**, **m**, **n**, **ñ**, **r**, **y**, **ź**).`,
+              en: `Have your language helper repeat Models 3b and 10 again and listen closely to this. However, since this “contagion between words” is not quite as uniform with all voiced letters, we are from now on merely writing the **j** as a **j** in such situations. Don’t let this spelling compromise make you less alert to the actual pronunciation though, when a **‑paj** is followed by a word which begins with a voiced sound (**a**, **i**, **u**, **b**, **d**, **g**, **hu**, **l**, **ll**, **m**, **n**, **ñ**, **r**, **y**, **ź**).`,
+              es: `Pida que su ayudante quichua repita los Modelos 3b y 10 otra vez, y escúchelos con mucho cuidado. Sin embargo, ya que esta “contagia entre palabras” no es tan uniforme con todas las letras sonoras, estamos simplemente escribiendo la **j** como **j** en tales situaciones. Aun así, no permita que este término medio le haga menos vigilante de hacer la pronunciación correcta, cuando un **‑paj** esté seguido por algún sonido sonoro (**a**, **i**, **u**, **b**, **d**, **g**, **hu**, **l**, **ll**, **m**, **n**, **ñ**, **r**, **y**, **ź**).`,
             },
           ],
         ],
@@ -2375,14 +2375,14 @@ export const lessons: lessonType[] = [
               es: `1. **¿Imanalla(taj) cangui?**`,
             },
             {
-              en: `This greeting is frequently used instead of **¿Allillachu cangui?** When someone does greet you in Quichua, be sure to notice which of these forms is used, as the answer must vary accordingly. **¿Allillachu cangui?** requires a “Yes” or “No” answer, while the other requires a statement like “I’m just fine,” or “I’m feeling simply awful.” The **-taj~** is very often dropped and simply “**¿Imanalla cangui?**” or even just “**¿Imanalla?**” is used.`,
-              es: `Se usa este saludo con frecuencia en lugar de **¿Allillachu cangui?** Cuando alguien le salude en quichua, tome el tiempo de notar cuál de estas formas usa, ya que la respuesta varía de acuerdo con la pregunta. **¿Allillachu cangui?** requiere una respuesta de “sí” o “no” mientras que la otra requiere un declaración como “Estoy bien”, o “Me siento terrible”. Muchas veces se omite el **-taj~**, y se dice “**¿Imanalla cangui?**” o aun simplemente “**¿Imanalla?**”`,
+              en: `This greeting is frequently used instead of **¿Allillachu cangui?** When someone does greet you in Quichua, be sure to notice which of these forms is used, as the answer must vary accordingly. **¿Allillachu cangui?** requires a “Yes” or “No” answer, while the other requires a statement like “I’m just fine,” or “I’m feeling simply awful.” The **‑taj~** is very often dropped and simply “**¿Imanalla cangui?**” or even just “**¿Imanalla?**” is used.`,
+              es: `Se usa este saludo con frecuencia en lugar de **¿Allillachu cangui?** Cuando alguien le salude en quichua, tome el tiempo de notar cuál de estas formas usa, ya que la respuesta varía de acuerdo con la pregunta. **¿Allillachu cangui?** requiere una respuesta de “sí” o “no” mientras que la otra requiere un declaración como “Estoy bien”, o “Me siento terrible”. Muchas veces se omite el **‑taj~**, y se dice “**¿Imanalla cangui?**” o aun simplemente “**¿Imanalla?**”`,
             },
           ],
           [
             {
-              en: `2. Noun suffix **-paj** “of, belonging to” (precedes **-man**, **-manta**, **-ta**; DV: **-puj**, and in Imbabura **-paj** or **-pa**)`,
-              es: `2. Sufijo nominal **-paj** “de, perteneciente a” (precede a **-man**, **-manta**, **-ta**; VD: **-puj**, y en Imbabura **-paj** o **-pa**)`,
+              en: `2. Noun suffix **‑paj** “of, belonging to” (precedes **‑man**, **‑manta**, **‑ta**; DV: **‑puj**, and in Imbabura **‑paj** or **‑pa**)`,
+              es: `2. Sufijo nominal **‑paj** “de, perteneciente a” (precede a **‑man**, **‑manta**, **‑ta**; VD: **‑puj**, y en Imbabura **‑paj** o **‑pa**)`,
             },
             {
               qu: `ñuca mama`,
@@ -2427,8 +2427,8 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `When **-paj** is added to any noun or pronoun, it indicates that the latter is the possessor of something. Such a possessive form may be used either as an adjective (as in the first column above) or as a noun in its own right:`,
-              es: `Al añadirse **-paj** a cualquier sustantivo o pronombre, indica que éste es el posesor de algo. Tal forma posesiva puede usarse o como adjetivo (como en la primera columna arriba) o como sustantivo propio:`,
+              en: `When **‑paj** is added to any noun or pronoun, it indicates that the latter is the possessor of something. Such a possessive form may be used either as an adjective (as in the first column above) or as a noun in its own right:`,
+              es: `Al añadirse **‑paj** a cualquier sustantivo o pronombre, indica que éste es el posesor de algo. Tal forma posesiva puede usarse o como adjetivo (como en la primera columna arriba) o como sustantivo propio:`,
             },
             {
               qu: `Ñucapajmi.`,
@@ -2441,8 +2441,8 @@ export const lessons: lessonType[] = [
               es: `Es leña.`,
             },
             {
-              en: `**Ñuca** and its plural **ñucanchij** are the only words which can be used as a possessive adjective without requiring the **-paj**. Note, however, that they take the **-paj** when used as an independent noun.`,
-              es: `**Nuca** y su plural **ñucanchij** son las únicas palabras que pueden usarse como adjetivos posesivos sin requerir el **-paj**. Note, sin embargo, que toman el **-paj** al usarse como sustantivo independiente.`,
+              en: `**Ñuca** and its plural **ñucanchij** are the only words which can be used as a possessive adjective without requiring the **‑paj**. Note, however, that they take the **‑paj** when used as an independent noun.`,
+              es: `**Nuca** y su plural **ñucanchij** son las únicas palabras que pueden usarse como adjetivos posesivos sin requerir el **‑paj**. Note, sin embargo, que toman el **‑paj** al usarse como sustantivo independiente.`,
             },
           ],
         ],
@@ -2452,8 +2452,8 @@ export const lessons: lessonType[] = [
   {
     slug: '8',
     topic: {
-      en: '**-paj** used purposively; **-ngapaj**; **‑pajman**; **‑pajmanta**',
-      es: '**-paj** de propósito; **-ngapaj**; **‑pajman**; **‑pajmanta**',
+      en: '**‑paj** used purposively; **‑ngapaj**; **‑pajman**; **‑pajmanta**',
+      es: '**‑paj** de propósito; **‑ngapaj**; **‑pajman**; **‑pajmanta**',
     },
     contents: [
       {
@@ -2640,8 +2640,8 @@ export const lessons: lessonType[] = [
         items: [
           [
             {
-              en: `1. Purposive use of **-paj**`,
-              es: `1. El uso de **-paj** como propósito`,
+              en: `1. Purposive use of **‑paj**`,
+              es: `1. El uso de **‑paj** como propósito`,
             },
             {
               qu: `¿Pi_paj_taj caica?`,
@@ -2654,14 +2654,14 @@ export const lessons: lessonType[] = [
               es: `¿Para qué estás trabajando?`,
             },
             {
-              en: `The **-paj** in the two sentences above is one and the same suffix, but it is used in two slightly different senses, the *purposive* as well as the *possessive*. (A little thought will show some sound logic behind the identification or relation of these two ideas!) The context almost always makes clear which one of these two meanings is uppermost.`,
-              es: `El sufijo **-paj** en las dos oraciones anteriores es el mismo sufijo, pero se usa con dos sentidos algo diferentes, el de *propósito* y el de *posesión*. (¡Al pensarlo se ve que hay buena lógica en la interrelación de estas dos ideas.) El contexto Casi siempre aclara cuál de los dos significados es el indicado.`,
+              en: `The **‑paj** in the two sentences above is one and the same suffix, but it is used in two slightly different senses, the *purposive* as well as the *possessive*. (A little thought will show some sound logic behind the identification or relation of these two ideas!) The context almost always makes clear which one of these two meanings is uppermost.`,
+              es: `El sufijo **‑paj** en las dos oraciones anteriores es el mismo sufijo, pero se usa con dos sentidos algo diferentes, el de *propósito* y el de *posesión*. (¡Al pensarlo se ve que hay buena lógica en la interrelación de estas dos ideas.) El contexto Casi siempre aclara cuál de los dos significados es el indicado.`,
             },
           ],
           [
             {
-              en: `When the word to which **-paj** is attached is used as an adjective, the possessive idea is central; if used as an adverb, the purposive idea. In other words, a person or other object is described in terms of its possessor, while an activity is described in terms of its purpose:`,
-              es: `Cuando la palabra a la cual está adjunto el **-paj** se usa como adjetivo, la idea de posesión es la central; si se usa como adverbio, la de propósito. En otras palabras, una persona u objeto se describe según su posesor, mientras que una actividad se describe según su propósito:`,
+              en: `When the word to which **‑paj** is attached is used as an adjective, the possessive idea is central; if used as an adverb, the purposive idea. In other words, a person or other object is described in terms of its possessor, while an activity is described in terms of its purpose:`,
+              es: `Cuando la palabra a la cual está adjunto el **‑paj** se usa como adjetivo, la idea de posesión es la central; si se usa como adverbio, la de propósito. En otras palabras, una persona u objeto se describe según su posesor, mientras que una actividad se describe según su propósito:`,
             },
             {
               qu: `¿Pipajtaj _chaica_?`,
@@ -2676,26 +2676,26 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `2. **-ngapaj** “in order to”`,
-              es: `2. **-ngapaj** “para (hacer)”`,
+              en: `2. **‑ngapaj** “in order to”`,
+              es: `2. **‑ngapaj** “para (hacer)”`,
             },
             {
-              en: `**randi-** (buy) + **-ngapaj** =\n **randingapaj** (in order to buy)`,
-              es: `**randi-** (comprar) + **-ngapaj** =\n **randingapaj** (para comprar)`,
+              en: `**randi-** (buy) + **‑ngapaj** =\n **randingapaj** (in order to buy)`,
+              es: `**randi-** (comprar) + **‑ngapaj** =\n **randingapaj** (para comprar)`,
             },
             {
-              en: `**c'atu-** (sell) + **-ngapaj** =\n **c'atungapaj** (in order to sell)`,
-              es: `**c'atu-** (vender) + **-ngapaj** =\n **c'atungapaj** (para vender)`,
+              en: `**c'atu-** (sell) + **‑ngapaj** =\n **c'atungapaj** (in order to sell)`,
+              es: `**c'atu-** (vender) + **‑ngapaj** =\n **c'atungapaj** (para vender)`,
             },
             {
-              en: `**yacha-** (know) + **-ngapaj** =\n **yachangapaj** (in order to know)`,
-              es: `**yacha-** (saber) + **-ngapaj** =\n **yachangapaj** (para saber)`,
+              en: `**yacha-** (know) + **‑ngapaj** =\n **yachangapaj** (in order to know)`,
+              es: `**yacha-** (saber) + **‑ngapaj** =\n **yachangapaj** (para saber)`,
             },
           ],
           [
             {
-              en: `The suffix **-ngapaj**, unlike the other adverbials so far studied, is attached to *verb roots*, changing them into words used as adverbs in the sentence.`,
-              es: `El sufijo **-ngapaj**, a diferencia de los otros sufijos adverbiales que hemos estudiado hasta ahora, se adjunta a las *raíces verbales*, convirtiéndolas en palabras usadas como adverbios en la oración.`,
+              en: `The suffix **‑ngapaj**, unlike the other adverbials so far studied, is attached to *verb roots*, changing them into words used as adverbs in the sentence.`,
+              es: `El sufijo **‑ngapaj**, a diferencia de los otros sufijos adverbiales que hemos estudiado hasta ahora, se adjunta a las *raíces verbales*, convirtiéndolas en palabras usadas como adverbios en la oración.`,
             },
             {
               en: `This suffix is only used when the subject of the main verb is the same as the subject of the **‑ngapaj** form, as in the following examples:`,
@@ -2722,7 +2722,7 @@ export const lessons: lessonType[] = [
           [
             {
               en: `If I am working in order that you may learn Quichua, the subjects are not the same, and **‑ngapaj** cannot be used.`,
-              es: `Si *yo* estoy trabajando para que *tú* puedas aprender quichua, los sujetos no son iguales, y no se puede usar **-ngapaj**.`,
+              es: `Si *yo* estoy trabajando para que *tú* puedas aprender quichua, los sujetos no son iguales, y no se puede usar **‑ngapaj**.`,
             },
             {
               en: `There is not a great deal of difference, practically speaking, between the **‑ngapaj** construction and that using **‑naman**. **Randingapaj** is about as close to **randinaman** as is “in order to buy” to the simple phrase “to buy” in English.`,
@@ -2747,12 +2747,12 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `3. **-pajman** and **-pajmanta** with personal objects`,
-              es: `3. **-pajman** y **-pajmanta** con complementos personales`,
+              en: `3. **‑pajman** and **‑pajmanta** with personal objects`,
+              es: `3. **‑pajman** y **‑pajmanta** con complementos personales`,
             },
             {
-              en: `Motion towards or away from an animate object is expressed by means of these combinations. The **‑paj** may be thought of as referring to a limited area around the person or animal, or to its “whereabouts”. Only if the action is performed directly to or upon, or directly from the actual person of the object can this **-paj** be dispensed with.`,
-              es: `El movimiento hacia o desde un complemento animado o personal se expresa por medio de estas combinaciones. El **‑paj** puede interpretarse como referente a una área limitada alrededor de la persona o animal, o a su “ubicación”. La única situación en que se puede prescindir de este **-paj** es cuando se ejecute la acción directamente en la persona misma.`,
+              en: `Motion towards or away from an animate object is expressed by means of these combinations. The **‑paj** may be thought of as referring to a limited area around the person or animal, or to its “whereabouts”. Only if the action is performed directly to or upon, or directly from the actual person of the object can this **‑paj** be dispensed with.`,
+              es: `El movimiento hacia o desde un complemento animado o personal se expresa por medio de estas combinaciones. El **‑paj** puede interpretarse como referente a una área limitada alrededor de la persona o animal, o a su “ubicación”. La única situación en que se puede prescindir de este **‑paj** es cuando se ejecute la acción directamente en la persona misma.`,
             },
           ],
           [
@@ -3085,8 +3085,8 @@ export const lessons: lessonType[] = [
               es: `El sufijo imperativo singular es **‑iˆ**. El plural es **‑ichij**. Cuando se añaden a una raíz verbal que termina con **i** (como **randi-**), se elimina una **i** de las dos, como en **¡Randi!** “¡Compra!”`,
             },
             {
-              en: `This imperative form is used in brisk commands which are meant to be obeyed immediately. Its brusqueness may be softened by the addition of the suffix **-pa** seen in Models 5 and 10 and discussed below.`,
-              es: `Esta forma imperativa se usa en mandatos urgentes que deben ser obedecidos inmediatamente. Su brusquedad puede ser templada con la adición del sufijo **-pa** visto en los Modelos 5 y 10 y explicado abajo.`,
+              en: `This imperative form is used in brisk commands which are meant to be obeyed immediately. Its brusqueness may be softened by the addition of the suffix **‑pa** seen in Models 5 and 10 and discussed below.`,
+              es: `Esta forma imperativa se usa en mandatos urgentes que deben ser obedecidos inmediatamente. Su brusquedad puede ser templada con la adición del sufijo **‑pa** visto en los Modelos 5 y 10 y explicado abajo.`,
             },
           ],
           [
@@ -3414,12 +3414,12 @@ export const lessons: lessonType[] = [
         items: [
           [
             {
-              en: `1. Noun plural suffix **‑cuna** (precedes **-paj**; DV **-guna**)`,
-              es: `1. El sufijo plural nominal **‑cuna** (que precede a **-paj**; VD **-guna**)`,
+              en: `1. Noun plural suffix **‑cuna** (precedes **‑paj**; DV **-guna**)`,
+              es: `1. El sufijo plural nominal **‑cuna** (que precede a **‑paj**; VD **-guna**)`,
             },
             {
-              en: `All nouns form the plural by adding **‑cuna**. Other suffixes such as **-man**, **-manta**, etc., may then be added to the plural noun:`,
-              es: `Todos los sustantivos forman su plural añadiendo **‑cuna**. Otros sufijos tales como **-man**, **-manta**, etc., pueden entonces añadirse al sustantivo plural:`,
+              en: `All nouns form the plural by adding **‑cuna**. Other suffixes such as **‑man**, **‑manta**, etc., may then be added to the plural noun:`,
+              es: `Todos los sustantivos forman su plural añadiendo **‑cuna**. Otros sufijos tales como **‑man**, **‑manta**, etc., pueden entonces añadirse al sustantivo plural:`,
             },
             {
               qu: `huasicunaman`,
@@ -3490,8 +3490,8 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `Personal pronouns form their plurals exactly as do other nouns (by adding **‑cuna**) except in the case of the first person, which adds **-nchij**. Like their singular counterparts, plural pronouns may be omitted from a sentence, just like in Spanish, for the verb suffixes alone indicate the person and number of the subject. Model 6 is an example of such an omission of the subject pronoun.`,
-              es: `Los pronombres personales forman su plural de la misma manera que cualquier otro sustantivo (añadiendo **‑cuna**) excepto en el caso de la primera persona, que añade **-nchij**. Igual como sus contra-partes singulares, los pronombres plurales pueden omitirse de la ora-ción, igual como en español, ya que los sufijos verbales indican solitos la persona y número del sujeto. El Modelo 6 es un ejemplo de tal omisión del pronombre del sujeto.`,
+              en: `Personal pronouns form their plurals exactly as do other nouns (by adding **‑cuna**) except in the case of the first person, which adds **‑nchij**. Like their singular counterparts, plural pronouns may be omitted from a sentence, just like in Spanish, for the verb suffixes alone indicate the person and number of the subject. Model 6 is an example of such an omission of the subject pronoun.`,
+              es: `Los pronombres personales forman su plural de la misma manera que cualquier otro sustantivo (añadiendo **‑cuna**) excepto en el caso de la primera persona, que añade **‑nchij**. Igual como sus contra-partes singulares, los pronombres plurales pueden omitirse de la ora-ción, igual como en español, ya que los sufijos verbales indican solitos la persona y número del sujeto. El Modelo 6 es un ejemplo de tal omisión del pronombre del sujeto.`,
             },
           ],
           [
@@ -3584,8 +3584,8 @@ export const lessons: lessonType[] = [
           ],
           [
             {
-              en: `However, as you can see, in the first and second person forms the person-number suffix already starts with an **-n**, so the two **n**’s are reduced to one. In the third person singular form, we see that there is no person-number suffix, only the present tense suffix.`,
-              es: `Sin embargo, como puede ver, en las formas de primera y segunda persona el sufijo de persona y número ya comienza con **-n**, así que se reducen las dos **n** a una. En la forma de tercera persona singular, vemos que no hay ningún sufijo de persona y número, sólo el sufijo de tiempo presente.`,
+              en: `However, as you can see, in the first and second person forms the person-number suffix already starts with an **‑n**, so the two **n**’s are reduced to one. In the third person singular form, we see that there is no person-number suffix, only the present tense suffix.`,
+              es: `Sin embargo, como puede ver, en las formas de primera y segunda persona el sufijo de persona y número ya comienza con **‑n**, así que se reducen las dos **n** a una. En la forma de tercera persona singular, vemos que no hay ningún sufijo de persona y número, sólo el sufijo de tiempo presente.`,
             },
             {
               en: `In lesson 11 we will see that this exact same system holds true in the past tense as well`,

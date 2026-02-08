@@ -12,7 +12,7 @@ import Models from '@/app/components/models';
 import Vocab from '@/app/components/vocab';
 import Ex from '@/app/components/ex';
 
-import { tocapuLibrary, tocapuSearch } from '@/app/ui/tocapu';
+import { tocapuLibrary, tocapuSearch } from '@/app/lib/tocapu';
 import tocapuStyles from '@/app/ui/tocapu.module.css';
 
 export async function generateStaticParams() {
@@ -48,15 +48,16 @@ export default async function Part({ params }: { params: Promise<{ slug: string,
   const partLength = getPartLength(slug,phaseId,partId) ?? 1;
   const progress = partIndex/(partLength-1 || 1); //(partIndex+1)/partLength;
   const phase = getPhase(slug,phaseId);
+  const sectionNo = `${(getLessonIndexBySlug(slug) ?? 0)+1}.${(getPhaseIndex(slug,phaseId) ?? 0)+1}`;
   let offset: number = 0;
   for (let i=0; i<partIndex; i++) {
-    const item = phase?.items[i];
+    const item = phase?.items?.[i];
     if (Array.isArray(item)) {offset +=  item?.length;}
   }
   const { prev, next } = getNeighbor(`/lessons/${slug}/${phaseId}/${partId}`);
   return (
     <>
-      <h1 className="text-2xl mb-4"><i><Text>{title}</Text></i></h1>
+      <h1 className="text-2xl mb-4">{sectionNo} <i><Text>{title}</Text></i></h1>
       <PhaseIcon id={svgId} margin={false} />
       {(partLength<=6) ? <ProgressDots on={partIndex+1} of={partLength} /> : <ProgressBar complete={progress} size="s" />}
       {(phaseId==='models') ? <Models obj={subPhase} offset={offset} /> : (phaseId==='vocab') ? <Vocab obj={subPhase} /> : <Ex obj={subPhase} />}

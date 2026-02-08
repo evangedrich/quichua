@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import styles from '@/app/ui/home.module.css';
 import Banner from '@/app/components/banner';
 import Button from '@/app/components/custom-button';
-import UnkuRibbon from '@/app/ui/unku-ribbon';
+import UnkuRibbon from '@/app/components/unku-ribbon';
 
 export default function Home() {
   const [isRendered,setIsRendered] = useState(false);

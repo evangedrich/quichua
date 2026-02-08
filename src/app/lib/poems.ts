@@ -10,14 +10,14 @@ export interface poemType {
 
 export const poems: poemType[] = [
   {
-    slug: `ushushicu`,
-    title: { qu: `Ushushicu`, en: `Ushushicu`, es: `Ushushicu`, },
+    slug: `llasag-ushushicu`,
+    title: { qu: `Ushushicu`, en: `Ñutita`, es: `Ñutita`, },
     author: `Lourdes Llasag (Panzaleo)`,
     dialect: `Cotopaxi`,
     text: {
       qu: `Amapola sisashina,
 cambaj samita cuyani
-Nayana chirlilla yacushina, tuycunapaj cauzaipaj
+Nayana chirlilla yacushina, tuycunapaj causaipaj
 Guźul muyuntitac yacu ucuta puric
 Enamorada tucui ruraicunapi
 Laglag mana tamyashpaca chaquishcacanqui
@@ -39,7 +39,175 @@ aire que calma mi dolor.`,
     },
   },
   {
-    slug: `canto-kowii`,
+    slug: `cartuche-acapana`,
+    title: { qu: `Acapana`, en: `Storm`, es: `Tormenta`, },
+    author: `Inti Cartuche`,
+    dialect: `Saraguro`,
+    text: {
+      qu: `Acapanami canica
+urmamunilla shina yarin
+maican cucha chaschichun illanmi.
+
+Rasuyaquic huairatami uyani
+huicsataca cushicuihuan shictachicta ricuni.
+
+Shina cacpica ñucaca,
+—urcupac churi,
+huaicucunapac huahua cashpa—
+shuc ñaupa cacharpayacuta,
+chushac caita
+allpacuyuyta quincuric suni asiriyta
+runtu cachun nishca shututapish uyachini.
+
+Huaira, imapactac pucumuhuanquillayari,
+acapana muyutaca ñuca ucupimi ña carinica.
+
+¡Uyarihuay!
+chaquishca panca shinami urmamuni
+ñaupacausaihuan mai hucushcami canica.`,
+      en: `Storm am I
+and it seems I fall straight down
+there is no lagoon that receives me.
+
+I listen to the wind freezing me
+cracking my womb with happiness. 
+
+While I, 
+—son of the mountain, 
+grandson of the creeks—
+whistle such an old farewell
+an un-being
+a long smile curving the earthquake
+a drop thrown to become a hailstone.
+
+Why do you blow, wind,
+if I already have inside the seed of the storm?
+
+Listen!
+I fall like a dry leave
+But I am extremely sodden of history.`,
+es: `Soy tormenta
+y parece que caigo en picada
+no hay laguna que me reciba.
+
+Escucho el viento que me congela
+que agrieta mi vientre de felicidad.
+
+Mientras yo,
+—hijo de la montaña,
+nieto de los arroyos—
+silbo una despedida tan antigua
+un no-ser
+una larga sonrisa que curva el terremoto
+una gota arrojada para convertirse en granizo.
+
+¿Por qué soplas, viento,
+si ya llevo dentro la semilla de la tormenta?
+
+¡Escucha!
+Caigo como una hoja seca
+pero estoy empapado de historia.`,
+    },
+  },
+  {
+    slug: `paza-sisa`,
+    title: { qu: `Pachamamapa sisa`, en: `Flower of mother nature`, es: `Flor de la madre naturaleza`, },
+    author: `Rasu Paza`,
+    dialect: `Puruwá`,
+    text: {
+      qu: `Maican chican chirimuyupa ñaupa pachapichari canpa rimaitaca uyarcani.
+Maican cullquishina, rasushina allimanta ricuc Mama Pachapichari canpa ñahuicunataca ricurcani.
+Maican huaranca huatacunachari cashca canca.
+Maipitaj carcanchi, maipi. Imatac carcanchiyari, huaranca huata ñaupa.
+
+Ñucaca can armachun, can upyachun, chuya achij yacumi carcani.
+Allimantami tucui churana illaclla ñuca caiman shamuj carcanqui.
+Ñuca cai, callpacuc mayuman rishpami armac carcanqui.
+Quipaca ishca makiuan hapishpami upyahuarca carcanqui.
+Canca, ñuca canpa tucui ucuctapash, uccutapashmi ricsichun saquiclla carcanqui.
+Chai quipaca, canpa ñutuclla uccupa, munaypa milkim ñucapi llutarishpa saquiric carca.
+
+Chaimanta pachami canpa rupac sumaimana chuchucunapash
+ñucapa quisha tucurcacuna.
+Ñucapa causaitapish punchan punchanmi
+canpa yura mallquihuan ahuashpa ric carcanqui.
+Canpa aichaca huiñayta mana huañunchu, shamurayacunllami.
+Cunanpash, ñaupamanta shamushpami cutin caipi canqui, ñucapa carahuan, ñucantin.`,
+      en: `In which of the remote times of chirimoya did I hear your voice?
+In which time, maybe, did I meet your face when the mother of the cosmos was gliding slowly like silver, like snow?
+How long ago was it?
+Where were you, Where! What were you thousands of years ago?
+
+I, so you can drink, so you can bathe, was the transparent water. 
+Slowly you came to me without attires.
+You bathed in the torrential river I was.
+Then you satiated me holding on with both hands. 
+You, with insistence let me know your body and essence. 
+Then your soft and delicious perfume remained adhered to me. 
+
+Since then your beautiful and warm breasts
+became my abode.
+My life was weaving day after day
+with the branches of your tree. 
+Your flesh never dies, it returns time after time.
+Today also,  you arrived from infinite time and are present, stuck to my skin, you and me together.`,
+      es: `¿En qué tiempos remotos de la chirimoya escuché tu voz?
+¿En qué tiempo, quizás, vi tu rostro cuando la madre del cosmos se deslizaba lentamente como plata, como nieve?
+¿Cuánto tiempo ha pasado?
+¿Dónde estabas, dónde? ¿Qué eras hace miles de años?
+
+Yo, para que bebieras, para que te bañaras, era el agua transparente.
+Lentamente viniste a mí sin vestiduras.
+Te bañaste en el río torrencial que yo era.
+Luego me saciaste aferrándote con ambas manos.
+Tú, con insistencia, me hiciste conocer tu cuerpo y tu esencia.
+Entonces tu suave y delicioso perfume permaneció adherido a mí.
+
+Desde entonces tus hermosos y cálidos senos
+se convirtieron en mi morada.
+Mi vida se fue tejiendo día tras día
+con las ramas de tu árbol.
+Tu carne nunca muere, regresa una y otra vez.
+Hoy también, llegaste desde el tiempo infinito y estás presente, pegada a mi piel, tú y yo juntos.`,
+    },
+  },
+  {
+    slug: `gualan-huarmi`,
+    title: { qu: `Sinchi huarmi`, en: `Strong woman`, es: `Mujer fuerte`, },
+    author: `Luiza Gualan`,
+    dialect: `Saraguro`,
+    text: {
+      qu: `Huarmi allpa maqui, nina shungucu,
+allpapachata chuchuchij huachac mama,
+hatun mamacunapaj ñaupa rimay.
+Shimicunaca, quiquinpaj taquipi huaquipish mana huañun,
+achichyachij quishpirichiy muscuicuna.
+Sara chuquirahuapash sisa huarmi,
+muscuita ahuac.
+Quiquinpaj hatun taitacuna tarpuna allpamamaca,
+quishpirishca riccharishca huarmimi mañacun.`,
+      en: `Woman hands of land, heart of fire, 
+breastmilk that nurtures the world, 
+ancestral language of the grandmothers. 
+In your song and your tears voices don’t fade, 
+dreams of light and freedom.
+Woman tassel of corn and chukirawa,
+weaver of dreams.
+The land your grandparents cultivated, 
+is calling for that free and awake huarmi.`,
+      es: `Manos de mujer que labran la tierra, corazón de fuego,
+leche materna que nutre el mundo,
+lenguaje ancestral de las abuelas.
+En tu canto y tus lágrimas las voces no se apagan,
+sueños de luz y libertad.
+Mujer, mazorca de maíz y chukirawa,
+tejedora de sueños.
+La tierra que cultivaron tus abuelos
+clama por esa huarmi libre y despierta.`,
+    },
+  },
+  {
+    slug: `kowii-canto`,
     title: { qu: `Ñucapa quiquin taqui`, en: `Song to Myself`, es: `Canto a mí mismo`, },
     author: `Ariruma Kowii`,
     dialect: `Imbabura`,
@@ -154,7 +322,7 @@ a killa mama.`,
     },
   },
   {
-    slug: `4-kowii`,
+    slug: `kowii-4`,
     title: { en: `Poem 4`, es: `Poema 4`, },
     author: `Ariruma Kowii`,
     dialect: `Imbabura`,
@@ -262,140 +430,9 @@ que debemos cuidarla, y saber
 cómo hacerla crecer.`,
     },
   },
-  {
-    slug: `flower-paza`,
-    title: { qu: `Pachamamapa sisa`, en: `Flower of mother nature`, es: `Flor de la madre naturaleza`, },
-    author: `Rasu Paza`,
-    dialect: `Puruwá`,
-    text: {
-      qu: `Maican chican chirimuyupa ñaupa pachapichari canpa rimaitaca uyarcani.
-Maican cullquishina, rasushina allimanta ricuc Mama Pachapichari canpa ñahuicunataca ricurcani.
-Maican huaranca huatacunachari cashca canca.
-Maipitac carcanchi, maipi. Imatac carcanchiyari, huaranca huata ñaupa.
-
-Ñucaca can armachun, can upyachun, chuya achic yacumi carcani.
-Allimantami tucui churana illaclla ñuca caiman shamuc carcanki.
-Ñuca cai, callpacuc mayuman rishpami armac carcanki.
-Quipaca ishca makiuan hapishpami upyahuarca carcanki.
-Canca, ñuca canpa tucui ucuctapash, uccutapashmi ricsichun saquiclla carcanki.
-Chai quipaca, canpa ñutuclla uccupa, munaypa milkim ñucapi llutarishpa saquiric carca.
-
-Chaimanta pachami canpa rupac sumaimana chuchucunapash
-ñucapa quisha tucurcacuna.
-Ñucapa cauzaitapish punchan punchanmi
-canpa yura mallquihuan ahuashpa ric carcanki.
-Canpa aichaca huiñayta mana huañunchu, shamurayacunllami.
-Cunanpash, ñaupamanta shamushpami cutin caipi canqui, ñucapa carahuan, ñucantin.`,
-      en: `In which of the remote times of chirimoya did I hear your voice?
-In which time, maybe, did I meet your face when Mother Cosmos was gliding slowly like silver, like snow?
-How long ago was it?
-Where were you, Where! What were you thousands of years ago?
-
-I, so you can drink, so you can bathe, was the transparent water. 
-Slowly you came to me without attires.
-You bathed in the torrential river I was.
-Then you satiated me holding on with both hands. 
-You, with insistence let me know your body and essence. 
-Then your soft and delicious perfume remained adhered to me. 
-
-Since then your beautiful and warm breasts
-became my abode.
-My life was weaving day after day
-with the branches of your tree. 
-Your flesh never dies, it returns time after time.
-Today also,  you arrived from infinite time and are present, stuck to my skin, you and me together.`,
-      es: `¿En qué tiempos remotos de la chirimoya escuché tu voz?
-¿En qué tiempo, quizás, vi tu rostro cuando la Madre Cosmos se deslizaba lentamente como plata, como nieve?
-¿Cuánto tiempo ha pasado?
-¿Dónde estabas, dónde? ¿Qué eras hace miles de años?
-
-Yo, para que bebieras, para que te bañaras, era el agua transparente.
-Lentamente viniste a mí sin vestiduras.
-Te bañaste en el río torrencial que yo era.
-Luego me saciaste aferrándote con ambas manos.
-Tú, con insistencia, me hiciste conocer tu cuerpo y tu esencia.
-Entonces tu suave y delicioso perfume permaneció adherido a mí.
-
-Desde entonces tus hermosos y cálidos senos
-se convirtieron en mi morada.
-Mi vida se fue tejiendo día tras día
-con las ramas de tu árbol.
-Tu carne nunca muere, regresa una y otra vez.
-Hoy también, llegaste desde el tiempo infinito y estás presente, pegada a mi piel, tú y yo juntos.`,
-    },
-  },
-  {
-    slug: `acapana`,
-    title: { qu: `Acapana`, en: `Storm`, es: `Tormenta`, },
-    author: `Inti Cartuche`,
-    dialect: `Saraguro`,
-    text: {
-      qu: `Acapanami canica
-urmamunilla shina yarin
-maican cucha chaschichun illanmi.
-
-Rasuyaquic huairatami uyani
-huicsataca cushicuihuan shictachicta ricuni.
-
-Shina cacpica ñucaca,
-—urcupac churi,
-huaicucunapac huahua cashpa—
-shuc ñaupa cacharpayacuta,
-chushac caita
-allpacuyuyta quincuric suni asiriyta
-runtu cachun nishca shututapish uyachini.
-
-Huaira, imapactac pucumuhuanquillayari,
-acapana muyutaca ñuca ucupimi ña carinica.
-
-¡Uyarihuay!
-chaquishca panca shinami urmamuni
-ñaupacausaihuan mai hucushcami canica.`,
-      en: `Storm am I
-and it seems I fall straight down
-there is no lagoon that receives me.
-
-I listen to the wind freezing me
-cracking my womb with happiness. 
-
-While I, 
-—son of the mountain, 
-grandson of the creeks—
-whistle such an old farewell
-an un-being
-a long smile curving the earthquake
-a drop thrown to become a hailstone.
-
-Why do you blow, wind,
-if I already have inside the seed of the storm?
-
-Listen!
-I fall like a dry leave
-But I am extremely sodden of history.`,
-es: `Soy tormenta
-y parece que caigo en picada
-no hay laguna que me reciba.
-
-Escucho el viento que me congela
-que agrieta mi vientre de felicidad.
-
-Mientras yo,
-—hijo de la montaña,
-nieto de los arroyos—
-silbo una despedida tan antigua
-un no-ser
-una larga sonrisa que curva el terremoto
-una gota arrojada para convertirse en granizo.
-
-¿Por qué soplas, viento,
-si ya llevo dentro la semilla de la tormenta?
-
-¡Escucha!
-Caigo como una hoja seca
-pero estoy empapado de historia.`,
-    },
-  },
 ];
+
+
 
 /*
   {

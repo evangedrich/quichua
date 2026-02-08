@@ -170,7 +170,7 @@
 }
 
 .info a, .poems a {
-  color: var(--color-theme);
+  color: var(--color-highlight);
 }
 .info a:hover, .poems li:hover, .poems a:hover {
   text-decoration: underline;

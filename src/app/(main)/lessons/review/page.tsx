@@ -12,7 +12,7 @@ export default function Review() {
     es: `Pero tu aprendizaje del idioma quichua está lejos de haber terminado.: este es un curso de 50 lecciones, y las 40 restantes son más difíciles. Vuelve más tarde y tendremos más material para que sigas aprendiendo quichua.`,
   };
   const text3: {en: string, es: string} = {
-    en: `In the meantime, practice what you've learned so far by navigating to the poetry page and seeing what words you recognize.`,
+    en: `In the meantime, practice what you've learned so far by navigating to the poetry page using the buttons on the righthand side of the screen and see what words you recognize.`,
     es: `Mientras tanto, practica lo que has aprendido hasta ahora navegando a la página de poesía y viendo qué palabras reconoces.`,
   };
   return (

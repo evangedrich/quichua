@@ -1,7 +1,7 @@
 'use client';
 
 import useMotion from '@/app/hooks/useMotion';
-import { tocapuLibrary, tocapuSearch } from '@/app/ui/tocapu';
+import { tocapuLibrary, tocapuSearch } from '@/app/lib/tocapu';
 import tocapuStyles from '@/app/ui/tocapu.module.css';
 
 export default function PhaseIcon({ id, margin }: { id: string, margin: boolean }) {

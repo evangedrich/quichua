@@ -576,7 +576,7 @@ export const tocapuLibrary: tocapu[] = [
   },
   {
     name: "curls",
-    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""}`}><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""} ${styles.svgCursor}`}><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <rect x="0" y="0" width="100" height="100" fill={green} />
         <rect x="5" y="5" width="90" height="90" fill={red} />
 
@@ -748,7 +748,7 @@ export const tocapuLibrary: tocapu[] = [
   },
   {
     name: "twoEyes1",
-    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""}`}><svg viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
+    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""} ${styles.svgCursor}`}><svg viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
       <rect x="-50" y="-50" width="100" height="100" fill={red} />
       <rect x="-45" y="-45" width="42.5" height="42.5" fill={brown} />
       <path d="M-23.75,-33.75 Q-10.75,-23.75 -23.75,-13.75 Q-36.75,-23.75 -23.75,-33.75 z" fill={yellow} stroke={yellow} strokeWidth="15" strokeLinecap="square" className={styles.twoEyes1A}></path>

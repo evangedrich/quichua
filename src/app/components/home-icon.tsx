@@ -2,7 +2,7 @@
 
 import styles from '@/app/ui/main.module.css';
 import { montserrat } from '@/app/ui/fonts';
-import { tocapuLibrary, tocapuSearch } from '@/app/ui/tocapu';
+import { tocapuLibrary, tocapuSearch } from '@/app/lib/tocapu';
 import tocapuStyles from '@/app/ui/tocapu.module.css';
 
 import useLang from '@/app/hooks/useLang';
