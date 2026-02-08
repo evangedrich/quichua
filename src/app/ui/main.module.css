@@ -168,6 +168,12 @@
 .content p {
   margin-bottom: 0.75rem;
 }
+.subOptions {
+  cursor: pointer;
+}
+.subOptions:hover {
+  color: var(--color-highlight);
+}
 
 .info a, .poems a {
   color: var(--color-highlight);
@@ -203,5 +209,8 @@
   }
   .content p {
 
+  }
+  .subOptions:hover {
+    color: var(--color-front);
   }
 }

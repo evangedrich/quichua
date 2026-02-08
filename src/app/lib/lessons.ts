@@ -393,16 +393,28 @@ export const lessons: lessonType[] = [
             },
           ],
           [
-            `1. **¿Allillachu cambaj _yaya_?**\n**Ari, paipish allillami.**`,
-            `**«_mama_; _churi_; _ushushi_»**`,
+            {
+              n: `1`,
+              q: `¿Allillachu cambaj _yaya_?`,
+              a: `Ari, paipish allillami.`,
+              subs: [ `mama`, `churi`, `ushushi`, ],
+            },
           ],
           [
-            `2. **¿Cambaj _yaya_cá?**\n**Ñuca _yaya_pish allillami.**`,
-            `**«_mama_; _churi_; _ushushi_»**`,
+            {
+              n: `2`,
+              q: `¿Cambaj _yaya_cá?`,
+              a: `Ñuca _yaya_pish allillami.`,
+              subs: [ `mama`, `churi`, `ushushi`, ],
+            },
           ],
           [
-            `3. **¿Cambaj _mama_cá?**\n**Paipish allillami.**`,
-            `**«_ushushi_; _churi_; _yaya_»**`,
+            {
+              n: `3`,
+              q: `¿Cambaj _mama_cá?`,
+              a: `Paipish allillami.`,
+              subs: [ `ushushi`, `churi`, `yaya`, ],
+            },
           ],
         ],
       },
@@ -695,24 +707,48 @@ export const lessons: lessonType[] = [
         phaseId: 'exercises',
         items: [
           [
-            `1. **¿Allillachu cambaj _mama_?**\n**Ari, paipish allillami.**`,
-            `«**_huauqui_/_turi_**; **_pani_/_ñaña_**; **_huahua_**; **_huambra_**; **_yaya_**»`,
-            `\n 2. **¿Cambaj _mama_cá?** \n **Ñuca _mama_pish allillami.**`,
-            `«**_churi_**; **_ushushi_**; **_yaya_**; **_pani_/_ñaña_**; **_huauqui_/_turi_**»`,
+            {
+              n: `1`,
+              q: `¿Allillachu cambaj _mama_?`,
+              a: `Ari, paipish allillami.`,
+              subs: [ `huauqui/turi`, `pani/ñaña`, `huahua`, `huambra`, `yaya`, ],
+            },
+            {
+              n: `2`,
+              q: `¿Cambaj _mama_cá?`,
+              a: `Ñuca _mama_pish allillami.`,
+              subs: [ `churi`, `ushushi`, `yaya`, `pani/ñaña`, `huauqui/turi`, ],
+            },
           ],
           [
-            `3. **¿Maimantaj ricungui?** \n **_Huasi_manmi ricuni.**`,
-            `«**_chagra_**; **_pueblo_**; **_iglesia_**; **_pugyu_**; **_Quito_**; **_Guayaquil_**»`,
-            `\n 4. **¿Cancá?** \n **Ñucaca _Quito_manmi ricuni.**`,
-            `«**_pugyu_**; **_huasi_**; **_pueblo_**; **_iglesia_**; **_chagra_**»`,
+            {
+              n: `3`,
+              q: `¿Maimantaj ricungui?`,
+              a: `_Huasi_manmi ricuni.`,
+              subs: [ `chagra`, `pueblo`, `iglesia`, `pugyu`, `Quito`, `Guayaquil`, ],
+            },
+            {
+              n: `4`,
+              q: `¿Cancá?`,
+              a: `Ñucaca _Quito_manmi ricuni.`,
+              subs: [ `pugyu`, `huasi`, `pueblo`, `iglesia`, `chagra`, ],
+            },
           ],
           [
-            `5. **Cambaj _yaya_ca ¿maimantaj ricun?** \n **Paica chagramanmi ricun.**`,
-            `«**_mama_**; **_huahua_**; **_huambra_**; **_huauqui_/_turi_**; **_pani_/_ñaña_**; **_churi_**; **_ushushi_**»`,
+            {
+              n: `5`,
+              q: `Cambaj _yaya_ca ¿maimantaj ricun?`,
+              a: `Paica chagramanmi ricun.`,
+              subs: [ `mama`, `huahua`, `huambra`, `huauqui/turi`, `pani/ñaña`, `churi`, `ushushi`, ],
+            },
           ],
           [
-            `6. **¿Maimantaj ricungui? Ñucapish _pugyu_manmi ricuni.** \n **_Pugyu_manmi ricuni. ¿Cancá?**`,
-            `«**_chagra_**; **_pueblo_**; **_iglesia_**; **_huasi_**; **_Quito_**; **_Guayaquil_**»`,
+            {
+              n: `6`,
+              q: `¿Maimantaj ricungui? Ñucapish _pugyu_manmi ricuni.`,
+              a: `_Pugyu_manmi ricuni. ¿Cancá?`,
+              subs: [ `chagra`, `pueblo`, `iglesia`, `huasi`, `Quito`, `Guayaquil`, ],
+            },
           ],
         ],
       },
