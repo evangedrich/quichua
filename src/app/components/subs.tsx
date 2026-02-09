@@ -15,13 +15,13 @@ export default function Subs({ obj, margin }: { obj: phaseType, margin: boolean 
     const htmlString = text.replace(/(_)(.*?)\1/g, `<u>$2</u>`);
     return <span ref={(node) => {node ? swapRefs.current.set(key, node) : swapRefs.current.delete(key) }}>{parse(htmlString)}</span>;
   }
-  function subOnClick(e) {
+  function subOnClick(e: React.SyntheticEvent) {
     if (!swapRefs.current) return;
 
     const incomingFullText = e.currentTarget.textContent || "";
-    const outgoingParts = [];
+    const outgoingParts: string[] = [];
 
-    const getNaturalFromData = (word) => {
+    const getNaturalFromData = (word: string) => {
       let match = null;
       items.forEach(item => {
         item.subs.forEach(sub => {
@@ -37,7 +37,7 @@ export default function Subs({ obj, margin }: { obj: phaseType, margin: boolean 
       return match;
     };
 
-    const isProperNounData = (word) => {
+    const isProperNounData = (word: string) => {
       const natural = getNaturalFromData(word);
       return natural && /^[A-Z]/.test(natural);
     };
@@ -48,7 +48,7 @@ export default function Subs({ obj, margin }: { obj: phaseType, margin: boolean 
 
     swapRefs.current.forEach(span => {
       const uTags = span.querySelectorAll('u');
-      uTags.forEach(u => {
+      uTags.forEach((u: Element) => {
         const currentWordInSentence = u.textContent || "";
         const prevText = u.previousSibling?.textContent || "";
         const isStartOfSentence = u.previousSibling === null ||

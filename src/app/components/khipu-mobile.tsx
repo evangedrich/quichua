@@ -30,7 +30,7 @@ export default function KhipuMobile({ show, toClose }: { show: boolean; toClose:
 
   return (
     <div className={`${styles.mKhipuIndex} ${show?'block':'hidden'}`}>
-      <div className={`${styles.mContainer} fixed top-0 w-screen h-screen bg-[var(--color-back)] z-10`}>
+      <div className={`${styles.mContainer} fixed top-0 w-screen h-screen bg-[var(--color-back)] z-30`}>
         <div className={`fixed top-5 w-full text-center text-2xl`}>index</div>
         <div className={`${styles.mClose} fixed top-0 right-0`} onClick={() => toClose(false)}>✕</div>
         <div className={`${styles.mKhipuWrapper}`}>
