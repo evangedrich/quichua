@@ -1,0 +1,8 @@
+{
+	"appId": "com.evangedrich.quichua",
+	"appName": "Quichua",
+	"webDir": "out",
+	"server": {
+		"androidScheme": "https"
+	}
+}
