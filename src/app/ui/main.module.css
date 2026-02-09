@@ -214,3 +214,9 @@
     color: var(--color-front);
   }
 }
+
+@supports (padding-top: env(safe-area-inset-top)) {
+  .header, .nav, .content {
+    padding-top: env(safe-area-inset-top);
+  }
+}

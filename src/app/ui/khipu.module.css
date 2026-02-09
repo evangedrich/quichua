@@ -155,10 +155,14 @@
 }
 .mContainer {
   overflow-x: scroll;
+  overscroll-behavior: none;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
+}
+.mCloseWrap {
+  background-color: transparent;
 }
 .mClose {
   text-align: center;
@@ -201,4 +205,10 @@
 .mSectionKnot svg {
   margin: auto;
   height: 100%;
+}
+
+@supports (padding-top: env(safe-area-inset-top)) {
+  .mContainer, .mTitle, .mCloseWrap {
+    padding-top: env(safe-area-inset-top);
+  }
 }
