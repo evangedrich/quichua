@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Quichua</string>
+    <string name="title_activity_main">Quichua</string>
+    <string name="package_name">com.evangedrich.quichua</string>
+    <string name="custom_url_scheme">com.evangedrich.quichua</string>
+</resources>
