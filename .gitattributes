@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+ios/ simulator/ linguist-generated=true
+android/ app/ linguist-generated=true
+
+# You might also want to ignore typical build/dist folders
+dist/ linguist-generated=true
+out/ linguist-generated=true
+build/ linguist-generated=true
