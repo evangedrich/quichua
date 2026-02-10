@@ -214,3 +214,11 @@
     color: var(--color-front);
   }
 }
+
+/* .is-native .header, .is-native .nav, .is-native .content {
+  padding-top: env(safe-area-inset-top);
+} */
+
+:global(.is-native) .header, :global(.is-native) .nav, :global(.is-native) .content {
+  padding-top: env(safe-area-inset-top);
+}

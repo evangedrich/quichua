@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Script from 'next/script';
 import { ContextProvider } from './ui/context'
@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: "Quichua",
   description: "A language learning tool for Quichua",
 };
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+}
 
 const setThemeMode = () => {
   const savedTheme = localStorage.getItem('theme');
