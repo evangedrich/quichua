@@ -3345,12 +3345,12 @@ export const lessons: lessonType[] = [
             },
             {
               qu: `cancuna`,
-              en: `y’all (informal)`,
+              en: `y'all (informal)`,
               es: `ustedes (informal)`,
             },
             {
               qu: `quiquincuna`,
-              en: `y’all (formal)`,
+              en: `y'all (formal)`,
               es: `ustedes (formal)`,
             },
             {
