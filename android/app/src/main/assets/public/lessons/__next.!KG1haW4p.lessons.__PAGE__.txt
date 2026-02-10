@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[53067,["/_next/static/chunks/83f2c9f752c855fa.js","/_next/static/chunks/f5654ee75d585b8b.js","/_next/static/chunks/d578490e3fa78114.js","/_next/static/chunks/c4e1ca054f47774a.js","/_next/static/chunks/4bdd22cbc88e4fa9.js","/_next/static/chunks/79e84c742849f134.js"],"default"]
+3:I[50134,["/_next/static/chunks/83f2c9f752c855fa.js","/_next/static/chunks/f5654ee75d585b8b.js","/_next/static/chunks/d578490e3fa78114.js","/_next/static/chunks/c4e1ca054f47774a.js","/_next/static/chunks/4bdd22cbc88e4fa9.js","/_next/static/chunks/79e84c742849f134.js"],"default"]
+4:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"buildId":"ypQk9BLuvZjvBoJQmB_Nb","rsc":["$","$1","c",{"children":[[["$","$L2",null,{"type":"p","children":{"en":"Welcome to *Introduction to Central Highland Quichua of Ecuador*, where we learn how to speak Quichua with the help of a language tutor. Click below to get started!","es":"Bienvenido a la *Introducción al quichua de la Sierra Central de Ecuador*, donde aprenderemos a hablar quichua con la ayuda de un tutor de idiomas. ¡Haz clic a continuación para empezar!"}}],["$","$L3",null,{"text":"let's go! →","to":"/lessons/1"}]],[["$","script","script-0",{"src":"/_next/static/chunks/79e84c742849f134.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"loading":null,"isPartial":false}
+6:null

@@ -155,6 +155,7 @@
 }
 .mContainer {
   overflow-x: scroll;
+  overscroll-behavior: none;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -201,4 +202,8 @@
 .mSectionKnot svg {
   margin: auto;
   height: 100%;
+}
+
+:global(.is-native) .mContainer, :global(.is-native) .mTitle, :global(.is-native) .mCloseWrap {
+  padding-top: env(safe-area-inset-top);
 }

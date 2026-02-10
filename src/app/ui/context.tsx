@@ -1,6 +1,7 @@
 'use client';
 
-import React, { createContext, useContext, useState, useCallback } from 'react';
+import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
+import { Capacitor } from '@capacitor/core';
 
 interface ContextType {
   theme: string,
@@ -29,6 +30,12 @@ export const ContextProvider = ({ children }: { children: React.ReactNode }) => 
   }, []);
   const toggleLang = useCallback(() => {
     setLang(prevLang => prevLang === 'en' ? 'es' : 'en');
+  }, []);
+
+  useEffect(() => {
+    if (Capacitor.isNativePlatform()) {
+      document.documentElement.classList.add('is-native');
+    }
   }, []);
 
   const contextValue = {

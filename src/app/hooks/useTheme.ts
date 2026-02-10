@@ -1,6 +1,6 @@
 'use client';
 
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { AppContext } from '@/app/ui/context';
 
 interface themeType {
@@ -14,17 +14,19 @@ const useTheme = (): themeType => {
     throw new Error('useTheme must be used within an AppProvider');
   }
   const { theme, setTheme, toggleTheme } = context;
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const savedTheme: string | null = localStorage.getItem('theme');
-    const systemPrefersDark: boolean = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setTheme(savedTheme || (systemPrefersDark ? 'dark' : 'light'));
-  }, []);
+    const isDark = document.documentElement.classList.contains('dark');
+    setTheme(isDark ? 'dark' : 'light');
+    setMounted(true);
+  }, [setTheme]);
   useEffect(() => {
+    if (!mounted) return;
     document.documentElement.classList.remove('light', 'dark');
     document.documentElement.classList.add(theme);
-    localStorage.setItem('theme', theme);
-  }, [theme]);
+    document.documentElement.style.colorScheme = theme;
+  }, [theme, mounted]);
 
   return { theme, toggleTheme };
 };
