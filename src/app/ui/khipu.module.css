@@ -204,6 +204,12 @@
   height: 100%;
 }
 
-:global(.is-native) .mContainer, :global(.is-native) .mTitle, :global(.is-native) .mCloseWrap {
+:global(.is-native) .mContainer, :global(.is-native) .mTitle {
   padding-top: env(safe-area-inset-top);
+}
+:global(.is-native) .mCloseWrap {
+  padding-top: calc(env(safe-area-inset-top) - 1rem);
+}
+:global(.not-native) .mContainer, :global(.not-native) .mTitle, :global(.not-native) .mCloseWrap {
+  padding-top: 0;
 }

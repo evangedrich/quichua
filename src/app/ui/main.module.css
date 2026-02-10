@@ -222,3 +222,6 @@
 :global(.is-native) .header, :global(.is-native) .nav, :global(.is-native) .content {
   padding-top: env(safe-area-inset-top);
 }
+:global(.not-native) .header, :global(.not-native) .nav, :global(.not-native) .content {
+  padding-top: 0;
+}

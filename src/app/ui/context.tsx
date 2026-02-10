@@ -35,7 +35,7 @@ export const ContextProvider = ({ children }: { children: React.ReactNode }) => 
   useEffect(() => {
     if (Capacitor.isNativePlatform()) {
       document.documentElement.classList.add('is-native');
-    }
+    } else { document.documentElement.classList.add('not-native'); }
   }, []);
 
   const contextValue = {
