@@ -46,6 +46,9 @@
 .flashCard p {
   line-height: 1.1em;
 }
+.flashCard:hover {
+  transform: scale(1.02);
+}
 .flashCard:active {
   transform: scale(0.97);
 }
@@ -62,6 +65,7 @@
   line-height: 5rem;
 }
 .flashButton:hover {
+  transform: scale(1.04);
   background-color: var(--color-mid-hover);
 }
 .flashButton:active {
@@ -73,7 +77,11 @@
   .studyWrapper {
     margin-top: -8rem;
   }
+  .flashCard:hover {
+    transform: scale(1);
+  }
   .flashButton:hover {
+    transform: scale(1);
     background-color: var(--color-mid);
   }
   .flashButton:active {
