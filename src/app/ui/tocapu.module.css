@@ -771,7 +771,7 @@
   animation-timing-function: linear;
 }
 
-.svgHover:hover .twoEyes1A, .svgHover:hover .twoEyes1B {
+.svgHover:hover .twoEyes1A, .svgHover:hover .twoEyes1B, .svgHover:hover .twoEyes2A, .svgHover:hover .twoEyes2B {
   animation-duration: 1500ms;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -784,6 +784,14 @@
 .svgHover:hover .twoEyes1B {
   animation-name: turnBlinkB;
   transform-origin: 23.75px 23.75px;
+}
+.svgHover:hover .twoEyes2A {
+  animation-name: turnBlinkB;
+  transform-origin: 23.75px -23.75px;
+}
+.svgHover:hover .twoEyes2B {
+  animation-name: turnBlinkA;
+  transform-origin: -23.75px 23.75px;
 }
 
 .svgHover:hover .curlPair {

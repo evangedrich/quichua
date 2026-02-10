@@ -1130,12 +1130,12 @@ export const lessons: lessonType[] = [
               es: `tío`,
             },
             {
-              qu: `yanta __(Imb.__ yamda/yanda__)__`,
+              qu: `yanta __(Imb.__ yamda__/__yanda__)__`,
               en: `firewood`,
               es: `leña`,
             },
             {
-              qu: `yantana __(Imb.__ yamdana/yandana__)__`,
+              qu: `yantana __(Imb.__ yamdana__/__yandana__)__`,
               en: `collect or cut firewood`,
               es: `recoger o cortar leña`,
             },
@@ -2949,8 +2949,8 @@ export const lessons: lessonType[] = [
           [
             {
               qu: `-pa`,
-              en: `por favor`,
-              es: `please`,
+              en: `please`,
+              es: `por favor`,
             },
             {
               qu: `-hua`,
@@ -2961,28 +2961,28 @@ export const lessons: lessonType[] = [
           [
             {
               qu: `cuna`,
-              en: `dar`,
-              es: `to give`,
+              en: `to give`,
+              es: `dar`,
             },
             {
               qu: `jatarina`,
-              en: `levantarse`,
-              es: `to rise, to get up`,
+              en: `to rise, to get up`,
+              es: `levantarse`,
             },
             {
               qu: `ricuna`,
-              en: `ver, mirar`,
-              es: `to see, to look at`,
+              en: `to see, to look at`,
+              es: `ver, mirar`,
             },
             {
               qu: `ricuchina`,
-              en: `mostrar`,
-              es: `to show`,
+              en: `to show`,
+              es: `mostrar`,
             },
             {
               qu: `tiyarina`,
-              en: `sentarse`,
-              es: `to sit down`,
+              en: `to sit down`,
+              es: `sentarse`,
             },
             {
               qu: `uyana`,
@@ -3273,12 +3273,12 @@ export const lessons: lessonType[] = [
               es: `anaco, falda indígena`,
             },
             {
-              qu: `baita / bayeta`,
+              qu: `baita__/__bayeta`,
               en: `Quichua shawl`,
               es: `bayeta; chal`,
             },
             {
-              qu: `lampa / pala`,
+              qu: `lampa__/__pala`,
               en: `shovel`,
               es: `pala, lampa`,
             },

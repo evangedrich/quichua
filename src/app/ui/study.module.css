@@ -1,0 +1,82 @@
+.studyWrapper {
+  height: auto;
+  width: fit-content;
+  margin: auto;
+  margin-top: -6rem;
+}
+.flashCard {
+  width: 22rem;
+  height: 22rem;
+  font-size: 3rem;
+  margin: auto;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+.flashCard .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 300ms;
+  transform-style: preserve-3d;
+}
+.inner.flipped {
+  transform: rotateY(180deg);
+}
+.flashCard .front, .flashCard .back {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  background-color: var(--color-mid);
+  border-radius: 10%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.flashCard .front {
+  backface-visibility: hidden;
+}
+.flashCard .back {
+  transform: rotateY(180deg);
+}
+.flashCard p {
+  line-height: 1.1em;
+}
+.flashCard:active {
+  transform: scale(0.97);
+}
+.buttonWrap {
+  display: flex;
+  justify-content: end;
+}
+.flashButton {
+  width: 5rem;
+  height: 5rem;
+  transition: transform 150ms;
+  right: 0;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+.flashButton:hover {
+  background-color: var(--color-mid-hover);
+}
+.flashButton:active {
+  background-color: var(--color-mid-active);
+  transform: scale(0.93);
+}
+
+@media screen and (max-width: 800px) {
+  .studyWrapper {
+    margin-top: -8rem;
+  }
+  .flashButton:hover {
+    background-color: var(--color-mid);
+  }
+  .flashButton:active {
+    background-color: var(--color-mid-hover);
+  }
+}

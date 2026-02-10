@@ -114,16 +114,16 @@
   padding: 0.25rem;
   margin-bottom: 0.75rem;
   border-radius: 10px;
-  background-color: var(--color-mid-hover);
+  background-color: var(--color-mid);
 }
 .mobileToggle svg {
   height: 100%;
   width: 100%;
 }
 .navGroup {
-  max-height: 30.1rem; /* 3.75 x number of total buttons */
+  max-height: 33.76rem; /* 3.75 x number of total buttons */
   overflow: hidden;
-  transition: max-height 200ms ease-out;
+  transition: max-height 250ms ease-out;
   margin-right: -0.1rem;
   padding-right: 0.1rem;
   margin-top: -0.1rem;
@@ -212,6 +212,10 @@
   }
   .subOptions:hover {
     color: var(--color-front);
+  }
+  .flashCard {
+    width: 90vw;
+    height: 90vw;
   }
 }
 

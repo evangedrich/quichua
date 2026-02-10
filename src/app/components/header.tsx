@@ -36,7 +36,7 @@ export default function Header() {
           } }
         >
           <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
-            <path d={navVisible?"M 10,40 50,10 90,40":"M 10,10 50,40 90,10"} fill="none" stroke="var(--color-back)" strokeWidth="5" strokeLinecap="round" />
+            <path d={navVisible?"M 10,40 50,10 90,40":"M 10,10 50,40 90,10"} fill="none" stroke="var(--color-front)" strokeWidth="5" strokeLinecap="round" />
           </svg>
         </button>
         <div className={`grid justify-items-end ${styles.navGroup} ${(navVisible || !isMobile)?'':styles.hideNav}`}>
@@ -49,6 +49,7 @@ export default function Header() {
           </div>
           <NavButton icon="sinchi" text="more" color="#d9b484" func={() => setMoreVisible(!moreVisible)} />
           <div className={`${styles.settingsButtons} ${moreVisible?'':styles.hideSettings}`}>
+            <NavButton icon="twoEyes2" text="/study" color="#5f633a" />
             <NavButton icon="twoEyes1" text="/poems" color="#e85538" />
             <NavButton icon="curls" text="/info" color="#5f633a" />
           </div>
