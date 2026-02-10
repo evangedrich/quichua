@@ -115,10 +115,15 @@
   margin-bottom: 0.75rem;
   border-radius: 10px;
   background-color: var(--color-mid);
+  transition: transform 150ms linear;
 }
 .mobileToggle svg {
   height: 100%;
   width: 100%;
+}
+.mobileToggle:active {
+  transform: scale(0.9);
+  background-color: var(--color-mid-hover);
 }
 .navGroup {
   max-height: 33.76rem; /* 3.75 x number of total buttons */

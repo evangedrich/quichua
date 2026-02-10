@@ -80,11 +80,15 @@
   .flashCard:hover {
     transform: scale(1);
   }
+  .flashCard:active {
+    transform: scale(0.97);
+  }
   .flashButton:hover {
     transform: scale(1);
     background-color: var(--color-mid);
   }
   .flashButton:active {
     background-color: var(--color-mid-hover);
+    transform: scale(0.95);
   }
 }
