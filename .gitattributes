@@ -1,5 +1,4 @@
 # Auto detect text files and perform LF normalization
-* text=auto
 
 ios/ simulator/ linguist-generated=true
 android/ app/ linguist-generated=true
