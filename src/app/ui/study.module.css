@@ -2,7 +2,7 @@
   height: auto;
   width: fit-content;
   margin: auto;
-  margin-top: -5rem;
+  margin-top: -4rem;
 }
 .flashCard {
   width: 22rem;
@@ -42,6 +42,7 @@
 }
 .flashCard .back {
   transform: rotateY(180deg);
+  font-size: 2.5rem;
 }
 .flashCard p {
   line-height: 1.1em;
@@ -54,15 +55,35 @@
 }
 .buttonWrap {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 .flashButton {
   width: 4rem;
   height: 4rem;
   transition: transform 150ms;
-  right: 0;
   font-size: 2.5rem;
   line-height: 4rem;
+  background-color: var(--color-mid);
+  border-radius: 4rem;
+  cursor: pointer;
+  padding: 0.8rem;
+}
+.flashButton svg {
+  width: 100%;
+  height: 100%;
+}
+.flashNext {
+  right: 0;
+}
+.flashBack {
+  left: 0;
+}
+.dummy {
+  width: 4rem;
+  height: 4rem;
+  cursor: default;
 }
 .flashButton:hover {
   transform: scale(1.04);
@@ -101,39 +122,92 @@
 .form button {
   position: absolute;
   right: 0.5rem;
-  background-color: var(--color-mid);
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   line-height: 3rem;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   cursor: pointer;
   transition: transform 100ms linear;
 }
-.form button:hover {
+.form button > svg {
+  margin: auto;
+  width: 55%;
+  height: 55%;
+}
+.regButton:hover {
   transform: scale(1.08);
   background-color: var(--color-mid-hover);
 }
-.form button:active {
+.regButton:active {
   transform: scale(0.96);
   background-color: var(--color-mid-active);
+}
+.regButton {
+  background-color: var(--color-mid);
+}
+.yButton, .yButton:hover, .yButton:active {
+  background-color: #5d854c;
+}
+.nButton, .nButton:hover, .nButton:active {
+  background-color: #e85538;
+}
+
+
+.rangeSelect {
+  border-radius: 1rem;
+  padding-left: 0.5em;
+  padding-right: 0.25em;
+  cursor: pointer;
+  transition: transform 200ms linear;
+}
+.rangeSelect span {
+  margin-left: 0.1em;
+}
+.dropCaret {
+  vertical-align: 0.3em;
+  line-height: 0;
+}
+.upCaret {
+  display: inline-block;
+  transform: rotate(180deg);
+  vertical-align: -0.3em;
+}
+.rangeSelect:hover {
+  background-color: var(--color-mid);
+}
+.rangeSelect:active {
+  background-color: var(--color-mid-hover);
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-width: fit-content;
+  background-color: var(--color-back);
+  justify-content: space-between;
+  z-index: 2;
+  border-radius: 1rem;
+}
+.dropdown ul {
+  flex: 1;
+  padding: 0.25em;
+}
+.dropdown li:hover {
+  cursor: pointer;
+  background-color: var(--color-mid);
 }
 
 @media screen and (max-width: 800px) {
   .studyWrapper {
-    margin-top: -8rem;
+    margin-top: -4rem;
   }
   .flashCard:hover {
     transform: scale(1);
   }
   .flashCard:active {
     transform: scale(0.97);
-  }
-  .flashButton {
-    width: 5rem;
-    height: 5rem;
-    font-size: 3rem;
-    line-height: 5rem;
   }
   .flashButton:hover {
     transform: scale(1);
@@ -143,12 +217,22 @@
     background-color: var(--color-mid-hover);
     transform: scale(0.95);
   }
-  .form button:hover {
+  .regButton:hover {
     transform: scale(1);
     background-color: var(--color-mid);
   }
-  .form button:active {
+  .regButton:active {
     transform: scale(0.92);
     background-color: var(--color-mid-hover);
+  }
+  .yButton:active, .nButton:active {
+    transform: scale(0.92);
+  }
+  .rangeSelect:hover {
+    background-color: transparent;
+  }
+  .rangeSelect:active {
+    background-color: transparent;
+    transform: scale(0.95);
   }
 }
