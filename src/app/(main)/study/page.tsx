@@ -94,7 +94,6 @@ export default function Study() {
     }
   }
   function newWord() {
-    console.log(vocab.flat());
     const vocabSet = (range.start===range.end ? vocab[range.start] : vocab.slice(range.start,range.end).flat()) as any[];
     let index = nextIndex.length>0 ? nextIndex[nextIndex.length-1] : Math.floor(Math.random()*vocabSet.length);
     if (prevIndex.length>0 && vocabSet.length>1) {
