@@ -94,10 +94,11 @@ export default function Study() {
     }
   }
   function newWord() {
+    console.log(vocab.flat());
     const vocabSet = (range.start===range.end ? vocab[range.start] : vocab.slice(range.start,range.end).flat()) as any[];
     let index = nextIndex.length>0 ? nextIndex[nextIndex.length-1] : Math.floor(Math.random()*vocabSet.length);
     if (prevIndex.length>0 && vocabSet.length>1) {
-      while (index === prevIndex[prevIndex.length-1]) { index = Math.floor(Math.random() * vocabSet.length); }
+      while (index === word.i) { index = Math.floor(Math.random() * vocabSet.length); }
     }
     setPrevIndex(priorArray => [...priorArray, word.i]);
     if (nextIndex.length>0) { setNextIndex(priorArray => priorArray.slice(0,-1)); }
@@ -115,8 +116,9 @@ export default function Study() {
       return str
         .toLowerCase()
         .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Strip accents
-        .replace(/[\u2018\u2019]/g, "'") // Normalize quotes
-        .replace(/[/()\-]/g, " ") // Treat slashes, dashes, and parentheses as spaces
+        .replace(/[\u2018\u2019\u201C\u201D\u00AB\u00BB'"]/g, "") // Remove quotes and apostrophes
+        .replace(/[()]/g, "") // Remove parentheses entirely
+        .replace(/[/-]/g, " ") // Treat slashes and dashes as spaces
         .replace(/[.,/#!$%^&*;:{}=_`~!?]/g, "") // Strip punctuation
         .split(/\s+/)
         .filter(word => word.length > 1 && !stopWords.includes(word)); // Ignore single letters like 'a'
@@ -157,7 +159,7 @@ export default function Study() {
               <Text textObj={{en: `LESSON${range.start<range.end?'S':''}`, es: `LECCIÓN${range.start<range.end?'ES':''}`}} />
             </div>
             <div className={`${montserrat.className} font-extrabold text-3xl relative`} onMouseLeave={() => setShowRange(false)}>
-              <button className={styles.rangeSelect} onClick={toggleShowRange}>
+              <button className={`${styles.rangeSelect}`} onClick={toggleShowRange}>
                 {range.start<range.end?<><span>{range.start+1}</span>
                 <span>–</span>
                 <span>{range.end+1}</span></>:<><span>{range.start+1}</span></>}

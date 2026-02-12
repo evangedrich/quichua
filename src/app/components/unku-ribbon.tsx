@@ -68,6 +68,7 @@ export default function UnkuRibbon({ pattern }: unkuProps) {
     if (id==='esses') { toggleTheme(); }
     else if (id==='earthquake' || id==="altEarthquake") { toggleMotion(); }
     else if (id==='owl') { toggleLang(); }
+    else if (id==='twoEyes2') { router.push('/study'); }
     else if (id==='twoEyes1') { router.push('/poems'); }
     else if (id==='curls') { router.push('/info'); }
     else { console.log(id); }

@@ -776,7 +776,7 @@ export const tocapuLibrary: tocapu[] = [
   },
   {
     name: "twoEyes2",
-    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""}`}><svg viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
+    svg: <div className={`${styles.svgBox} ${(move)?styles.svgMove:""} ${styles.svgCursor}`}><svg viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
       <rect x="-50" y="-50" width="100" height="100" fill={red} />
       <rect x="-45" y="-45" width="42.5" height="42.5" fill={brown} />
       <path d="M-38,-45 -38,-2.5 -10,-45 -10,-2.5 z" stroke={yellow} strokeWidth="2.5" strokeLinecap="square" ></path>
