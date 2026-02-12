@@ -153,13 +153,12 @@
   background-color: #e85538;
 }
 
-
 .rangeSelect {
-  border-radius: 1rem;
-  padding-left: 0.5em;
+  border-radius: 0.9rem;
+  padding-left: 0.36em;
   padding-right: 0.25em;
   cursor: pointer;
-  transition: transform 200ms linear;
+  transition: transform 150ms linear;
 }
 .rangeSelect span {
   margin-left: 0.1em;
@@ -234,5 +233,6 @@
   .rangeSelect:active {
     background-color: transparent;
     transform: scale(0.95);
+    opacity: 0.8;
   }
 }

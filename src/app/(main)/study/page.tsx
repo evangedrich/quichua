@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef, ChangeEvent, FormEvent } from 'react';
+import useLang from '@/app/hooks/useLang';
 import { lessons, phaseType, trilingualType } from '@/app/lib/lessons';
 import { montserrat } from '@/app/ui/fonts';
 import styles from '@/app/ui/study.module.css';
@@ -33,6 +34,7 @@ function getVocab() {
 }
 
 export default function Study() {
+  const { lang } = useLang();
   const isFirstRender = useRef(true);
   // top buttons
   const [range, setRange] = useState({ start: 0, end: lessons.length-1, });
@@ -93,7 +95,10 @@ export default function Study() {
   }
   function newWord() {
     const vocabSet = (range.start===range.end ? vocab[range.start] : vocab.slice(range.start,range.end).flat()) as any[];
-    const index = nextIndex.length>0 ? nextIndex[nextIndex.length-1] : Math.floor(Math.random()*vocabSet.length);
+    let index = nextIndex.length>0 ? nextIndex[nextIndex.length-1] : Math.floor(Math.random()*vocabSet.length);
+    if (prevIndex.length>0 && vocabSet.length>1) {
+      while (index === prevIndex[prevIndex.length-1]) { index = Math.floor(Math.random() * vocabSet.length); }
+    }
     setPrevIndex(priorArray => [...priorArray, word.i]);
     if (nextIndex.length>0) { setNextIndex(priorArray => priorArray.slice(0,-1)); }
     setWord({ i: index, options: vocabSet, });
@@ -102,12 +107,34 @@ export default function Study() {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
   };
+  const checkMatch = (def: { en: string, es: string }) => {
+    const myDef = lang==='en' ? def.en : def.es;
+    // the remainder of the function below was written with AI, 1 of 2 such functions
+    const stopWords = ['the', 'a', 'an', 'el', 'la', 'los', 'las', 'un', 'una', 'to', 'or', 'o'];
+    const getCleanWords = (str: string) => {
+      return str
+        .toLowerCase()
+        .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Strip accents
+        .replace(/[\u2018\u2019]/g, "'") // Normalize quotes
+        .replace(/[/()\-]/g, " ") // Treat slashes, dashes, and parentheses as spaces
+        .replace(/[.,/#!$%^&*;:{}=_`~!?]/g, "") // Strip punctuation
+        .split(/\s+/)
+        .filter(word => word.length > 1 && !stopWords.includes(word)); // Ignore single letters like 'a'
+    };
+    const defWords = getCleanWords(myDef);
+    const inputWords = getCleanWords(input);
+    if (inputWords.length === 0) return false;
+    const isMatch = inputWords.every(inputWord =>
+      defWords.some(defWord => defWord.startsWith(inputWord) || defWord === inputWord)
+    );
+    return isMatch;
+  };
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const currentWord = word.options[word.i] as any;
     if (input==='') { setCorrectGuess(null); }
     else if (typeof currentWord === 'object' && currentWord !== null && 'en' in currentWord) {
-      if (currentWord.en.includes(input) || currentWord.es.includes(input)) {
+      if (checkMatch({en:currentWord.en,es:currentWord.es,})) {
         setCorrectGuess(true);
         newWord();
       } else { setCorrectGuess(false); }
@@ -126,7 +153,7 @@ export default function Study() {
           >{studySVGs[0]}</button>
           <button className={`${styles.dummy} ${prevIndex.length===0?'block':'hidden'} opacity-0`}></button>
           <div>
-            <div className={`${montserrat.className} font-extrabold mb-0`}>
+            <div className={`${montserrat.className} font-extrabold mb-[-0.1rem]`}>
               <Text textObj={{en: `LESSON${range.start<range.end?'S':''}`, es: `LECCIÓN${range.start<range.end?'ES':''}`}} />
             </div>
             <div className={`${montserrat.className} font-extrabold text-3xl relative`} onMouseLeave={() => setShowRange(false)}>
@@ -161,6 +188,7 @@ export default function Study() {
           <label>
             <input
               type="text"
+              autoComplete="off"
               value={input}
               onChange={handleChange}
               className={`border-2 border-solid ${correctGuess===null?'border-[var(--color-mid)]':correctGuess?'border-[#5d854c]':'border-[#e85538]'}`}
