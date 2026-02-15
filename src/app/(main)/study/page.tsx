@@ -52,11 +52,21 @@ export default function Study() {
   function FlashCard({ word }: { word: any }) {
     const [isFlipped, setIsFlipped] = useState(false);
     const flip = () => { setIsFlipped(!isFlipped); };
+    const Design = ({ x }: { x: number }) => {
+      const d = x===0
+      ? "M 5,20 10,20 10,15 15,15 15,10 20,10 20,5  80,5 80,10 85,10 85,15 90,15 90,20 95,20  95,80 90,80 90,85 85,85 85,90 80,90 80,95  20,95 20,90 15,90 15,85 10,85 10,80 5,80 z"
+      : "M 15,5 H 85 A 10,10 0 0 1 95,15 V 85 A 10,10 0 0 1 85,95 H 15 A 10,10 0 0 1 5,85 V 15 A 10,10 0 0 1 15,5 Z";
+    return <div className="absolute w-full h-full top-0 left-0 p-[0.45rem]" style={{backfaceVisibility:'hidden',transform:'translateZ(1px)'}}>
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="w-full h-full backface-hidden">
+          <path d={d} stroke="var(--color-mid)" fill="none" strokeWidth="0.4" strokeLinejoin="round" />
+        </svg>
+      </div>;
+    };
     return (
       <div className={`${styles.flashCard}`} onClick={flip}>
         <div className={`${styles.inner} ${isFlipped?styles.flipped:''}`}>
-          <div className={`${styles.front}`}><p><b>{textParser(word.qu)}</b></p></div>
-          <div  className={`${styles.back}`}><Text type="p">{{en: word.en, es: word.es}}</Text></div>
+          <div className={`${styles.front}`}><Design x={0}/><p><b>{textParser(word.qu)}</b></p></div>
+          <div  className={`${styles.back}`}><Design x={1}/><Text type="p">{{en: word.en, es: word.es}}</Text></div>
         </div>
       </div>
     )
@@ -96,7 +106,7 @@ export default function Study() {
   function newWord() {
     const vocabSet = (range.start===range.end ? vocab[range.start] : vocab.slice(range.start,range.end).flat()) as any[];
     let index = nextIndex.length>0 ? nextIndex[nextIndex.length-1] : Math.floor(Math.random()*vocabSet.length);
-    if (prevIndex.length>0 && vocabSet.length>1) {
+    if (vocabSet.length>1) {
       while (index === word.i) { index = Math.floor(Math.random() * vocabSet.length); }
     }
     setPrevIndex(priorArray => [...priorArray, word.i]);
@@ -152,7 +162,7 @@ export default function Study() {
           <button onClick={oldWord}
             className={`${styles.flashButton} ${styles.flashBack} ${prevIndex.length===0?'hidden':'block'}`}
           >{studySVGs[0]}</button>
-          <button className={`${styles.dummy} ${prevIndex.length===0?'block':'hidden'} opacity-0`}></button>
+          <button className={`${styles.dummy} ${prevIndex.length===0?'block':'hidden'} opacity-0`} tabIndex={-1}></button>
           <div>
             <div className={`${montserrat.className} font-extrabold mb-[-0.1rem]`}>
               <Text textObj={{en: `LESSON${range.start<range.end?'S':''}`, es: `LECCIÓN${range.start<range.end?'ES':''}`}} />
@@ -169,14 +179,14 @@ export default function Study() {
                   {Array.from({ length: lessons.length }, (_, i) => i)
                     .filter(i => i!==range.start)
                     .map(i => (
-                      <li key={`lowerBound${i}`} onClick={(e) => updateRange(e,'lower')}>{i + 1}</li>
+                      <li key={`lowerBound${i}`} onClick={(e) => updateRange(e,'lower')} role="button" tabIndex={0}>{i + 1}</li>
                     ))}
                 </ul>
                 {range.start!==9?<ul>
                   {Array.from({ length: lessons.length }, (_, i) => i)
                     .filter((i) => i >= range.start && i !== range.end)
                     .map((i) => (
-                      <li key={`upperBound${i}`} onClick={(e) => updateRange(e, 'upper')}>{i + 1}</li>
+                      <li key={`upperBound${i}`} onClick={(e) => updateRange(e, 'upper')} role="button" tabIndex={0}>{i + 1}</li>
                     ))}
                 </ul>:<></>}
               </div>
@@ -192,7 +202,7 @@ export default function Study() {
               autoComplete="off"
               value={input}
               onChange={handleChange}
-              className={`border-2 border-solid ${correctGuess===null?'border-[var(--color-mid)]':correctGuess?'border-[#5d854c]':'border-[#e85538]'}`}
+              className={`border-[1.5px] border-solid ${correctGuess===null?styles.regInput:correctGuess?'border-[#5d854c]':'border-[#e85538]'}`}
             />
             <button
               type="submit"

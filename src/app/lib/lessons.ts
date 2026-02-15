@@ -156,8 +156,8 @@ export const lessons: lessonType[] = [
               es: `En el quichua la acentuación de las palabras es muy regular, ya que como regla general cae en la sílaba penúltima de cada palabra. En los siguientes ejemplos la sílaba acentuada de cada palabra está escrita con todas mayúsculas:`,
             },
             {
-              en: `**a·*LLI*·lla**\n**a·lli·*LLA*·chu**\n** *CAN*·gui **\n** *A*·ri **`,
-              es: `**a·*LLI*·lla**\n**a·lli·*LLA*·chu**\n** *CAN*·gui **\n** *A*·ri **`,
+              en: `**a**·**LLI**·**lla**\n**a**·**lli**·**LLA**·**chu**\n**CAN**·**gui**\n**A**·**ri**`,
+              es: `**a**·**LLI**·**lla**\n**a**·**lli**·**LLA**·**chu**\n**CAN**·**gui**\n**A**·**ri**`,
             },
             {
               en: `Sometimes, for added emphasis, the accent is shifted to the final syllable of a word. This is indicated by the use of a written accent mark over the accented syllable. An example of such a “displaced” accent will be seen in the next lesson.`,

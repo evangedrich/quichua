@@ -49,9 +49,9 @@ export default function Header() {
           </div>
           <NavButton icon="sinchi" text="more" color="#d9b484" func={() => setMoreVisible(!moreVisible)} />
           <div className={`${styles.settingsButtons} ${moreVisible?'':styles.hideSettings}`}>
-            <NavButton icon="twoEyes2" text="/study" color="#5f633a" />
-            <NavButton icon="twoEyes1" text="/poems" color="#e85538" />
+            <NavButton icon="twoEyes2" text="/study" color="#e85538" />
             <NavButton icon="curls" text="/info" color="#5f633a" />
+            <NavButton icon="twoEyes1" text="/poems" color="#e85538" />
           </div>
       </div>
       </div>

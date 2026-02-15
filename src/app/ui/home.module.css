@@ -41,6 +41,7 @@
   cursor: pointer;
   transition: transform 50ms linear;
   user-select: none;
+  font-family: system-ui, sans-serif;
 }
 .customButton:hover {
   background-color: var(--color-mid-hover);
